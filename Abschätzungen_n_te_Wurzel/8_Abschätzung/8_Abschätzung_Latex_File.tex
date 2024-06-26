@@ -1,0 +1,278 @@
+\documentclass[10pt]{beamer}
+
+\title{}
+\author{Artur's Mathematikstübchen}
+\date{}
+
+
+% ===== Packages =========
+\usepackage[utf8]{inputenc}
+
+\usepackage[natbibapa]{apacite}
+\bibliographystyle{apacite}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{MnSymbol}
+\usepackage{tikz-cd}
+\usepackage{enumitem}
+\usepackage{amsthm}
+\usepackage{mleftright}
+\usepackage{dsfont}
+
+
+
+\def\bD{\mathbb{D}}               
+\def\bE{\mathbb{E}}
+\def\bG{\mathbb{G}}
+\def\bN{\mathbb{N}}
+\def\bP{\mathbb{P}}
+\def\bQ{\mathbb{Q}}
+\def\bR{\mathbb{R}}
+\def\bBarR{\bar{\mathbb{R}}}
+\def\bY{\mathbb{Y}}
+
+
+
+\def\mA{\mathcal{A}}
+\def\mB{\mathcal{B}}
+\def\mD{\mathcal{D}}
+\def\mE{\mathcal{E}}
+\def\mF{\mathcal{F}}
+\def\mG{\mathcal{G}}
+\def\mH{\mathcal{H}}
+\def\mL{\mathcal{L}}
+\def\mN{\mathcal{N}}
+\def\mP{\mathcal{P}}
+\def\mS{\mathcal{S}}
+\def\mT{\mathcal{T}}
+\def\mX{\mathcal{X}}
+\def\mY{\mathcal{Y}}
+
+
+
+\usetheme{Madrid}
+
+
+
+\begin{document}
+
+
+
+% ======================== Begrüßung ==================
+
+\begin{frame}
+    \begin{center}
+        \textbf{\huge Willkommen in der guten Stube \newline \newline :D}
+    \end{center}
+\end{frame}
+% =====================================================
+
+
+
+% ======================== Präsentation ==================
+
+\begin{frame}{}
+    \begin{alertblock}{Aufgabe}
+        Sei \( m \in \mathbb{N} \) eine beliebige natürliche Zahl. Man zeige für alle \( n \in \bN \) mit \( n \geq m \) die Abschätzung:
+        \begin{align*}
+            n
+        	\geq \sum_{k = 0}^{m} \binom{n}{k} \cdot \left( \sqrt[n]{n} - 1 \right)^{k}.
+        \end{align*}
+    \end{alertblock}
+\end{frame}
+
+
+
+\begin{frame}{Hilfsmittel}
+    \begin{itemize}
+        \item<1-> Für alle \( x, y \in \bR \) und alle \( p \in \bN \) gilt:  
+         \begin{align*}
+             \left( x + y \right)^{p}
+             = \sum_{k = 0}^{p} \binom{p}{k} \cdot x^{p - k} \cdot y^{k}.
+         \end{align*} 
+    \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( n \in \bN \) eine natürliche Zahl mit \( n \geq m \).
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( n \in \bN \) eine natürliche Zahl mit \( n \geq m \). Zusammen mit dem binomischen Lehrsatz folgt:
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( n \in \bN \) eine natürliche Zahl mit \( n \geq m \). Zusammen mit dem binomischen Lehrsatz folgt:
+    \begin{align*}
+        n
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( n \in \bN \) eine natürliche Zahl mit \( n \geq m \). Zusammen mit dem binomischen Lehrsatz folgt:
+    \begin{align*}
+        n
+        & = \left( \sqrt[n]{n} \right)^{n} \\
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( n \in \bN \) eine natürliche Zahl mit \( n \geq m \). Zusammen mit dem binomischen Lehrsatz folgt:
+    \begin{align*}
+        n
+        & = \left( \sqrt[n]{n} \right)^{n} \\
+        & = \left( 1 + \sqrt[n]{n} - 1 \right)^{n} \\
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( n \in \bN \) eine natürliche Zahl mit \( n \geq m \). Zusammen mit dem binomischen Lehrsatz folgt:
+    \begin{align*}
+        n
+        & = \left( \sqrt[n]{n} \right)^{n} \\
+        & = \left( 1 + \sqrt[n]{n} - 1 \right)^{n} \\
+        & = \sum_{k = 0}^{n}\binom{n}{k} \cdot \left( \sqrt[n]{n} - 1 \right)^{k} \\
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( n \in \bN \) eine natürliche Zahl mit \( n \geq m \). Zusammen mit dem binomischen Lehrsatz folgt:
+    \begin{align*}
+        n
+        & = \left( \sqrt[n]{n} \right)^{n} \\
+        & = \left( 1 + \sqrt[n]{n} - 1 \right)^{n} \\
+        & = \sum_{k = 0}^{n} \binom{n}{k} \cdot \left( \sqrt[n]{n} - 1 \right)^{k} \\
+        & = \sum_{k = 0}^{m} \binom{n}{k} \cdot \left( \sqrt[n]{n} - 1 \right)^{k} + \underbrace{\sum_{k = m + 1}^{n} \binom{n}{k} \cdot \left( \sqrt[n]{n} - 1 \right)^{k}}_{\text{\( \geq 0 \)}} \\
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( n \in \bN \) eine natürliche Zahl mit \( n \geq m \). Zusammen mit dem binomischen Lehrsatz folgt:
+    \begin{align*}
+        n
+        & = \left( \sqrt[n]{n} \right)^{n} \\
+        & = \left( 1 + \sqrt[n]{n} - 1 \right)^{n} \\
+        & = \sum_{k = 0}^{n} \binom{n}{k} \cdot \left( \sqrt[n]{n} - 1 \right)^{k} \\
+        & = \sum_{k = 0}^{m} \binom{n}{k} \cdot \left( \sqrt[n]{n} - 1 \right)^{k} + \underbrace{\sum_{k = m + 1}^{n} \binom{n}{k} \cdot \left( \sqrt[n]{n} - 1 \right)^{k}}_{\text{\( \geq 0 \)}} \\
+        & \geq \sum_{k = 0}^{m} \binom{n}{k} \cdot \left( \sqrt[n]{n} - 1 \right)^{k}.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 1}
+    Für \( m = 1 \) folgt die Abschätzung:
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 1}
+    Für \( m = 1 \) folgt die Abschätzung:
+    \begin{align*}
+        n 
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 1}
+    Für \( m = 1 \) folgt die Abschätzung:
+    \begin{align*}
+        n 
+        & \geq \sum_{k = 0}^{1} \binom{n}{k} \cdot \left( \sqrt[n]{n} - 1 \right)^{k} \\
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 1}
+    Für \( m = 1 \) folgt die Abschätzung:
+    \begin{align*}
+        n 
+        & \geq \sum_{k = 0}^{1} \binom{n}{k} \cdot \left( \sqrt[n]{n} - 1 \right)^{k} \\
+        & = \binom{n}{0} \cdot \left( \sqrt[n]{n} - 1 \right)^{0} + \binom{n}{1} \cdot \left( \sqrt[n]{n} - 1 \right)^{1} \\
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 1}
+    Für \( m = 1 \) folgt die Abschätzung:
+    \begin{align*}
+        n 
+        & \geq \sum_{k = 0}^{1} \binom{n}{k} \cdot \left( \sqrt[n]{n} - 1 \right)^{k} \\
+        & = \binom{n}{0} \cdot \left( \sqrt[n]{n} - 1 \right)^{0} + \binom{n}{1} \cdot \left( \sqrt[n]{n} - 1 \right)^{1} \\
+        & = 1 + n \cdot \left( \sqrt[n]{n} - 1 \right).
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 2}
+    Für \( m = 2 \) folgt die Abschätzung:
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 2}
+    Für \( m = 2 \) folgt die Abschätzung:
+    \begin{align*}
+        n 
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 2}
+    Für \( m = 2 \) folgt die Abschätzung:
+    \begin{align*}
+        n 
+        & \geq \sum_{k = 0}^{2} \binom{n}{k} \cdot \left( \sqrt[n]{n} - 1 \right)^{k} \\
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 2}
+    Für \( m = 2 \) folgt die Abschätzung:
+    \begin{align*}
+        n 
+        & \geq \sum_{k = 0}^{2} \binom{n}{k} \cdot \left( \sqrt[n]{n} - 1 \right)^{k} \\
+        & = \binom{n}{0} \cdot \left( \sqrt[n]{n} - 1 \right)^{0} + \binom{n}{1} \cdot \left( \sqrt[n]{n} - 1 \right)^{1} + \binom{n}{2} \cdot \left( \sqrt[n]{n} - 1 \right)^{2} \\
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 2}
+    Für \( m = 2 \) folgt die Abschätzung:
+    \begin{align*}
+        n 
+        & \geq \sum_{k = 0}^{2} \binom{n}{k} \cdot \left( \sqrt[n]{n} - 1 \right)^{k} \\
+        & = \binom{n}{0} \cdot \left( \sqrt[n]{n} - 1 \right)^{0} + \binom{n}{1} \cdot \left( \sqrt[n]{n} - 1 \right)^{1} + \binom{n}{2} \cdot \left( \sqrt[n]{n} - 1 \right)^{2} \\
+        & > 1 + \binom{n}{2} \cdot \left( \sqrt[n]{n} - 1 \right)^{2}.
+    \end{align*}
+\end{frame}
+% ============================================================
+
+\end{document}

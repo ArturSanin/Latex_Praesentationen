@@ -1,0 +1,293 @@
+\documentclass[10pt]{beamer}
+
+\title{}
+\author{Artur's Mathematikstübchen}
+\date{}
+
+
+% ===== Packages =========
+\usepackage[utf8]{inputenc}
+
+\usepackage[natbibapa]{apacite}
+\bibliographystyle{apacite}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{MnSymbol}
+\usepackage{tikz-cd}
+\usepackage{enumitem}
+\usepackage{amsthm}
+\usepackage{mleftright}
+\usepackage{dsfont}
+
+
+
+\def\bD{\mathbb{D}}               
+\def\bE{\mathbb{E}}
+\def\bG{\mathbb{G}}
+\def\bN{\mathbb{N}}
+\def\bP{\mathbb{P}}
+\def\bQ{\mathbb{Q}}
+\def\bR{\mathbb{R}}
+\def\bBarR{\bar{\mathbb{R}}}
+\def\bY{\mathbb{Y}}
+
+
+
+\def\mA{\mathcal{A}}
+\def\mB{\mathcal{B}}
+\def\mD{\mathcal{D}}
+\def\mE{\mathcal{E}}
+\def\mF{\mathcal{F}}
+\def\mG{\mathcal{G}}
+\def\mH{\mathcal{H}}
+\def\mL{\mathcal{L}}
+\def\mN{\mathcal{N}}
+\def\mP{\mathcal{P}}
+\def\mS{\mathcal{S}}
+\def\mT{\mathcal{T}}
+\def\mX{\mathcal{X}}
+\def\mY{\mathcal{Y}}
+
+
+
+\usetheme{Madrid}
+
+
+
+\begin{document}
+
+
+
+% ======================== Begrüßung ==================
+
+\begin{frame}
+    \begin{center}
+        \textbf{\huge Willkommen in der guten Stube \newline \newline :D}
+    \end{center}
+\end{frame}
+% =====================================================
+
+
+
+% ======================== Präsentation ==================
+
+\begin{frame}{}
+    \begin{alertblock}{Aufgabe}
+        Man zeige für alle \( n \in \bN \) die Gültigkeit der Abschätzung:
+        \begin{align*}
+            \sqrt[n]{n}
+        	\leq 1 - \frac{2}{n} + \frac{2}{\sqrt{n}}.
+        \end{align*}
+    \end{alertblock}
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    \begin{itemize}
+        \item<1->  Für den Beweis verwenden wir als Hilfsmittel die Ungleichung zwischen dem geometrischen und arithmetischen Mittel:   
+        \item<2-> 
+        \begin{block}{Hilfsabschätzung}
+             Für alle \( x_{1}, \ldots, x_{m} > 0 \), \( m \in \bN \), gilt die Abschätzung:
+             \[
+                \sqrt[m]{x_{1} \cdot \ldots \cdot x_{m}} 
+                \leq \frac{x_{1} + \ldots + x_{m}}{m}.
+             \]
+        \end{block} 
+    \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( n \in \bN \) eine beliebige natürliche Zahl.
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( n \in \bN \) eine beliebige natürliche Zahl. Wir schreiben \( n = \sqrt{n} \cdot \sqrt{n} \cdot \underbrace{1 \cdot \ldots \cdot 1}_{\text{\( \left( n - 2 \right) \)-mal}} \) und schätzen mit der Ungleichung zwischen dem geometrischen und arithmetischen Mittel ab:
+\end{frame}
+
+
+\begin{frame}{Beweis}
+    Sei \( n \in \bN \) eine beliebige natürliche Zahl. Wir schreiben \( n = \sqrt{n} \cdot \sqrt{n} \cdot \underbrace{1 \cdot \ldots \cdot 1}_{\text{\( \left( n - 2 \right) \)-mal}} \) und schätzen mit der Ungleichung zwischen dem geometrischen und arithmetischen Mittel ab:
+    \begin{align*}
+        \sqrt[n]{n}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( n \in \bN \) eine beliebige natürliche Zahl. Wir schreiben \( n = \sqrt{n} \cdot \sqrt{n} \cdot \underbrace{1 \cdot \ldots \cdot 1}_{\text{\( \left( n - 2 \right) \)-mal}} \) und schätzen mit der Ungleichung zwischen dem geometrischen und arithmetischen Mittel ab:
+    \begin{align*}
+        \sqrt[n]{n}
+        & = \sqrt[n]{\sqrt{n} \cdot \sqrt{n} \cdot 1 \ldots \cdot 1} \\
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( n \in \bN \) eine beliebige natürliche Zahl. Wir schreiben \( n = \sqrt{n} \cdot \sqrt{n} \cdot \underbrace{1 \cdot \ldots \cdot 1}_{\text{\( \left( n - 2 \right) \)-mal}} \) und schätzen mit der Ungleichung zwischen dem geometrischen und arithmetischen Mittel ab:
+    \begin{align*}
+        \sqrt[n]{n}
+        & = \sqrt[n]{\sqrt{n} \cdot \sqrt{n} \cdot 1 \ldots \cdot 1} \\
+        & \leq \frac{\sqrt{n} + \sqrt{n} + 1 + \ldots + 1}{n} \\
+    \end{align*}
+\end{frame}
+
+
+
+
+\begin{frame}{Beweis}
+    Sei \( n \in \bN \) eine beliebige natürliche Zahl. Wir schreiben \( n = \sqrt{n} \cdot \sqrt{n} \cdot \underbrace{1 \cdot \ldots \cdot 1}_{\text{\( \left( n - 2 \right) \)-mal}} \) und schätzen mit der Ungleichung zwischen dem geometrischen und arithmetischen Mittel ab:
+    \begin{align*}
+        \sqrt[n]{n}
+        & = \sqrt[n]{\sqrt{n} \cdot \sqrt{n} \cdot 1 \ldots \cdot 1} \\
+        & \leq \frac{\sqrt{n} + \sqrt{n} + 1 + \ldots + 1}{n} \\
+        & = \frac{2 \cdot \sqrt{n} + n - 2}{n} \\
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( n \in \bN \) eine beliebige natürliche Zahl. Wir schreiben \( n = \sqrt{n} \cdot \sqrt{n} \cdot \underbrace{1 \cdot \ldots \cdot 1}_{\text{\( \left( n - 2 \right) \)-mal}} \) und schätzen mit der Ungleichung zwischen dem geometrischen und arithmetischen Mittel ab:
+    \begin{align*}
+        \sqrt[n]{n}
+        & = \sqrt[n]{\sqrt{n} \cdot \sqrt{n} \cdot 1 \ldots \cdot 1} \\
+        & \leq \frac{\sqrt{n} + \sqrt{n} + 1 + \ldots + 1}{n} \\
+        & = \frac{2 \cdot \sqrt{n} + n - 2}{n} \\
+        & = 1 - \frac{2}{n} + \frac{2 \cdot \sqrt{n}}{n} \\
+    \end{align*}
+\end{frame}
+
+
+
+
+\begin{frame}{Beweis}
+    Sei \( n \in \bN \) eine beliebige natürliche Zahl. Wir schreiben \( n = \sqrt{n} \cdot \sqrt{n} \cdot \underbrace{1 \cdot \ldots \cdot 1}_{\text{\( \left( n - 2 \right) \)-mal}} \) und schätzen mit der Ungleichung zwischen dem geometrischen und arithmetischen Mittel ab:
+    \begin{align*}
+        \sqrt[n]{n}
+        & = \sqrt[n]{\sqrt{n} \cdot \sqrt{n} \cdot 1 \ldots \cdot 1} \\
+        & \leq \frac{\sqrt{n} + \sqrt{n} + 1 + \ldots + 1}{n} \\
+        & = \frac{2 \cdot \sqrt{n} + n - 2}{n} \\
+        & = 1 - \frac{2}{n} + \frac{2 \cdot \sqrt{n}}{n} \\
+        & = 1 - \frac{2}{n} + \frac{2}{\sqrt{n}}.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 1}
+    Aus der eben gezeigten Abschätzung erhalten wir insbesondere die Abschätzung:
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 1}
+    Aus der eben gezeigten Abschätzung erhalten wir insbesondere die Abschätzung:
+    \[
+        \sqrt[n]{n}
+    \]
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 1}
+    Aus der eben gezeigten Abschätzung erhalten wir insbesondere die Abschätzung:
+    \[
+        \sqrt[n]{n}
+        \leq 1 - \frac{2}{n} + \frac{2}{\sqrt{n}}
+    \]
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 1}
+    Aus der eben gezeigten Abschätzung erhalten wir insbesondere die Abschätzung:
+    \[
+        \sqrt[n]{n}
+        \leq 1 - \frac{2}{n} + \frac{2}{\sqrt{n}}
+        < 1 + \frac{2}{\sqrt{n}}.
+    \]
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 2}
+    Wir setzen \( w_{n} \coloneq \sqrt[n]{n} \).
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 2}
+    Wir setzen \( w_{n} \coloneq \sqrt[n]{n} \). Für den Grenzwert der Folge \( \left( w_{n} \right)_{n \in \bN} \) gilt:
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 2}
+    Wir setzen \( w_{n} \coloneq \sqrt[n]{n} \). Für den Grenzwert der Folge \( \left( w_{n} \right)_{n \in \bN} \) gilt:
+    \[
+        \lim_{n \to \infty} \sqrt[n]{n}
+    \]
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 2}
+    Wir setzen \( w_{n} \coloneq \sqrt[n]{n} \). Für den Grenzwert der Folge \( \left( w_{n} \right)_{n \in \bN} \) gilt:
+    \[
+        \lim_{n \to \infty} \sqrt[n]{n} 
+        \leq \lim_{n \to \infty} \left( 1 - \frac{2}{n} + \frac{2}{\sqrt{n}} \right)
+    \]
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 2}
+    Wir setzen \( w_{n} \coloneq \sqrt[n]{n} \). Für den Grenzwert der Folge \( \left( w_{n} \right)_{n \in \bN} \) gilt:
+    \[
+        \lim_{n \to \infty} \sqrt[n]{n} 
+        \leq \lim_{n \to \infty} \left( 1 - \frac{2}{n} + \frac{2}{\sqrt{n}} \right)
+        = 1.
+    \]
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 2}
+    Wir setzen \( w_{n} \coloneq \sqrt[n]{n} \). Für den Grenzwert der Folge \( \left( w_{n} \right)_{n \in \bN} \) gilt:
+    \[
+        \lim_{n \to \infty} \sqrt[n]{n} 
+        \leq \lim_{n \to \infty} \left( 1 - \frac{2}{n} + \frac{2}{\sqrt{n}} \right)
+        = 1.
+    \]
+    Wegen \( 1 \leq \sqrt[n]{n} \), für alle \( n \in \bN \), erhalten wir:
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 2}
+    Wir setzen \( w_{n} \coloneq \sqrt[n]{n} \). Für den Grenzwert der Folge \( \left( w_{n} \right)_{n \in \bN} \) gilt:
+    \[
+        \lim_{n \to \infty} \sqrt[n]{n} 
+        \leq \lim_{n \to \infty} \left( 1 - \frac{2}{n} + \frac{2}{\sqrt{n}} \right)
+        = 1.
+    \]
+    Wegen \( 1 \leq \sqrt[n]{n} \), für alle \( n \in \bN \), erhalten wir:
+    \[
+        \lim_{n \to \infty} \sqrt[n]{n}
+        = 1.
+    \]
+\end{frame}
+% =====================================================
+
+\end{document}
