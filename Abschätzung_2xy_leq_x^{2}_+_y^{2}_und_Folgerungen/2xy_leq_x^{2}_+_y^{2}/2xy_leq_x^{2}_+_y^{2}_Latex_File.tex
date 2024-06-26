@@ -1,0 +1,669 @@
+\documentclass[10pt]{beamer}
+
+\title{}
+\author{Artur's Mathematikstübchen}
+\date{}
+
+
+% ===== Packages =========
+\usepackage[utf8]{inputenc}
+
+\usepackage[natbibapa]{apacite}
+\bibliographystyle{apacite}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{MnSymbol}
+\usepackage{tikz-cd}
+\usepackage{enumitem}
+\usepackage{amsthm}
+\usepackage{mleftright}
+\usepackage{dsfont}
+
+
+
+\def\bD{\mathbb{D}}               
+\def\bE{\mathbb{E}}
+\def\bG{\mathbb{G}}
+\def\bN{\mathbb{N}}
+\def\bP{\mathbb{P}}
+\def\bQ{\mathbb{Q}}
+\def\bR{\mathbb{R}}
+\def\bBarR{\bar{\mathbb{R}}}
+\def\bY{\mathbb{Y}}
+
+
+
+\def\mA{\mathcal{A}}
+\def\mB{\mathcal{B}}
+\def\mD{\mathcal{D}}
+\def\mE{\mathcal{E}}
+\def\mF{\mathcal{F}}
+\def\mG{\mathcal{G}}
+\def\mH{\mathcal{H}}
+\def\mL{\mathcal{L}}
+\def\mN{\mathcal{N}}
+\def\mP{\mathcal{P}}
+\def\mS{\mathcal{S}}
+\def\mT{\mathcal{T}}
+\def\mX{\mathcal{X}}
+\def\mY{\mathcal{Y}}
+
+
+
+\usetheme{Madrid}
+
+
+
+% ======================== Beginn Document ========================
+
+\begin{document}
+
+
+
+
+
+% ======================== Begrüßung ==================
+
+\begin{frame}
+    \begin{center}
+        \textbf{\huge Willkommen in der guten Stube \newline \newline :D}
+    \end{center}
+\end{frame}
+% =====================================================
+
+
+
+% ======================== Präsentation ==================
+
+\begin{frame}
+    \begin{alertblock}{Aufgabe}
+        Für alle \( x, y \in \bR \) zeige man die Abschätzung:
+        \begin{align*}
+            2xy
+            \leq x^{2} + y^{2}.
+        \end{align*}
+    \end{alertblock}
+\end{frame}
+
+
+
+\begin{frame}{Hilfsmittel}
+    \begin{itemize}
+        \item<1-> 1. Für alle \( p \in \bR \) ist \( p^{2} \geq 0 \).
+        \item<2-> 2. Für alle \( p, q \in \bR \) ist \( \left( p - q \right)^{2}
+            = p^{2} - 2pq + q^{2}. \)
+    \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Erster Ansatz}
+    Seien \( x, y \in \bR \) zwei beliebige reelle Zahlen.
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Erster Ansatz}
+    Seien \( x, y \in \bR \) zwei beliebige reelle Zahlen. Dann ist:
+    \begin{align*}
+        x^{2} - 2xy + y^{2}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Erster Ansatz}
+    Seien \( x, y \in \bR \) zwei beliebige reelle Zahlen. Dann ist:
+    \begin{align*}
+        x^{2} - 2xy + y^{2}
+        = \left( x - y \right)^{2}  
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Erster Ansatz}
+    Seien \( x, y \in \bR \) zwei beliebige reelle Zahlen. Dann ist:
+    \begin{align*}
+        x^{2} - 2xy + y^{2}
+        = \left( x - y \right)^{2}
+        \geq 0  
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Erster Ansatz}
+    Seien \( x, y \in \bR \) zwei beliebige reelle Zahlen. Dann ist:
+    \begin{align*}
+        x^{2} - 2xy + y^{2}
+        = \left( x - y \right)^{2}
+        \geq 0
+        \quad \Leftrightarrow \quad x^{2} + y^{2} \geq 2xy.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Zweiter Ansatz}
+    Seien \( x, y \in \bR \) zwei beliebige reelle Zahlen.
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Zweiter Ansatz}
+    Seien \( x, y \in \bR \) zwei beliebige reelle Zahlen. Dann gilt:
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Zweiter Ansatz}
+    Seien \( x, y \in \bR \) zwei beliebige reelle Zahlen. Dann gilt:
+    \begin{align*}
+        2xy
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Zweiter Ansatz}
+    Seien \( x, y \in \bR \) zwei beliebige reelle Zahlen. Dann gilt:
+    \begin{align*}
+        2xy
+        & = x^{2} - x^{2} + 2xy \\
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Zweiter Ansatz}
+    Seien \( x, y \in \bR \) zwei beliebige reelle Zahlen. Dann gilt:
+    \begin{align*}
+        2xy
+        & = x^{2} - x^{2} + 2xy \\
+        & = x^{2} - x^{2} + 2xy + y^{2} - y^{2} \\
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Zweiter Ansatz}
+    Seien \( x, y \in \bR \) zwei beliebige reelle Zahlen. Dann gilt:
+    \begin{align*}
+        2xy
+        & = x^{2} - x^{2} + 2xy \\
+        & = x^{2} - x^{2} + 2xy + y^{2} - y^{2} \\
+        & = x^{2} + y^{2} - \left( x^{2} - 2xy + y^{2} \right) \\ 
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Zweiter Ansatz}
+    Seien \( x, y \in \bR \) zwei beliebige reelle Zahlen. Dann gilt:
+    \begin{align*}
+        2xy
+        & = x^{2} - x^{2} + 2xy \\
+        & = x^{2} - x^{2} + 2xy + y^{2} - y^{2} \\
+        & = x^{2} + y^{2} - \left( x^{2} - 2xy + y^{2} \right) \\ 
+        & = x^{2} + y^{2} - \left( x - y \right)^{2} \\ 
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Zweiter Ansatz}
+    Seien \( x, y \in \bR \) zwei beliebige reelle Zahlen. Dann gilt:
+    \begin{align*}
+        2xy
+        & = x^{2} - x^{2} + 2xy \\
+        & = x^{2} - x^{2} + 2xy + y^{2} - y^{2} \\
+        & = x^{2} + y^{2} - \left( x^{2} - 2xy + y^{2} \right) \\ 
+        & = x^{2} + y^{2} - \underbrace{\left( x - y \right)^{2}}_{\text{\( \geq 0 \)}} \\ 
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Zweiter Ansatz}
+    Seien \( x, y \in \bR \) zwei beliebige reelle Zahlen. Dann gilt:
+    \begin{align*}
+        2xy
+        & = x^{2} - x^{2} + 2xy \\
+        & = x^{2} - x^{2} + 2xy + y^{2} - y^{2} \\
+        & = x^{2} + y^{2} - \left( x^{2} - 2xy + y^{2} \right) \\ 
+        & = x^{2} + y^{2} - \underbrace{\left( x - y \right)^{2}}_{\text{\( \geq 0 \)}} \\
+        & \leq x^{2} + y^{2}.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 1}
+    Aus der eben gezeigten Abschätzung folgt direkt: 
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 1}
+    Aus der eben gezeigten Abschätzung folgt direkt: Für alle \( x, y \in \bR \) gilt:
+    \begin{align*}
+        xy
+        \leq \frac{x^{2} + y^{2}}{2}.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Geometrische Interpretation der Abschätzung}
+    
+\end{frame}
+
+
+
+\begin{frame}{Geometrische Interpretation der Abschätzung}
+    \begin{center}
+        \begin{tikzpicture}
+            \draw(0, 0) rectangle (3, 1);
+        \end{tikzpicture}
+    \end{center}
+\end{frame}
+
+
+
+\begin{frame}{Geometrische Interpretation der Abschätzung}
+    \begin{center}
+        \begin{tikzpicture}
+            \draw(0, 0) rectangle (3, 1);
+            \node[below] at (1.5, 0) { x };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}
+
+
+
+\begin{frame}{Geometrische Interpretation der Abschätzung}
+    \begin{center}
+        \begin{tikzpicture}
+            \draw(0, 0) rectangle (3, 1);
+            \node[below] at (1.5, 0) { x };
+            \node[right] at (3, 0.5) { y };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}
+
+
+
+\begin{frame}{Geometrische Interpretation der Abschätzung}
+    \begin{center}
+        \begin{tikzpicture}
+            \draw(0, 0) rectangle (3, 1);
+            \node[below] at (1.5, 0) { \( x \) };
+            \node[right] at (3, 0.5) { \( y \) };
+            \node at (1.5, 0.5) { \( xy \) };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}
+
+
+
+\begin{frame}{Geometrische Interpretation der Abschätzung}
+    \begin{center}
+        \begin{tikzpicture}
+            \draw(0, 0) rectangle (3, 1);
+            \node[below] at (1.5, 0) { \( x \) };
+            \node[right] at (3, 0.5) { \( y \) };
+            \node at (1.5, 0.5) { \( xy \) };
+            
+            \draw(0, 0) -- (0, -3) -- (3, 0);
+            \node[left] at (0, -1.5) { \( x \) };
+        \end{tikzpicture}
+    \end{center}
+\end{frame}
+
+
+
+\begin{frame}{Geometrische Interpretation der Abschätzung}
+    \begin{center}
+        \begin{tikzpicture}
+            \draw(0, 0) rectangle (3, 1);
+            \node[below] at (1.5, 0) { \( x \) };
+            \node[right] at (3, 0.5) { \( y \) };
+            \node at (1.5, 0.5) { \( xy \) };
+            
+            \draw(0, 0) -- (0, -3) -- (3, 0);
+            \node[left] at (0, -1.5) { \( x \) };
+            \node at (1, -1) {\( \frac{1}{2}x^{2} \)};
+        \end{tikzpicture}
+    \end{center}
+\end{frame}
+
+
+
+\begin{frame}{Geometrische Interpretation der Abschätzung}
+    \begin{center}
+        \begin{tikzpicture}
+            \draw(0, 0) rectangle (3, 1);
+            \node[below] at (1.5, 0) { \( x \) };
+            \node[left] at (3, 0.5) { \( y \) };
+            \node at (1.5, 0.5) { \( xy \) };
+            
+            \draw(0, 0) -- (0, -3) -- (3, 0);
+            \node[left] at (0, -1.5) { \( x \) };
+            \node at (1, -1) {\( \frac{1}{2}x^{2} \)};
+
+            \draw(3, 0) -- (4, 0) -- (3, 1);
+            \node[below] at (3.5, 0) {\( y \)};
+        \end{tikzpicture}
+    \end{center}
+\end{frame}
+
+
+
+\begin{frame}{Geometrische Interpretation der Abschätzung}
+    \begin{center}
+        \begin{tikzpicture}
+            \draw(0, 0) rectangle (3, 1);
+            \node[below] at (1.5, 0) { \( x \) };
+            \node[left] at (3, 0.5) { \( y \) };
+            \node at (1.5, 0.5) { \( xy \) };
+            
+            \draw(0, 0) -- (0, -3) -- (3, 0);
+            \node[left] at (0, -1.5) { \( x \) };
+            \node at (1, -1) {\( \frac{1}{2}x^{2} \)};
+
+            \draw(3, 0) -- (4, 0) -- (3, 1);
+            \node[below] at (3.5, 0) {\( y \)};
+            \node[node font = \tiny] at (3.3, 0.3) {\( \frac{1}{2}y^{2} \)};
+        \end{tikzpicture}
+    \end{center}
+\end{frame}
+
+
+
+\begin{frame}{Geometrische Interpretation der Abschätzung}
+    
+\end{frame}
+
+
+
+\begin{frame}{Geometrische Interpretation der Abschätzung}
+    \begin{tikzpicture}
+        \draw[blue!40!white, fill](0, 0) rectangle (3, 1);
+        \node at (1.5, 0.5) { \( xy \) };
+    \end{tikzpicture}
+\end{frame}
+
+
+
+\begin{frame}{Geometrische Interpretation der Abschätzung}
+    \begin{tikzpicture}
+        \draw[blue!40!white, fill](0, 0) rectangle (3, 1);
+        \node at (1.5, 0.5) { \( xy \) };
+        \node[node font = \Huge] at (4, 0.5)  {\( \leq \)};
+    \end{tikzpicture}
+\end{frame}
+
+
+
+\begin{frame}{Geometrische Interpretation der Abschätzung}
+    \begin{tikzpicture}
+        \draw[blue!40!white, fill](0, 0) rectangle (3, 1);
+        \node at (1.5, 0.5) { \( xy \) };
+        \node[node font = \Huge] at (4, 0.5)  {\( \leq \)};
+
+        \draw[blue!40!white, fill](5, 0) -- (5, 3) -- (8, 0);
+        \node at (6, 1.0) { \( \frac{1}{2}x^{2} \) };
+    \end{tikzpicture}
+\end{frame}
+
+
+
+\begin{frame}{Geometrische Interpretation der Abschätzung}
+    \begin{tikzpicture}
+        \draw[blue!40!white, fill](0, 0) rectangle (3, 1);
+        \node at (1.5, 0.5) { \( xy \) };
+        \node[node font = \Huge] at (4, 0.5)  {\( \leq \)};
+
+        \draw[blue!40!white, fill](5, 0) -- (5, 3) -- (8, 0);
+        \node at (6, 1.0) { \( \frac{1}{2}x^{2} \) };
+
+        \node[node font = \Huge] at (9, 0.5)  {\( + \)};
+    \end{tikzpicture}
+\end{frame}
+
+
+
+\begin{frame}{Geometrische Interpretation der Abschätzung}
+    \begin{tikzpicture}
+        \draw[blue!40!white, fill](0, 0) rectangle (3, 1);
+        \node at (1.5, 0.5) { \( xy \) };
+        \node[node font = \Huge] at (4, 0.5)  {\( \leq \)};
+
+        \draw[blue!40!white, fill](5, 0) -- (5, 3) -- (8, 0);
+        \node at (6, 1.0) { \( \frac{1}{2}x^{2} \) };
+
+        \node[node font = \Huge] at (9, 0.5)  {\( + \)};
+
+        \draw[blue!40!white, fill](10, 0) -- (10, 1) -- (11, 0);
+        \node[node font = \tiny] at (10.3, 0.3) { \( \frac{1}{2}y^{2} \) };
+    \end{tikzpicture}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 2}
+    Wählen wir \( x = \sqrt{\Tilde{x}} \) und \( y = \sqrt{\Tilde{y}} \), wobei \( \Tilde{x}, \Tilde{y} \in \bR_{\geq 0} \), so erhalten wir die Abschätzung: 
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 2}
+    Wählen wir \( x = \sqrt{\Tilde{x}} \) und \( y = \sqrt{\Tilde{y}} \), wobei \( \Tilde{x}, \Tilde{y} \in \bR_{\geq 0} \), so erhalten wir die Abschätzung:
+    \begin{align*}
+        \sqrt{\Tilde{x} \cdot \Tilde{y}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 2}
+    Wählen wir \( x = \sqrt{\Tilde{x}} \) und \( y = \sqrt{\Tilde{y}} \), wobei \( \Tilde{x}, \Tilde{y} \in \bR_{\geq 0} \), so erhalten wir die Abschätzung:
+    \begin{align*}
+        \sqrt{\Tilde{x} \cdot \Tilde{y}}
+        & = x \cdot y \\
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 2}
+    Wählen wir \( x = \sqrt{\Tilde{x}} \) und \( y = \sqrt{\Tilde{y}} \), wobei \( \Tilde{x}, \Tilde{y} \in \bR_{\geq 0} \), so erhalten wir die Abschätzung:
+    \begin{align*}
+        \sqrt{\Tilde{x} \cdot \Tilde{y}}
+        & = x \cdot y \\
+        & \leq \frac{x^{2} + y^{2}}{2} \\
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 2}
+    Wählen wir \( x = \sqrt{\Tilde{x}} \) und \( y = \sqrt{\Tilde{y}} \), wobei \( \Tilde{x}, \Tilde{y} \in \bR_{\geq 0} \), so erhalten wir die Abschätzung:
+    \begin{align*}
+        \sqrt{\Tilde{x} \cdot \Tilde{y}}
+        & = x \cdot y \\
+        & \leq \frac{x^{2} + y^{2}}{2} \\
+        & = \frac{\left( \sqrt{\Tilde{x}} \right)^{2} + \left( \sqrt{\Tilde{y}} \right)^{2}}{2} \\
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 2}
+    Wählen wir \( x = \sqrt{\Tilde{x}} \) und \( y = \sqrt{\Tilde{y}} \), wobei \( \Tilde{x}, \Tilde{y} \in \bR_{\geq 0} \), so erhalten wir die Abschätzung:
+    \begin{align*}
+        \sqrt{\Tilde{x} \cdot \Tilde{y}}
+        & = x \cdot y \\
+        & \leq \frac{x^{2} + y^{2}}{2} \\
+        & = \frac{\left( \sqrt{\Tilde{x}} \right)^{2} + \left( \sqrt{\Tilde{y}} \right)^{2}}{2} \\
+        & = \frac{\Tilde{x} + \Tilde{y}}{2}.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 2}
+    Wählen wir \( x = \sqrt{\Tilde{x}} \) und \( y = \sqrt{\Tilde{y}} \), wobei \( \Tilde{x}, \Tilde{y} \in \bR_{\geq 0} \), so erhalten wir die Abschätzung:
+    \begin{align*}
+        \sqrt{\Tilde{x} \cdot \Tilde{y}}
+        & = x \cdot y \\
+        & \leq \frac{x^{2} + y^{2}}{2} \\
+        & = \frac{\left( \sqrt{\Tilde{x}} \right)^{2} + \left( \sqrt{\Tilde{y}} \right)^{2}}{2} \\
+        & = \frac{\Tilde{x} + \Tilde{y}}{2}.
+    \end{align*}
+    Das ist die Abschätzung zwischen dem geometrischen und arithmetischen Mittel für zwei Zahlen.
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 3}
+    Wählen wir \( x = \sin\left( \Tilde{x} \right) \) und \( y = \cos\left( \Tilde{x} \right) \), wobei \( \Tilde{x} \in \bR \), so erhalten wir die Abschätzung: 
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 3}
+    Wählen wir \( x = \sin\left( \Tilde{x} \right) \) und \( y = \cos\left( \Tilde{x} \right) \), wobei \( \Tilde{x} \in \bR \), so erhalten wir die Abschätzung:
+    \begin{align*}
+        \sin\left( \Tilde{x} \right) \cdot \cos\left( \Tilde{x} \right)
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 3}
+    Wählen wir \( x = \sin\left( \Tilde{x} \right) \) und \( y = \cos\left( \Tilde{x} \right) \), wobei \( \Tilde{x} \in \bR \), so erhalten wir die Abschätzung:
+    \begin{align*}
+        \sin\left( \Tilde{x} \right) \cdot \cos\left( \Tilde{x} \right)
+        & = x \cdot y \\
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 3}
+    Wählen wir \( x = \sin\left( \Tilde{x} \right) \) und \( y = \cos\left( \Tilde{x} \right) \), wobei \( \Tilde{x} \in \bR \), so erhalten wir die Abschätzung:
+    \begin{align*}
+        \sin\left( \Tilde{x} \right) \cdot \cos\left( \Tilde{y} \right)
+        & = x \cdot y \\
+        & \leq \frac{x^{2} + y^{2}}{2} \\
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 3}
+    Wählen wir \( x = \sin\left( \Tilde{x} \right) \) und \( y = \cos\left( \Tilde{x} \right) \), wobei \( \Tilde{x} \in \bR \), so erhalten wir die Abschätzung:
+    \begin{align*}
+        \sin\left( \Tilde{x} \right) \cdot \cos\left( \Tilde{x} \right)
+        & = x \cdot y \\
+        & \leq \frac{x^{2} + y^{2}}{2} \\ 
+        & = \frac{\sin^{2}\left( \Tilde{x} \right) + \cos^{2}\left( \Tilde{x} \right)}{2} \\
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 3}
+    Wählen wir \( x = \sin\left( \Tilde{x} \right) \) und \( y = \cos\left( \Tilde{x} \right) \), wobei \( \Tilde{x} \in \bR \), so erhalten wir die Abschätzung:
+    \begin{align*}
+        \sin\left( \Tilde{x} \right) \cdot \cos\left( \Tilde{x} \right)
+        & = x \cdot y \\
+        & \leq \frac{x^{2} + y^{2}}{2} \\ 
+        & = \frac{\sin^{2}\left( \Tilde{x} \right) + \cos^{2}\left( \Tilde{x} \right)}{2} \\
+        & = \frac{1}{2}.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 4}
+    Wählen wir \( x = e^{\frac{\Tilde{x}}{2}} \) und \( y = e^{\frac{\Tilde{y}}{2}} \), wobei \( \Tilde{x}, \Tilde{y} \in \bR \) beliebig, so erhalten wir die Abschätzung: 
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 4}
+    Wählen wir \( x = e^{\frac{\Tilde{x}}{2}} \) und \( y = e^{\frac{\Tilde{y}}{2}} \), wobei \( \Tilde{x}, \Tilde{y} \in \bR \) beliebig, so erhalten wir die Abschätzung:
+    \begin{align*}
+        e^{\frac{\Tilde{x}}{2} + \frac{\Tilde{y}}{2}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 4}
+    Wählen wir \( x = e^{\frac{\Tilde{x}}{2}} \) und \( y = e^{\frac{\Tilde{y}}{2}} \), wobei \( \Tilde{x}, \Tilde{y} \in \bR \) beliebig, so erhalten wir die Abschätzung:
+    \begin{align*}
+        e^{\frac{\Tilde{x}}{2} + \frac{\Tilde{y}}{2}}
+        & = e^{\frac{\Tilde{x}}{2}} \cdot e^{\frac{\Tilde{y}}{2}} \\
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 4}
+    Wählen wir \( x = e^{\frac{\Tilde{x}}{2}} \) und \( y = e^{\frac{\Tilde{y}}{2}} \), wobei \( \Tilde{x}, \Tilde{y} \in \bR \) beliebig, so erhalten wir die Abschätzung:
+    \begin{align*}
+        e^{\frac{\Tilde{x}}{2} + \frac{\Tilde{y}}{2}}
+        & = e^{\frac{\Tilde{x}}{2}} \cdot e^{\frac{\Tilde{y}}{2}} \\
+        & = x \cdot y \\
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 4}
+    Wählen wir \( x = e^{\frac{\Tilde{x}}{2}} \) und \( y = e^{\frac{\Tilde{y}}{2}} \), wobei \( \Tilde{x}, \Tilde{y} \in \bR \) beliebig, so erhalten wir die Abschätzung:
+    \begin{align*}
+        e^{\frac{\Tilde{x}}{2} + \frac{\Tilde{y}}{2}}
+        & = e^{\frac{\Tilde{x}}{2}} \cdot e^{\frac{\Tilde{y}}{2}} \\
+        & = x \cdot y \\
+        & \leq \frac{x^{2} + y^{2}}{2} \\
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 4}
+    Wählen wir \( x = e^{\frac{\Tilde{x}}{2}} \) und \( y = e^{\frac{\Tilde{y}}{2}} \), wobei \( \Tilde{x}, \Tilde{y} \in \bR \) beliebig, so erhalten wir die Abschätzung:
+    \begin{align*}
+        e^{\frac{\Tilde{x}}{2} + \frac{\Tilde{y}}{2}}
+        & = e^{\frac{\Tilde{x}}{2}} \cdot e^{\frac{\Tilde{y}}{2}} \\
+        & = x \cdot y \\
+        & \leq \frac{x^{2} + y^{2}}{2} \\
+        & = \frac{\left( e^{\frac{\Tilde{x}}{2}} \right)^{2} + \left( e^{\frac{\Tilde{y}}{2}} \right)^{2}}{2} \\
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 4}
+    Wählen wir \( x = e^{\frac{\Tilde{x}}{2}} \) und \( y = e^{\frac{\Tilde{y}}{2}} \), wobei \( \Tilde{x}, \Tilde{y} \in \bR \) beliebig, so erhalten wir die Abschätzung:
+    \begin{align*}
+        e^{\frac{\Tilde{x}}{2} + \frac{\Tilde{y}}{2}}
+        & = e^{\frac{\Tilde{x}}{2}} \cdot e^{\frac{\Tilde{y}}{2}} \\
+        & = x \cdot y \\
+        & \leq \frac{x^{2} + y^{2}}{2} \\
+        & = \frac{\left( e^{\frac{\Tilde{x}}{2}} \right)^{2} + \left( e^{\frac{\Tilde{y}}{2}} \right)^{2}}{2} \\
+        & = \frac{e^{\Tilde{x}} + e^{\Tilde{y}}}{2}.
+    \end{align*}
+\end{frame}
+% ============================================================
+
+\end{document}
