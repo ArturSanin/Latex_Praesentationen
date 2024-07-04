@@ -1,0 +1,1241 @@
+\documentclass[10pt]{beamer}
+
+\title{}
+\author{Artur's Mathematikstübchen}
+\date{}
+
+
+% ===== Packages =========
+\usepackage[utf8]{inputenc}
+
+\usepackage[natbibapa]{apacite}
+\bibliographystyle{apacite}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{MnSymbol}
+\usepackage{enumitem}
+\usepackage{amsthm}
+\usepackage{mleftright}
+\usepackage{dsfont}
+\usepackage{tikz-cd}
+
+
+\def\bD{\mathbb{D}}               
+\def\bE{\mathbb{E}}
+\def\bG{\mathbb{G}}
+\def\bN{\mathbb{N}}
+\def\bP{\mathbb{P}}
+\def\bQ{\mathbb{Q}}
+\def\bR{\mathbb{R}}
+\def\bBarR{\bar{\mathbb{R}}}
+\def\bY{\mathbb{Y}}
+
+
+
+\def\mA{\mathcal{A}}
+\def\mB{\mathcal{B}}
+\def\mD{\mathcal{D}}
+\def\mE{\mathcal{E}}
+\def\mF{\mathcal{F}}
+\def\mG{\mathcal{G}}
+\def\mH{\mathcal{H}}
+\def\mL{\mathcal{L}}
+\def\mN{\mathcal{N}}
+\def\mP{\mathcal{P}}
+\def\mS{\mathcal{S}}
+\def\mT{\mathcal{T}}
+\def\mX{\mathcal{X}}
+\def\mY{\mathcal{Y}}
+
+
+
+\usetheme{Madrid}
+
+
+
+% ======================== Beginn Document ========================
+
+\begin{document}
+
+
+
+
+
+% ======================== Begrüßung ==================
+
+\begin{frame}
+    \begin{center}
+        \textbf{\huge Willkommen in der guten Stube \newline \newline :D}
+    \end{center}
+\end{frame}
+% =====================================================
+
+
+
+% ======================== Präsentation ==================
+
+\begin{frame}
+    \begin{alertblock}{Aufgabe}
+        Für alle \( x \in \bR_{> 0} \) zeige man die Abschätzung:
+        \begin{align*}
+            2
+            \leq x + \frac{1}{x}.
+        \end{align*}
+    \end{alertblock}
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Erster Ansatz}
+    Sei \( x > 0 \) eine positive reelle Zahl.
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Erster Ansatz}
+    Sei \( x > 0 \) eine positive reelle Zahl. Dann existiert \( \sqrt{x} > 0 \) und es gilt:
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Erster Ansatz}
+    Sei \( x > 0 \) eine positive reelle Zahl. Dann existiert \( \sqrt{x} > 0 \) und es gilt:
+    \begin{align*}
+        2
+    \end{align*}
+\end{frame}
+
+
+
+
+\begin{frame}{Beweis: Erster Ansatz}
+    Sei \( x > 0 \) eine positive reelle Zahl. Dann existiert \( \sqrt{x} > 0 \) und es gilt:
+    \begin{align*}
+        2
+        & = x - x + 2
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Erster Ansatz}
+    Sei \( x > 0 \) eine positive reelle Zahl. Dann existiert \( \sqrt{x} > 0 \) und es gilt:
+    \begin{align*}
+        2
+        & = x - x + 2 \\
+        & = x - x + 2 + \frac{1}{x} - \frac{1}{x}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Erster Ansatz}
+    Sei \( x > 0 \) eine positive reelle Zahl. Dann existiert \( \sqrt{x} > 0 \) und es gilt:
+    \begin{align*}
+        2
+        & = x - x + 2 \\
+        & = x - x + 2 + \frac{1}{x} - \frac{1}{x} \\
+        & = x + \frac{1}{x} - x + 2 - \frac{1}{x}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Erster Ansatz}
+    Sei \( x > 0 \) eine positive reelle Zahl. Dann existiert \( \sqrt{x} > 0 \) und es gilt:
+    \begin{align*}
+        2
+        & = x - x + 2 \\
+        & = x - x + 2 + \frac{1}{x} - \frac{1}{x} \\
+        & = x + \frac{1}{x} - x + 2 - \frac{1}{x} \\
+        & = x + \frac{1}{x} - \left( x - 2 + \frac{1}{x} \right)
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Erster Ansatz}
+    Sei \( x > 0 \) eine positive reelle Zahl. Dann existiert \( \sqrt{x} > 0 \) und es gilt:
+    \begin{align*}
+        2
+        & = x - x + 2 \\
+        & = x - x + 2 + \frac{1}{x} - \frac{1}{x} \\
+        & = x + \frac{1}{x} - x + 2 - \frac{1}{x} \\
+        & = x + \frac{1}{x} - \left( x - 2 + \frac{1}{x} \right) \\
+        & = x + \frac{1}{x} - \left( \left( \sqrt{x} \right)^{2} - 2 \cdot \sqrt{x} \cdot \frac{1}{\sqrt{x}} + \left( \frac{1}{\sqrt{x}} \right)^{2} \right)
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Erster Ansatz}
+    Sei \( x > 0 \) eine positive reelle Zahl. Dann existiert \( \sqrt{x} > 0 \) und es gilt:
+    \begin{align*}
+        2
+        & = x - x + 2 \\
+        & = x - x + 2 + \frac{1}{x} - \frac{1}{x} \\
+        & = x + \frac{1}{x} - x + 2 - \frac{1}{x} \\
+        & = x + \frac{1}{x} - \left( x - 2 + \frac{1}{x} \right) \\
+        & = x + \frac{1}{x} - \left( \left( \sqrt{x} \right)^{2} - 2 \cdot \sqrt{x} \cdot \frac{1}{\sqrt{x}} + \left( \frac{1}{\sqrt{x}} \right)^{2} \right) \\
+        & = x + \frac{1}{x} - \left( \sqrt{x} - \frac{1}{\sqrt{x}} \right)^{2} 
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Erster Ansatz}
+    Sei \( x > 0 \) eine positive reelle Zahl. Dann existiert \( \sqrt{x} > 0 \) und es gilt:
+    \begin{align*}
+        2
+        & = x - x + 2 \\
+        & = x - x + 2 + \frac{1}{x} - \frac{1}{x} \\
+        & = x + \frac{1}{x} - x + 2 - \frac{1}{x} \\
+        & = x + \frac{1}{x} - \left( x - 2 + \frac{1}{x} \right) \\
+        & = x + \frac{1}{x} - \left( \left( \sqrt{x} \right)^{2} - 2 \cdot \sqrt{x} \cdot \frac{1}{\sqrt{x}} + \left( \frac{1}{\sqrt{x}} \right)^{2} \right) \\
+        & = x + \frac{1}{x} - \underset{\text{\( \geq 0 \)}}{\underbrace{\left( \sqrt{x} - \frac{1}{\sqrt{x}} \right)^{2}}} 
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Erster Ansatz}
+    Sei \( x > 0 \) eine positive reelle Zahl. Dann existiert \( \sqrt{x} > 0 \) und es gilt:
+    \begin{align*}
+        2
+        & = x - x + 2 \\
+        & = x - x + 2 + \frac{1}{x} - \frac{1}{x} \\
+        & = x + \frac{1}{x} - x + 2 - \frac{1}{x} \\
+        & = x + \frac{1}{x} - \left( x - 2 + \frac{1}{x} \right) \\
+        & = x + \frac{1}{x} - \left( \left( \sqrt{x} \right)^{2} - 2 \cdot \sqrt{x} \cdot \frac{1}{\sqrt{x}} + \left( \frac{1}{\sqrt{x}} \right)^{2} \right) \\
+        & = x + \frac{1}{x} - \underset{\text{\( \geq 0 \)}}{\underbrace{\left( \sqrt{x} - \frac{1}{\sqrt{x}} \right)^{2}}} \\
+        & \leq x + \frac{1}{x}.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Zweiter Ansatz}
+    Für eine positive reelle Zahl \( x > 0 \) betrachten wir die Funktion:
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Zweiter Ansatz}
+    Für eine positive reelle Zahl \( x > 0 \) betrachten wir die Funktion:
+    \begin{align*}
+        f( x ) 
+        \coloneq x + \frac{1}{x}.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Zweiter Ansatz}
+    Für eine positive reelle Zahl \( x > 0 \) betrachten wir die Funktion:
+    \begin{align*}
+        f( x ) 
+        \coloneq x + \frac{1}{x}.
+    \end{align*}
+    Die Funktion \( f \) ist differenzierbar mit der Ableitung:
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Zweiter Ansatz}
+    Für eine positive reelle Zahl \( x > 0 \) betrachten wir die Funktion:
+    \begin{align*}
+        f( x ) 
+        \coloneq x + \frac{1}{x}.
+    \end{align*}
+    Die Funktion \( f \) ist differenzierbar mit der Ableitung:
+    \begin{align*}
+        f^{\prime}( x ) 
+        = 1 - \frac{1}{x^{2}}.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Zweiter Ansatz}
+    Für eine positive reelle Zahl \( x > 0 \) betrachten wir die Funktion:
+    \begin{align*}
+        f( x ) 
+        \coloneq x + \frac{1}{x}.
+    \end{align*}
+    Die Funktion \( f \) ist differenzierbar mit der Ableitung:
+    \begin{align*}
+        f^{\prime}( x ) 
+        = 1 - \frac{1}{x^{2}}.
+    \end{align*}
+    Mit der Ableitung untersuchen wir das Monotonieverhalten von \( f \).
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Zweiter Ansatz}
+    Zunächst gilt:
+    \begin{align*}
+        1 - \frac{1}{x^{2}} > 0
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Zweiter Ansatz}
+    Zunächst gilt:
+    \begin{align*}
+        1 - \frac{1}{x^{2}} > 0 
+        \quad \Leftrightarrow \quad 1 > \frac{1}{x^{2}} 
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Zweiter Ansatz}
+    Zunächst gilt:
+    \begin{align*}
+        1 - \frac{1}{x^{2}} > 0 
+        \quad & \Leftrightarrow \quad 1 > \frac{1}{x^{2}} \\
+        \quad & \Leftrightarrow \quad x^{2} > 1 
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Zweiter Ansatz}
+    Zunächst gilt:
+    \begin{align*}
+        1 - \frac{1}{x^{2}} > 0 
+        \quad & \Leftrightarrow \quad 1 > \frac{1}{x^{2}} \\
+        \quad & \Leftrightarrow \quad x^{2} > 1 \\
+        \quad & \Leftrightarrow \quad \left\vert x \right\vert > 1
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Zweiter Ansatz}
+    Zunächst gilt:
+    \begin{align*}
+        1 - \frac{1}{x^{2}} > 0 
+        \quad & \Leftrightarrow \quad 1 > \frac{1}{x^{2}} \\
+        \quad & \Leftrightarrow \quad x^{2} > 1 \\
+        \quad & \Leftrightarrow \quad \left\vert x \right\vert > 1 \\
+        \quad & \Leftrightarrow \quad \text{\( x \in \left(1, \infty \right)  \) oder \( x \in \left(- \infty, -1 \right) \)}.  
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Zweiter Ansatz}
+    Zunächst gilt:
+    \begin{align*}
+        1 - \frac{1}{x^{2}} > 0 
+        \quad & \Leftrightarrow \quad 1 > \frac{1}{x^{2}} \\
+        \quad & \Leftrightarrow \quad x^{2} > 1 \\
+        \quad & \Leftrightarrow \quad \left\vert x \right\vert > 1 \\
+        \quad & \Leftrightarrow \quad \text{\( x \in \left(1, \infty \right)  \) oder \( x \in \left(- \infty, -1 \right) \)}.  
+    \end{align*}
+    Da wir nur positive \( x \) betrachten, erhalten wir:
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Zweiter Ansatz}
+    Zunächst gilt:
+    \begin{align*}
+        1 - \frac{1}{x^{2}} > 0 
+        \quad & \Leftrightarrow \quad 1 > \frac{1}{x^{2}} \\
+        \quad & \Leftrightarrow \quad x^{2} > 1 \\
+        \quad & \Leftrightarrow \quad \left\vert x \right\vert > 1 \\
+        \quad & \Leftrightarrow \quad \text{\( x \in \left(1, \infty \right)  \) oder \( x \in \left(- \infty, -1 \right) \)}.  
+    \end{align*}
+    Da wir nur positive \( x \) betrachten, erhalten wir:
+    \begin{align*}
+        f^{\prime}( x ) > 0 \quad \Leftrightarrow \quad x > 1.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Zweiter Ansatz}
+    Zunächst gilt:
+    \begin{align*}
+        1 - \frac{1}{x^{2}} > 0 
+        \quad & \Leftrightarrow \quad 1 > \frac{1}{x^{2}} \\
+        \quad & \Leftrightarrow \quad x^{2} > 1 \\
+        \quad & \Leftrightarrow \quad \left\vert x \right\vert > 1 \\
+        \quad & \Leftrightarrow \quad \text{\( x \in \left(1, \infty \right)  \) oder \( x \in \left(- \infty, -1 \right) \)}.  
+    \end{align*}
+    Da wir nur positive \( x \) betrachten, erhalten wir:
+    \begin{align*}
+        f^{\prime}( x ) > 0 \quad \Leftrightarrow \quad x > 1.
+    \end{align*}
+    Damit ist die Funktion \( f \) streng monoton wachsend auf dem Intervall \( \left(1, \infty \right) \).
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Zweiter Ansatz}
+    Ähnlich ergibt sich:
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Zweiter Ansatz}
+    Ähnlich ergibt sich: 
+    \begin{align*}
+        1 - \frac{1}{x^{2}} < 0
+        \quad & \Leftrightarrow \quad \text{\( \left\vert x \right\vert < 1 \), \( x \neq 0 \)}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Zweiter Ansatz}
+    Ähnlich ergibt sich: 
+    \begin{align*}
+        1 - \frac{1}{x^{2}} < 0
+        \quad & \Leftrightarrow \quad \text{\( \left\vert x \right\vert < 1 \), \( x \neq 0 \)} \\
+        \quad & \Leftrightarrow \quad \text{\( -1 < x < 0 \) oder \( 0 < x < 1 \)}.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Zweiter Ansatz}
+    Ähnlich ergibt sich: 
+    \begin{align*}
+        1 - \frac{1}{x^{2}} < 0
+        \quad & \Leftrightarrow \quad \text{\( \left\vert x \right\vert < 1 \), \( x \neq 0 \)} \\
+        \quad & \Leftrightarrow \quad \text{\( -1 < x < 0 \) oder \( 0 < x < 1 \)}.
+    \end{align*}
+    Da wir nur positive \( x \) betrachten, erhalten wir: 
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Zweiter Ansatz}
+    Ähnlich ergibt sich: 
+    \begin{align*}
+        1 - \frac{1}{x^{2}} < 0
+        \quad & \Leftrightarrow \quad \text{\( \left\vert x \right\vert < 1 \), \( x \neq 0 \)} \\
+        \quad & \Leftrightarrow \quad \text{\( -1 < x < 0 \) oder \( 0 < x < 1 \)}.
+    \end{align*}
+    Da wir nur positive \( x \) betrachten, erhalten wir:
+    \begin{align*}
+        f^{\prime}( x ) < 0 \quad \Leftrightarrow \quad 0 < x < 1.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Zweiter Ansatz}
+    Ähnlich ergibt sich: 
+    \begin{align*}
+        1 - \frac{1}{x^{2}} < 0
+        \quad & \Leftrightarrow \quad \text{\( \left\vert x \right\vert < 1 \), \( x \neq 0 \)} \\
+        \quad & \Leftrightarrow \quad \text{\( -1 < x < 0 \) oder \( 0 < x < 1 \)}.
+    \end{align*}
+    Da wir nur positive \( x \) betrachten, erhalten wir:
+    \begin{align*}
+        f^{\prime}( x ) < 0 \quad \Leftrightarrow \quad 0 < x < 1.
+    \end{align*}
+    Damit ist \( f \) streng monoton fallend auf dem Intervall \( \left( 0, 1 \right) \).
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Zweiter Ansatz}
+    Ist \( x \in \left( 0, 1 \right] \) so folgt, weil \( f \) auf \( \left( 0, 1 \right) \) streng monoton fallend ist:
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Zweiter Ansatz}
+    Ist \( x \in \left( 0, 1 \right] \) so folgt, weil \( f \) auf \( \left( 0, 1 \right) \) monoton fallend ist:
+    \begin{align*}
+        f( 1 )
+        \leq f( x ).
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Zweiter Ansatz}
+    Ist \( x \in \left( 0, 1 \right) \) so folgt, weil \( f \) auf \( \left( 0, 1 \right) \) monoton fallend ist:
+    \begin{align*}
+        f( 1 )
+        \leq f( x ).
+    \end{align*}
+    Ist \( x \in \left( 1, \infty \right] \) so folgt, weil \( f \) auf \( \left( 1, \infty \right) \) streng monoton wachsend ist:
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Zweiter Ansatz}
+    Ist \( x \in \left( 0, 1 \right] \) so folgt, weil \( f \) auf \( \left( 0, 1 \right) \) monoton fallend ist:
+    \begin{align*}
+        f( 1 )
+        \leq f( x ).
+    \end{align*}
+    Ist \( x \in \left( 1, \infty \right) \) so folgt, weil \( f \) auf \( \left( 1, \infty \right) \) streng monoton wachsend ist:
+    \begin{align*}
+        f( 1 )
+        < f( x ).
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis: Zweiter Ansatz}
+    Ist \( x \in \left( 0, 1 \right] \) so folgt, weil \( f \) auf \( \left( 0, 1 \right) \) monoton fallend ist:
+    \begin{align*}
+        f( 1 )
+        \leq f( x ).
+    \end{align*}
+    Ist \( x \in \left( 1, \infty \right) \) so folgt, weil \( f \) auf \( \left( 1, \infty \right) \) streng monoton wachsend ist:
+    \begin{align*}
+        f( 1 )
+        < f( x ).
+    \end{align*}
+    Insgesamt also \( 2 \leq f( x ) \) für alle positiven reellen Zahlen \( x > 0 \).
+\end{frame}
+
+
+
+\begin{frame}{Bemerkung}
+    In meinem letzten Video habe ich, für alle \( \Tilde{x}, \Tilde{y} \in \bR \), die folgende Abschätzung gezeigt:    
+\end{frame}
+
+
+
+\begin{frame}{Bemerkung}
+    In meinem letzten Video habe ich, für alle \( \Tilde{x}, \Tilde{y} \in \bR \), die folgende Abschätzung gezeigt:
+    \begin{align*}
+        2\Tilde{x}\Tilde{y}
+        \leq \Tilde{x}^{2} + \Tilde{y}^{2}.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Bemerkung}
+    In meinem letzten Video habe ich, für alle \( \Tilde{x}, \Tilde{y} \in \bR \), die folgende Abschätzung gezeigt:
+    \begin{align*}
+        2\Tilde{x}\Tilde{y}
+        \leq \Tilde{x}^{2} + \Tilde{y}^{2}.
+    \end{align*}
+    Da \( x > 0 \) ist, existiert \( \sqrt{x} > 0 \). Setzen wir \( \Tilde{x} = \sqrt{x} \) und \( \Tilde{y} = \frac{1}{\sqrt{x}} \) so folgt direkt:
+\end{frame}
+
+
+
+\begin{frame}{Bemerkung}
+    In meinem letzten Video habe ich, für alle \( \Tilde{x}, \Tilde{y} \in \bR \), die folgende Abschätzung gezeigt:
+    \begin{align*}
+        2\Tilde{x}\Tilde{y}
+        \leq \Tilde{x}^{2} + \Tilde{y}^{2}.
+    \end{align*}
+    Da \( x > 0 \) ist, existiert \( \sqrt{x} > 0 \). Setzen wir \( \Tilde{x} = \sqrt{x} \) und \( \Tilde{y} = \frac{1}{\sqrt{x}} \) so folgt direkt:
+    \begin{align*}
+        2
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Bemerkung}
+    In meinem letzten Video habe ich, für alle \( \Tilde{x}, \Tilde{y} \in \bR \), die folgende Abschätzung gezeigt:
+    \begin{align*}
+        2\Tilde{x}\Tilde{y}
+        \leq \Tilde{x}^{2} + \Tilde{y}^{2}.
+    \end{align*}
+    Da \( x > 0 \) ist, existiert \( \sqrt{x} > 0 \). Setzen wir \( \Tilde{x} = \sqrt{x} \) und \( \Tilde{y} = \frac{1}{\sqrt{x}} \) so folgt direkt:
+    \begin{align*}
+        2
+        & = 2 \cdot \sqrt{x} \cdot \frac{1}{\sqrt{x}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Bemerkung}
+    In meinem letzten Video habe ich, für alle \( \Tilde{x}, \Tilde{y} \in \bR \), die folgende Abschätzung gezeigt:
+    \begin{align*}
+        2\Tilde{x}\Tilde{y}
+        \leq \Tilde{x}^{2} + \Tilde{y}^{2}.
+    \end{align*}
+    Da \( x > 0 \) ist, existiert \( \sqrt{x} > 0 \). Setzen wir \( \Tilde{x} = \sqrt{x} \) und \( \Tilde{y} = \frac{1}{\sqrt{x}} \) so folgt direkt:
+    \begin{align*}
+        2
+        & = 2 \cdot \sqrt{x} \cdot \frac{1}{\sqrt{x}} \\
+        & = 2\Tilde{x}\Tilde{y}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Bemerkung}
+    In meinem letzten Video habe ich, für alle \( \Tilde{x}, \Tilde{y} \in \bR \), die folgende Abschätzung gezeigt:
+    \begin{align*}
+        2\Tilde{x}\Tilde{y}
+        \leq \Tilde{x}^{2} + \Tilde{y}^{2}.
+    \end{align*}
+    Da \( x > 0 \) ist, existiert \( \sqrt{x} > 0 \). Setzen wir \( \Tilde{x} = \sqrt{x} \) und \( \Tilde{y} = \frac{1}{\sqrt{x}} \) so folgt direkt:
+    \begin{align*}
+        2
+        & = 2 \cdot \sqrt{x} \cdot \frac{1}{\sqrt{x}} \\
+        & = 2\Tilde{x}\Tilde{y} \\
+        & \leq \Tilde{x}^{2} + \Tilde{y}^{2}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Bemerkung}
+    In meinem letzten Video habe ich, für alle \( \Tilde{x}, \Tilde{y} \in \bR \), die folgende Abschätzung gezeigt:
+    \begin{align*}
+        2\Tilde{x}\Tilde{y}
+        \leq \Tilde{x}^{2} + \Tilde{y}^{2}.
+    \end{align*}
+    Da \( x > 0 \) ist, existiert \( \sqrt{x} > 0 \). Setzen wir \( \Tilde{x} = \sqrt{x} \) und \( \Tilde{y} = \frac{1}{\sqrt{x}} \) so folgt direkt:
+    \begin{align*}
+        2
+        & = 2 \cdot \sqrt{x} \cdot \frac{1}{\sqrt{x}} \\
+        & = 2\Tilde{x}\Tilde{y} \\
+        & \leq \Tilde{x}^{2} + \Tilde{y}^{2} \\
+        & = \left( \sqrt{x} \right)^{2} + \left( \frac{1}{\sqrt{x}} \right)^{2}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Bemerkung}
+    In meinem letzten Video habe ich, für alle \( \Tilde{x}, \Tilde{y} \in \bR \), die folgende Abschätzung gezeigt:
+    \begin{align*}
+        2\Tilde{x}\Tilde{y}
+        \leq \Tilde{x}^{2} + \Tilde{y}^{2}.
+    \end{align*}
+    Da \( x > 0 \) ist, existiert \( \sqrt{x} > 0 \). Setzen wir \( \Tilde{x} = \sqrt{x} \) und \( \Tilde{y} = \frac{1}{\sqrt{x}} \) so folgt direkt:
+    \begin{align*}
+        2
+        & = 2 \cdot \sqrt{x} \cdot \frac{1}{\sqrt{x}} \\
+        & = 2\Tilde{x}\Tilde{y} \\
+        & \leq \Tilde{x}^{2} + \Tilde{y}^{2} \\
+        & = \left( \sqrt{x} \right)^{2} + \left( \frac{1}{\sqrt{x}} \right)^{2} \\
+        & = x + \frac{1}{x}.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 1}
+    Seien \( x, y \in \bR \setminus \left\{ 0 \right\} \) zwei reelle Zahlen mit \( \frac{x}{y} > 0 \).
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 1}
+    Seien \( x, y \in \bR \setminus \left\{ 0 \right\} \) zwei reelle Zahlen mit \( \frac{x}{y} > 0 \). Setzen wir \( \Tilde{x} = \frac{x}{y} \) in die eben gezeigte Abschätzung, so folgt:
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 1}
+    Seien \( \Tilde{x}, x \in \bR \setminus \left\{ 0 \right\} \) zwei reelle Zahlen mit \( \frac{\Tilde{x}}{x} > 0 \). Setzen wir \( \Tilde{x} = \frac{\Tilde{x}}{x} \) in die eben gezeigte Abschätzung, so folgt:
+    \begin{align*}
+        \frac{x}{y} + \frac{y}{x}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 1}
+    Seien \( x, y \in \bR \setminus \left\{ 0 \right\} \) zwei reelle Zahlen mit \( \frac{x}{y} > 0 \). Setzen wir \( \Tilde{x} = \frac{x}{y} \) in die eben gezeigte Abschätzung, so folgt:
+    \begin{align*}
+        \frac{x}{y} + \frac{y}{x}
+        & = \frac{x}{y} + \frac{1}{\frac{x}{y}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 1}
+    Seien \( x, y \in \bR \setminus \left\{ 0 \right\} \) zwei reelle Zahlen mit \( \frac{x}{y} > 0 \). Setzen wir \( \Tilde{x} = \frac{x}{y} \) in die eben gezeigte Abschätzung, so folgt:
+    \begin{align*}
+        \frac{x}{y} + \frac{y}{x}
+        & = \frac{x}{y} + \frac{1}{\frac{x}{y}} \\
+        & = \Tilde{x} + \frac{1}{\Tilde{x}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 1}
+    Seien \( x, y \in \bR \setminus \left\{ 0 \right\} \) zwei reelle Zahlen mit \( \frac{x}{y} > 0 \). Setzen wir \( \Tilde{x} = \frac{x}{y} \) in die eben gezeigte Abschätzung, so folgt:
+    \begin{align*}
+        \frac{x}{y} + \frac{y}{x}
+        & = \frac{x}{y} + \frac{1}{\frac{x}{y}} \\
+        & = \Tilde{x} + \frac{1}{\Tilde{x}} \\
+        & \geq 2.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 2}
+    Seien \( x, y \in \bR \setminus \left\{ 0 \right\} \) zwei reelle Zahlen mit \( \frac{x}{y} > 0 \).
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 2}
+    Seien \( x, y \in \bR \setminus \left\{ 0 \right\} \) zwei reelle Zahlen mit \( \frac{x}{y} > 0 \). Setzen wir \( \Tilde{x} = \sqrt{\frac{x}{y}} \), dann folgt auf die selbe Weise die Abschätzung:
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 2}
+    Seien \( x, y \in \bR \setminus \left\{ 0 \right\} \) zwei reelle Zahlen mit \( \frac{x}{y} > 0 \). Setzen wir \( \Tilde{x} = \sqrt{\frac{x}{y}} \), dann folgt auf die selbe Weise die Abschätzung:
+    \begin{align*}
+        \sqrt{\frac{x}{y}} + \sqrt{\frac{y}{x}} 
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 2}
+    Seien \( x, y \in \bR \setminus \left\{ 0 \right\} \) zwei reelle Zahlen mit \( \frac{x}{y} > 0 \). Setzen wir \( \Tilde{x} = \sqrt{\frac{x}{y}} \), dann folgt auf die selbe Weise die Abschätzung:
+    \begin{align*}
+        \sqrt{\frac{x}{y}} + \sqrt{\frac{y}{x}} 
+        & = \frac{\sqrt{x}}{\sqrt{y}} + \frac{\sqrt{y}}{\sqrt{x}} 
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 2}
+    Seien \( x, y \in \bR \setminus \left\{ 0 \right\} \) zwei reelle Zahlen mit \( \frac{x}{y} > 0 \). Setzen wir \( \Tilde{x} = \sqrt{\frac{x}{y}} \), dann folgt auf die selbe Weise die Abschätzung:
+    \begin{align*}
+        \sqrt{\frac{x}{y}} + \sqrt{\frac{y}{x}} 
+        & = \frac{\sqrt{x}}{\sqrt{y}} + \frac{\sqrt{y}}{\sqrt{x}} \\
+        & = \frac{\sqrt{x}}{\sqrt{y}} + \frac{1}{\frac{\sqrt{x}}{\sqrt{y}}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 2}
+    Seien \( x, y \in \bR \setminus \left\{ 0 \right\} \) zwei reelle Zahlen mit \( \frac{x}{y} > 0 \). Setzen wir \( \Tilde{x} = \sqrt{\frac{x}{y}} \), dann folgt auf die selbe Weise die Abschätzung:
+    \begin{align*}
+        \sqrt{\frac{x}{y}} + \sqrt{\frac{y}{x}} 
+        & = \frac{\sqrt{x}}{\sqrt{y}} + \frac{\sqrt{y}}{\sqrt{x}} \\
+        & = \frac{\sqrt{x}}{\sqrt{y}} + \frac{1}{\frac{\sqrt{x}}{\sqrt{y}}} \\
+        & = \Tilde{x} + \frac{1}{\Tilde{x}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 2}
+    Seien \( x, y \in \bR \setminus \left\{ 0 \right\} \) zwei reelle Zahlen mit \( \frac{x}{y} > 0 \). Setzen wir \( \Tilde{x} = \sqrt{\frac{x}{y}} \), dann folgt auf die selbe Weise die Abschätzung:
+    \begin{align*}
+        \sqrt{\frac{x}{y}} + \sqrt{\frac{y}{x}} 
+        & = \frac{\sqrt{x}}{\sqrt{y}} + \frac{\sqrt{y}}{\sqrt{x}} \\
+        & = \frac{\sqrt{x}}{\sqrt{y}} + \frac{1}{\frac{\sqrt{x}}{\sqrt{y}}} \\
+        & = \Tilde{x} + \frac{1}{\Tilde{x}} \\
+        & \geq 2.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 3}
+    Seien \( x, y \in \bR_{> 1} \) zwei reelle Zahlen.
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 3}
+    Seien \( x, y \in \bR_{> 1} \) zwei reelle Zahlen. Dann sind \( \ln\left( x \right), \ln\left( y \right) > 0 \) und es gilt:
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 3}
+    Seien \( x, y \in \bR_{> 1} \) zwei reelle Zahlen. Dann sind \( \ln\left( x \right), \ln\left( y \right) > 0 \) und es gilt:
+    \begin{align*}
+        \frac{\ln\left( x \right)}{\ln\left( y \right)} + \frac{\ln\left( y \right)}{\ln\left( x \right)} 
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 3}
+    Seien \( x, y \in \bR_{> 1} \) zwei reelle Zahlen. Dann sind \( \ln\left( x \right), \ln\left( y \right) > 0 \) und es gilt:
+    \begin{align*}
+        \frac{\ln\left( x \right)}{\ln\left( y \right)} + \frac{\ln\left( y \right)}{\ln\left( x \right)} 
+        \geq 2.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 3}
+    Seien \( x, y \in \bR_{> 1} \) zwei reelle Zahlen. Dann sind \( \ln\left( x \right), \ln\left( y \right) > 0 \) und es gilt:
+    \begin{align*}
+        \frac{\ln\left( x \right)}{\ln\left( y \right)} + \frac{\ln\left( y \right)}{\ln\left( x \right)} 
+        \geq 2.
+    \end{align*}
+    Andererseits folgt aus den Logarithmus Gesetzen:
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 3}
+    Seien \( x, y \in \bR_{> 1} \) zwei reelle Zahlen. Dann sind \( \ln\left( x \right), \ln\left( y \right) > 0 \) und es gilt:
+    \begin{align*}
+        \frac{\ln\left( x \right)}{\ln\left( y \right)} + \frac{\ln\left( y \right)}{\ln\left( x \right)} 
+        \geq 2.
+    \end{align*}
+    Andererseits folgt aus den Logarithmus Gesetzen:
+    \begin{align*}
+        \frac{\ln\left( x \right)}{\ln\left( y \right)} + \frac{\ln\left( y \right)}{\ln\left( x \right)} 
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 3}
+    Seien \( x, y \in \bR_{> 1} \) zwei reelle Zahlen. Dann sind \( \ln\left( x \right), \ln\left( y \right) > 0 \) und es gilt:
+    \begin{align*}
+        \frac{\ln\left( x \right)}{\ln\left( y \right)} + \frac{\ln\left( y \right)}{\ln\left( x \right)} 
+        \geq 2.
+    \end{align*}
+    Andererseits folgt aus den Logarithmus Gesetzen:
+    \begin{align*}
+        \frac{\ln\left( x \right)}{\ln\left( y \right)} + \frac{\ln\left( y \right)}{\ln\left( x \right)} 
+        & = \frac{1}{\ln\left( y \right)} \cdot \ln\left( x \right) + \frac{1}{\ln\left( x \right)} \cdot \ln\left( y \right)
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 3}
+    Seien \( x, y \in \bR_{> 1} \) zwei reelle Zahlen. Dann sind \( \ln\left( x \right), \ln\left( y \right) > 0 \) und es gilt:
+    \begin{align*}
+        \frac{\ln\left( x \right)}{\ln\left( y \right)} + \frac{\ln\left( y \right)}{\ln\left( x \right)} 
+        \geq 2.
+    \end{align*}
+    Andererseits folgt aus den Logarithmus Gesetzen:
+    \begin{align*}
+        \frac{\ln\left( x \right)}{\ln\left( y \right)} + \frac{\ln\left( y \right)}{\ln\left( x \right)} 
+        & = \frac{1}{\ln\left( y \right)} \cdot \ln\left( x \right) + \frac{1}{\ln\left( x \right)} \cdot \ln\left( y \right) \\
+        & = \ln\left( x^{\frac{1}{\ln\left( y \right)}} \right) + \ln\left( y^{\frac{1}{\ln\left( x \right)}} \right)
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 3}
+    Seien \( x, y \in \bR_{> 1} \) zwei reelle Zahlen. Dann sind \( \ln\left( x \right), \ln\left( y \right) > 0 \) und es gilt:
+    \begin{align*}
+        \frac{\ln\left( x \right)}{\ln\left( y \right)} + \frac{\ln\left( y \right)}{\ln\left( x \right)} 
+        \geq 2.
+    \end{align*}
+    Andererseits folgt aus den Logarithmus Gesetzen:
+    \begin{align*}
+        \frac{\ln\left( x \right)}{\ln\left( y \right)} + \frac{\ln\left( y \right)}{\ln\left( x \right)} 
+        & = \frac{1}{\ln\left( y \right)} \cdot \ln\left( x \right) + \frac{1}{\ln\left( x \right)} \cdot \ln\left( y \right) \\
+        & = \ln\left( x^{\frac{1}{\ln\left( y \right)}} \right) + \ln\left( y^{\frac{1}{\ln\left( x \right)}} \right) \\
+        & = \ln\left( x^{\frac{1}{\ln\left( y \right)}} \cdot y^{\frac{1}{\ln\left( x \right)}} \right).
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 3}
+    Damit ist:
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 3}
+    Damit ist:
+    \begin{align*}
+        \ln\left( x^{\frac{1}{\ln\left( y \right)}} \cdot y^{\frac{1}{\ln\left( x \right)}} \right) 
+        \geq 2.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 3}
+    Damit ist:
+    \begin{align*}
+        \ln\left( x^{\frac{1}{\ln\left( y \right)}} \cdot y^{\frac{1}{\ln\left( x \right)}} \right) 
+        \geq 2.
+    \end{align*}
+    Die Funktion \( \Tilde{x} \mapsto e^{\Tilde{x}} \) ist streng monoton wachsend.
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 3}
+    Damit ist:
+    \begin{align*}
+        \ln\left( x^{\frac{1}{\ln\left( y \right)}} \cdot y^{\frac{1}{\ln\left( x \right)}} \right) 
+        \geq 2.
+    \end{align*}
+    Die Funktion \( \Tilde{x} \mapsto e^{\Tilde{x}} \) ist streng monoton wachsend. Damit folgt schließlich:
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 3}
+    Damit ist:
+    \begin{align*}
+        \ln\left( x^{\frac{1}{\ln\left( y \right)}} \cdot y^{\frac{1}{\ln\left( x \right)}} \right) 
+        \geq 2.
+    \end{align*}
+    Die Funktion \( \Tilde{x} \mapsto e^{\Tilde{x}} \) ist streng monoton wachsend. Damit folgt schließlich:
+    \begin{align*}
+        e^{2}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 3}
+    Damit ist:
+    \begin{align*}
+        \ln\left( x^{\frac{1}{\ln\left( y \right)}} \cdot y^{\frac{1}{\ln\left( x \right)}} \right) 
+        \geq 2.
+    \end{align*}
+    Die Funktion \( \Tilde{x} \mapsto e^{\Tilde{x}} \) ist streng monoton wachsend. Damit folgt schließlich:
+    \begin{align*}
+        e^{2}
+        \leq e^{\ln\left( x^{\frac{1}{\ln\left( y \right)}} \cdot y^{\frac{1}{\ln\left( x \right)}} \right)}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 3}
+    Damit ist:
+    \begin{align*}
+        \ln\left( x^{\frac{1}{\ln\left( y \right)}} \cdot y^{\frac{1}{\ln\left( x \right)}} \right) 
+        \geq 2.
+    \end{align*}
+    Die Funktion \( \Tilde{x} \mapsto e^{\Tilde{x}} \) ist streng monoton wachsend. Damit folgt schließlich:
+    \begin{align*}
+        e^{2}
+        & \leq e^{\ln\left( x^{\frac{1}{\ln\left( y \right)}} \cdot y^{\frac{1}{\ln\left( x \right)}} \right)} \\
+        & = x^{\frac{1}{\ln\left( y \right)}} \cdot y^{\frac{1}{\ln\left( x \right)}}.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 4}
+    Für \( x \in \bR \) ist der Kosinus hyperbolicus wie folgt definiert:
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 4}
+    Für \( x \in \bR \) ist der Kosinus hyperbolicus wie folgt definiert:
+    \begin{align*}
+        \cosh\left( x \right)
+        \coloneq \frac{1}{2} \left( e^{x} + e^{-x} \right).
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 4}
+    Für \( x \in \bR \) ist der Kosinus hyperbolicus wie folgt definiert:
+    \begin{align*}
+        \cosh\left( x \right)
+        \coloneq \frac{1}{2} \left( e^{x} + e^{-x} \right).
+    \end{align*}
+    Sei \( x \in \bR \) eine beliebige reelle Zahl.
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 4}
+    Für \( x \in \bR \) ist der Kosinus hyperbolicus wie folgt definiert:
+    \begin{align*}
+        \cosh\left( x \right)
+        \coloneq \frac{1}{2} \left( e^{x} + e^{-x} \right).
+    \end{align*}
+    Sei \( x \in \bR \) eine beliebige reelle Zahl. Wir setzen \( \Tilde{x} = e^{x} > 0 \) und erhalten die Abschätzung:
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 4}
+    Für \( x \in \bR \) ist der Kosinus hyperbolicus wie folgt definiert:
+    \begin{align*}
+        \cosh\left( x \right)
+        \coloneq \frac{1}{2} \left( e^{x} + e^{-x} \right).
+    \end{align*}
+    Sei \( x \in \bR \) eine beliebige reelle Zahl. Wir setzen \( \Tilde{x} = e^{x} > 0 \) und erhalten die Abschätzung:
+    \begin{align*}
+        \cosh\left( x \right)
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 4}
+    Für \( x \in \bR \) ist der Kosinus hyperbolicus wie folgt definiert:
+    \begin{align*}
+        \cosh\left( x \right)
+        \coloneq \frac{1}{2} \left( e^{x} + e^{-x} \right).
+    \end{align*}
+    Sei \( x \in \bR \) eine beliebige reelle Zahl. Wir setzen \( \Tilde{x} = e^{x} > 0 \) und erhalten die Abschätzung:
+    \begin{align*}
+        \cosh\left( x \right)
+        & = \frac{1}{2} \left( e^{x} + e^{-x} \right)
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 4}
+    Für \( x \in \bR \) ist der Kosinus hyperbolicus wie folgt definiert:
+    \begin{align*}
+        \cosh\left( x \right)
+        \coloneq \frac{1}{2} \left( e^{x} + e^{-x} \right).
+    \end{align*}
+    Sei \( x \in \bR \) eine beliebige reelle Zahl. Wir setzen \( \Tilde{x} = e^{x} > 0 \) und erhalten die Abschätzung:
+    \begin{align*}
+        \cosh\left( x \right)
+        & = \frac{1}{2} \left( e^{x} + e^{-x} \right) \\
+        & = \frac{1}{2} \left( e^{x} + \frac{1}{e^{x}} \right)
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 4}
+    Für \( x \in \bR \) ist der Kosinus hyperbolicus wie folgt definiert:
+    \begin{align*}
+        \cosh\left( x \right)
+        \coloneq \frac{1}{2} \left( e^{x} + e^{-x} \right).
+    \end{align*}
+    Sei \( x \in \bR \) eine beliebige reelle Zahl. Wir setzen \( \Tilde{x} = e^{x} > 0 \) und erhalten die Abschätzung:
+    \begin{align*}
+        \cosh\left( x \right)
+        & = \frac{1}{2} \left( e^{x} + e^{-x} \right) \\
+        & = \frac{1}{2} \left( e^{x} + \frac{1}{e^{x}} \right) \\
+        & = \frac{1}{2} \left( \Tilde{x} + \frac{1}{\Tilde{x}} \right)
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 4}
+    Für \( x \in \bR \) ist der Kosinus hyperbolicus wie folgt definiert:
+    \begin{align*}
+        \cosh\left( x \right)
+        \coloneq \frac{1}{2} \left( e^{x} + e^{-x} \right).
+    \end{align*}
+    Sei \( x \in \bR \) eine beliebige reelle Zahl. Wir setzen \( \Tilde{x} = e^{x} > 0 \) und erhalten die Abschätzung:
+    \begin{align*}
+        \cosh\left( x \right)
+        & = \frac{1}{2} \left( e^{x} + e^{-x} \right) \\
+        & = \frac{1}{2} \left( e^{x} + \frac{1}{e^{x}} \right) \\
+        & = \frac{1}{2} \left( \Tilde{x} + \frac{1}{\Tilde{x}} \right) \\
+        & \geq \frac{1}{2} \cdot 2
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 4}
+    Für \( x \in \bR \) ist der Kosinus hyperbolicus wie folgt definiert:
+    \begin{align*}
+        \cosh\left( x \right)
+        \coloneq \frac{1}{2} \left( e^{x} + e^{-x} \right).
+    \end{align*}
+    Sei \( x \in \bR \) eine beliebige reelle Zahl. Wir setzen \( \Tilde{x} = e^{x} > 0 \) und erhalten die Abschätzung:
+    \begin{align*}
+        \cosh\left( x \right)
+        & = \frac{1}{2} \left( e^{x} + e^{-x} \right) \\
+        & = \frac{1}{2} \left( e^{x} + \frac{1}{e^{x}} \right) \\
+        & = \frac{1}{2} \left( \Tilde{x} + \frac{1}{\Tilde{x}} \right) \\
+        & \geq \frac{1}{2} \cdot 2 \\
+        & = 1.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 5}
+    Für \( \Tilde{x} \in \bR_{\geq 0} \) folgt direkt die Abschätzung:
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 5}
+    Für \( \Tilde{x} \in \bR_{\geq 0} \) folgt direkt die Abschätzung:
+    \begin{align*}
+        2 \Tilde{x}
+        \leq 1 + \Tilde{x}^{2}.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 5}
+    Für \( \Tilde{x} \in \bR_{\geq 0} \) folgt direkt die Abschätzung:
+    \begin{align*}
+        2 \Tilde{x}
+        \leq 1 + \Tilde{x}^{2}.
+    \end{align*}
+    Für eine beliebige reelle Zahl \( x \in \bR \) setzen wir \( \Tilde{x} = \left\vert \sin\left( x \right) \right\vert \) und erhalten die Abschätzung:
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 5}
+    Für \( \Tilde{x} \in \bR_{\geq 0} \) folgt direkt die Abschätzung:
+    \begin{align*}
+        2 \Tilde{x}
+        \leq 1 + \Tilde{x}^{2}.
+    \end{align*}
+    Für eine beliebige reelle Zahl \( x \in \bR \) setzen wir \( \Tilde{x} = \left\vert \sin\left( x \right) \right\vert \) und erhalten die Abschätzung:
+    \begin{align*}
+        2 \left\vert \sin\left( x \right) \right\vert
+        \leq 1 + \left\vert \sin\left( x \right) \right\vert^{2}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 5}
+    Für \( \Tilde{x} \in \bR_{\geq 0} \) folgt direkt die Abschätzung:
+    \begin{align*}
+        2 \Tilde{x}
+        \leq 1 + \Tilde{x}^{2}.
+    \end{align*}
+    Für eine beliebige reelle Zahl \( x \in \bR \) setzen wir \( \Tilde{x} = \left\vert \sin\left( x \right) \right\vert \) und erhalten die Abschätzung:
+    \begin{align*}
+        2 \left\vert \sin\left( x \right) \right\vert
+        & \leq 1 + \left\vert \sin\left( x \right) \right\vert^{2} \\
+        & = 1 + \sin^{2}\left( x \right).
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 5}
+    Für \( \Tilde{x} \in \bR_{\geq 0} \) folgt direkt die Abschätzung:
+    \begin{align*}
+        2 \Tilde{x}
+        \leq 1 + \Tilde{x}^{2}.
+    \end{align*}
+    Für eine beliebige reelle Zahl \( x \in \bR \) setzen wir \( \Tilde{x} = \left\vert \sin\left( x \right) \right\vert \) und erhalten die Abschätzung:
+    \begin{align*}
+        2 \left\vert \sin\left( x \right) \right\vert
+        & \leq 1 + \left\vert \sin\left( x \right) \right\vert^{2} \\
+        & = 1 + \sin^{2}\left( x \right).
+    \end{align*}
+    Für eine beliebige reelle Zahl \( x \in \bR \) setzen wir weiter \( \Tilde{x} = \left\vert \cos\left( x \right) \right\vert \) und erhalten auf die gleiche Weise die Abschätzung:
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 5}
+    Für \( \Tilde{x} \in \bR_{\geq 0} \) folgt direkt die Abschätzung:
+    \begin{align*}
+        2 \Tilde{x}
+        \leq 1 + \Tilde{x}^{2}.
+    \end{align*}
+    Für eine beliebige reelle Zahl \( x \in \bR \) setzen wir \( \Tilde{x} = \left\vert \sin\left( x \right) \right\vert \) und erhalten die Abschätzung:
+    \begin{align*}
+        2 \left\vert \sin\left( x \right) \right\vert
+        & \leq 1 + \left\vert \sin\left( x \right) \right\vert^{2} \\
+        & = 1 + \sin^{2}\left( x \right).
+    \end{align*}
+    Für eine beliebige reelle Zahl \( x \in \bR \) setzen wir weiter \( \Tilde{x} = \left\vert \cos\left( x \right) \right\vert \) und erhalten auf die gleiche Weise die Abschätzung:
+    \begin{align*}
+        2 \left\vert \cos\left( x \right) \right\vert
+        & \leq  1 + \cos^{2}\left( x \right).
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 5}
+    Bringen wir die beiden Abschätzungen zusammen, so erhalten wir für alle \( x \in \bR \) die Abschätzung:
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 5}
+    Bringen wir die beiden Abschätzungen zusammen, so erhalten wir für alle \( x \in \bR \) die Abschätzung:
+    \begin{align*}
+        2 \left( \left\vert \cos\left( x \right) \right\vert + \left\vert \sin\left( x \right) \right\vert \right)
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 5}
+    Bringen wir die beiden Abschätzungen zusammen, so erhalten wir für alle \( x \in \bR \) die Abschätzung:
+    \begin{align*}
+        2 \left( \left\vert \cos\left( x \right) \right\vert + \left\vert \sin\left( x \right) \right\vert \right)
+        & \leq 1 + \cos^{2}\left( x \right) + 1 + \sin^{2}\left( x \right)
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 5}
+    Bringen wir die beiden Abschätzungen zusammen, so erhalten wir für alle \( x \in \bR \) die Abschätzung:
+    \begin{align*}
+        2 \left( \left\vert \cos\left( x \right) \right\vert + \left\vert \sin\left( x \right) \right\vert \right)
+        & \leq 1 + \cos^{2}\left( x \right) + 1 + \sin^{2}\left( x \right) \\
+        & = 3
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 5}
+    Bringen wir die beiden Abschätzungen zusammen, so erhalten wir für alle \( x \in \bR \) die Abschätzung:
+    \begin{align*}
+        2 \left( \left\vert \cos\left( x \right) \right\vert + \left\vert \sin\left( x \right) \right\vert \right)
+        & \leq 1 + \cos^{2}\left( x \right) + 1 + \sin^{2}\left( x \right) \\
+        & = 3
+    \end{align*}
+    und hieraus folgt:
+\end{frame}
+
+
+
+\begin{frame}{Folgerung 5}
+    Bringen wir die beiden Abschätzungen zusammen, so erhalten wir für alle \( x \in \bR \) die Abschätzung:
+    \begin{align*}
+        2 \left( \left\vert \cos\left( x \right) \right\vert + \left\vert \sin\left( x \right) \right\vert \right)
+        & \leq 1 + \cos^{2}\left( x \right) + 1 + \sin^{2}\left( x \right) \\
+        & = 3
+    \end{align*}
+    und hieraus folgt:
+    \begin{align*}
+        \left\vert \cos\left( x \right) \right\vert + \left\vert \sin\left( x \right) \right\vert
+        \leq \frac{3}{2}.
+    \end{align*}
+\end{frame}
+% ============================================================
+
+\end{document}
