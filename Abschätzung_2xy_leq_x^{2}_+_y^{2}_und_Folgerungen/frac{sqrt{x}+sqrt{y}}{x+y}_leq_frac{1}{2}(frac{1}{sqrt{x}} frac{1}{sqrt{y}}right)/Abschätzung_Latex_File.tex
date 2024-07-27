@@ -1,0 +1,218 @@
+\documentclass[10pt]{beamer}
+
+\title{}
+\author{Artur's Mathematikstübchen}
+\date{}
+
+
+% ===== Packages =========
+\usepackage[utf8]{inputenc}
+
+\usepackage[natbibapa]{apacite}
+\bibliographystyle{apacite}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{MnSymbol}
+\usepackage{enumitem}
+\usepackage{amsthm}
+\usepackage{mleftright}
+\usepackage{dsfont}
+\usepackage{tikz-cd}
+
+
+\def\bD{\mathbb{D}}               
+\def\bE{\mathbb{E}}
+\def\bG{\mathbb{G}}
+\def\bN{\mathbb{N}}
+\def\bP{\mathbb{P}}
+\def\bQ{\mathbb{Q}}
+\def\bR{\mathbb{R}}
+\def\bBarR{\bar{\mathbb{R}}}
+\def\bY{\mathbb{Y}}
+
+
+
+\def\mA{\mathcal{A}}
+\def\mB{\mathcal{B}}
+\def\mD{\mathcal{D}}
+\def\mE{\mathcal{E}}
+\def\mF{\mathcal{F}}
+\def\mG{\mathcal{G}}
+\def\mH{\mathcal{H}}
+\def\mL{\mathcal{L}}
+\def\mN{\mathcal{N}}
+\def\mP{\mathcal{P}}
+\def\mS{\mathcal{S}}
+\def\mT{\mathcal{T}}
+\def\mX{\mathcal{X}}
+\def\mY{\mathcal{Y}}
+
+
+
+\usetheme{Madrid}
+
+
+
+% ======================== Beginn Document ========================
+
+\begin{document}
+
+
+
+
+
+% ======================== Begrüßung ==================
+
+\begin{frame}
+    \begin{center}
+        \textbf{\huge Willkommen in der guten Stube \newline \newline :D}
+    \end{center}
+\end{frame}
+% =====================================================
+
+
+
+% ======================== Präsentation ==================
+
+\begin{frame}
+    \begin{alertblock}{Aufgabe}
+        Für alle \( x, y \in \bR_{> 0} \) zeige man die Abschätzung:
+        \begin{align*}
+            \frac{\sqrt{x} + \sqrt{y}}{x + y}
+            \leq \frac{1}{2} \left( \frac{1}{\sqrt{x}} + \frac{1}{\sqrt{y}} \right).
+        \end{align*}
+    \end{alertblock}
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    \begin{block}{Hilfsabschätzung}
+        Für alle \( u, v \in \bR_{> 0} \) gilt die Abschätzung:
+        \begin{align*}
+            \sqrt{uv}
+            \leq \frac{u + v}{2}.
+        \end{align*}
+    \end{block}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x, y > 0 \) zwei positive reelle Zahlen.
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x, y > 0 \) zwei positive reelle Zahlen. Dann folgt zunächst:
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x, y > 0 \) zwei positive reelle Zahlen. Dann folgt zunächst:
+    \begin{align*}
+        \sqrt{x} + \sqrt{y}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x, y > 0 \) zwei positive reelle Zahlen. Dann folgt zunächst:
+    \begin{align*}
+        \sqrt{x} + \sqrt{y}
+        & = \frac{\sqrt{x} \cdot \sqrt{y}}{\sqrt{y}} + \frac{\sqrt{y} \cdot \sqrt{x}}{\sqrt{x}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x, y > 0 \) zwei positive reelle Zahlen. Dann folgt zunächst:
+    \begin{align*}
+        \sqrt{x} + \sqrt{y}
+        & = \frac{\sqrt{x} \cdot \sqrt{y}}{\sqrt{y}} + \frac{\sqrt{y} \cdot \sqrt{x}}{\sqrt{x}} \\
+        & \leq \frac{1}{2}\frac{1}{\sqrt{x}}\left( x + y \right) + \frac{1}{2}\frac{1}{\sqrt{y}} \left( x + y \right)
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x, y > 0 \) zwei positive reelle Zahlen. Dann folgt zunächst:
+    \begin{align*}
+        \sqrt{x} + \sqrt{y}
+        & = \frac{\sqrt{x} \cdot \sqrt{y}}{\sqrt{y}} + \frac{\sqrt{y} \cdot \sqrt{x}}{\sqrt{x}} \\
+        & \leq \frac{1}{2}\frac{1}{\sqrt{x}}\left( x + y \right) + \frac{1}{2}\frac{1}{\sqrt{y}} \left( x + y \right) \\
+        & = \frac{1}{2} \left( x + y \right) \left( \frac{1}{\sqrt{x}} + \frac{1}{\sqrt{y}} \right).
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Damit erhalten wir:
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Damit erhalten wir:
+    \begin{align*}
+        \frac{\sqrt{x} + \sqrt{y}}{x + y}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Damit erhalten wir:
+    \begin{align*}
+        \frac{\sqrt{x} + \sqrt{y}}{x + y}
+        & = \frac{1}{x + y} \cdot \left( \sqrt{x} + \sqrt{y} \right)
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Damit erhalten wir:
+    \begin{align*}
+        \frac{\sqrt{x} + \sqrt{y}}{x + y}
+        & = \frac{1}{x + y} \cdot \left( \sqrt{x} + \sqrt{y} \right) \\
+        & \leq \frac{1}{x + y} \cdot \frac{1}{2}\left( x + y \right) \left( \frac{1}{\sqrt{x}} + \frac{1}{\sqrt{y}} \right)
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Damit erhalten wir:
+    \begin{align*}
+        \frac{\sqrt{x} + \sqrt{y}}{x + y}
+        & = \frac{1}{x + y} \cdot \left( \sqrt{x} + \sqrt{y} \right) \\
+        & \leq \frac{1}{x + y} \cdot \frac{1}{2}\left( x + y \right)\left( \frac{1}{\sqrt{x}} + \frac{1}{\sqrt{y}} \right) \\
+        & = \frac{1}{2}\left( \frac{1}{\sqrt{x}} + \frac{1}{\sqrt{y}} \right).
+    \end{align*}
+\end{frame}
+% ============================================================
+
+\end{document}
