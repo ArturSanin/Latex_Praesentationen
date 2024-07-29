@@ -1,0 +1,214 @@
+\documentclass[10pt]{beamer}
+
+\title{}
+\author{Artur's Mathematikstübchen}
+\date{}
+
+
+% ===== Packages =========
+\usepackage[utf8]{inputenc}
+
+\usepackage[natbibapa]{apacite}
+\bibliographystyle{apacite}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{MnSymbol}
+\usepackage{enumitem}
+\usepackage{amsthm}
+\usepackage{mleftright}
+\usepackage{dsfont}
+\usepackage{tikz-cd}
+
+
+\def\bD{\mathbb{D}}               
+\def\bE{\mathbb{E}}
+\def\bG{\mathbb{G}}
+\def\bN{\mathbb{N}}
+\def\bP{\mathbb{P}}
+\def\bQ{\mathbb{Q}}
+\def\bR{\mathbb{R}}
+\def\bBarR{\bar{\mathbb{R}}}
+\def\bY{\mathbb{Y}}
+
+
+
+\def\mA{\mathcal{A}}
+\def\mB{\mathcal{B}}
+\def\mD{\mathcal{D}}
+\def\mE{\mathcal{E}}
+\def\mF{\mathcal{F}}
+\def\mG{\mathcal{G}}
+\def\mH{\mathcal{H}}
+\def\mL{\mathcal{L}}
+\def\mN{\mathcal{N}}
+\def\mP{\mathcal{P}}
+\def\mS{\mathcal{S}}
+\def\mT{\mathcal{T}}
+\def\mX{\mathcal{X}}
+\def\mY{\mathcal{Y}}
+
+
+
+\usetheme{Madrid}
+
+
+
+% ======================== Beginn Document ========================
+
+\begin{document}
+
+
+
+
+
+% ======================== Begrüßung ==================
+
+\begin{frame}
+    \begin{center}
+        \textbf{\huge Willkommen in der guten Stube \newline \newline :D}
+    \end{center}
+\end{frame}
+% =====================================================
+
+
+
+% ======================== Präsentation ==================
+
+\begin{frame}
+    \begin{alertblock}{Aufgabe}
+        Sei \( \left\vert x \right\vert < 1 \) eine reelle Zahl. Für \( n \in \bN \) zeige man die Abschätzung:
+        \begin{align*}
+            \sum_{k = 0}^{n} \sqrt{\binom{n}{k}} \cdot x^{k}
+            \leq \frac{2^{\frac{n}{2}}}{\sqrt{1 - x^{2}}}.
+        \end{align*}
+    \end{alertblock}
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    \begin{block}{Cauchy-Schwarzsche Ungleichung}
+        Für alle \( x_{1}, x_{2}, \ldots, x_{m}, y_{1}, y_{2}, \ldots, y_{m} \in \bR \), \( m \in \bN \), gilt die Abschätzung:
+        \begin{align*}
+            \sum_{k = 1}^{m} x_{k} y_{k}
+            \leq \sqrt{\sum_{k = 1}^{m} x_{k}^{2}} \cdot \sqrt{\sum_{k = 1}^{m} y_{k}^{2}}.
+        \end{align*}
+    \end{block}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( \left\vert x \right\vert < 1 \) eine reelle Zahl und \( n \in \bN \) eine beliebige natürliche Zahl.
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( \left\vert x \right\vert < 1 \) eine reelle Zahl und \( n \in \bN \) eine beliebige natürliche Zahl. Dann schätzen wir ab:
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( \left\vert x \right\vert < 1 \) eine reelle Zahl und \( n \in \bN \) eine beliebige natürliche Zahl. Dann schätzen wir ab:
+    \begin{align*}
+        \sum_{k = 0}^{n} \sqrt{\binom{n}{k}} \cdot x^{k}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( \left\vert x \right\vert < 1 \) eine reelle Zahl und \( n \in \bN \) eine beliebige natürliche Zahl. Dann schätzen wir ab:
+    \begin{align*}
+        \sum_{k = 0}^{n} \sqrt{\binom{n}{k}} \cdot x^{k}
+        & \leq \sqrt{\sum_{k = 0}^{n} \left( \sqrt{\binom{n}{k}} \right)^{2}} \cdot \sqrt{\sum_{k = 0}^{n} x^{2k}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( \left\vert x \right\vert < 1 \) eine reelle Zahl und \( n \in \bN \) eine beliebige natürliche Zahl. Dann schätzen wir ab:
+    \begin{align*}
+        \sum_{k = 0}^{n} \sqrt{\binom{n}{k}} \cdot x^{k}
+        & \leq \sqrt{\sum_{k = 0}^{n} \left( \sqrt{\binom{n}{k}} \right)^{2}} \cdot \sqrt{\sum_{k = 0}^{n} x^{2k}} \\
+        & = \sqrt{\sum_{k = 0}^{n} \binom{n}{k}} \cdot \sqrt{\sum_{k = 0}^{n} x^{2k}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( \left\vert x \right\vert < 1 \) eine reelle Zahl und \( n \in \bN \) eine beliebige natürliche Zahl. Dann schätzen wir ab:
+    \begin{align*}
+        \sum_{k = 0}^{n} \sqrt{\binom{n}{k}} \cdot x^{k}
+        & \leq \sqrt{\sum_{k = 0}^{n} \left( \sqrt{\binom{n}{k}} \right)^{2}} \cdot \sqrt{\sum_{k = 0}^{n} x^{2k}} \\
+        & = \sqrt{\sum_{k = 0}^{n} \binom{n}{k}} \cdot \sqrt{\sum_{k = 0}^{n} x^{2k}} \\
+        & = \sqrt{\left( 1 + 1 \right)^{n}} \cdot \sqrt{\sum_{k = 0}^{n} x^{2k}} 
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( \left\vert x \right\vert < 1 \) eine reelle Zahl und \( n \in \bN \) eine beliebige natürliche Zahl. Dann schätzen wir ab:
+    \begin{align*}
+        \sum_{k = 0}^{n} \sqrt{\binom{n}{k}} \cdot x^{k}
+        & \leq \sqrt{\sum_{k = 0}^{n} \left( \sqrt{\binom{n}{k}} \right)^{2}} \cdot \sqrt{\sum_{k = 0}^{n} x^{2k}} \\
+        & = \sqrt{\sum_{k = 0}^{n} \binom{n}{k}} \cdot \sqrt{\sum_{k = 0}^{n} x^{2k}} \\
+        & = \sqrt{\left( 1 + 1 \right)^{n}} \cdot \sqrt{\sum_{k = 0}^{n} x^{2k}} \\
+        & = \sqrt{2^{n}} \cdot \sqrt{\sum_{k = 0}^{n} x^{2k}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( \left\vert x \right\vert < 1 \) eine reelle Zahl und \( n \in \bN \) eine beliebige natürliche Zahl. Dann schätzen wir ab:
+    \begin{align*}
+        \sum_{k = 0}^{n} \sqrt{\binom{n}{k}} \cdot x^{k}
+        & \leq \sqrt{\sum_{k = 0}^{n} \left( \sqrt{\binom{n}{k}} \right)^{2}} \cdot \sqrt{\sum_{k = 0}^{n} x^{2k}} \\
+        & = \sqrt{\sum_{k = 0}^{n} \binom{n}{k}} \cdot \sqrt{\sum_{k = 0}^{n} x^{2k}} \\
+        & = \sqrt{\left( 1 + 1 \right)^{n}} \cdot \sqrt{\sum_{k = 0}^{n} x^{2k}} \\
+        & = \sqrt{2^{n}} \cdot \sqrt{\sum_{k = 0}^{n} x^{2k}} \\
+        & \leq \sqrt{2^{n}} \cdot \sqrt{\sum_{k = 0}^{\infty} x^{2k}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( \left\vert x \right\vert < 1 \) eine reelle Zahl und \( n \in \bN \) eine beliebige natürliche Zahl. Dann schätzen wir ab:
+    {\small
+    \begin{align*}
+        \sum_{k = 0}^{n} \sqrt{\binom{n}{k}} \cdot x^{k}
+        & \leq \sqrt{\sum_{k = 0}^{n} \left( \sqrt{\binom{n}{k}} \right)^{2}} \cdot \sqrt{\sum_{k = 0}^{n} x^{2k}} \\
+        & = \sqrt{\sum_{k = 0}^{n} \binom{n}{k}} \cdot \sqrt{\sum_{k = 0}^{n} x^{2k}} \\
+        & = \sqrt{\left( 1 + 1 \right)^{n}} \cdot \sqrt{\sum_{k = 0}^{n} x^{2k}} \\
+        & = \sqrt{2^{n}} \cdot \sqrt{\sum_{k = 0}^{n} x^{2k}} \\
+        & \leq \sqrt{2^{n}} \cdot \sqrt{\sum_{k = 0}^{\infty} x^{2k}} \\
+        & = \frac{2^{\frac{n}{2}}}{\sqrt{1 - x^{2}}}.
+    \end{align*}
+    }
+\end{frame}
+% ============================================================
+
+\end{document}
