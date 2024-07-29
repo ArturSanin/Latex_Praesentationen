@@ -1,0 +1,292 @@
+\documentclass[10pt]{beamer}
+
+\title{}
+\author{Artur's Mathematikstübchen}
+\date{}
+
+
+% ===== Packages =========
+\usepackage[utf8]{inputenc}
+
+\usepackage[natbibapa]{apacite}
+\bibliographystyle{apacite}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{MnSymbol}
+\usepackage{enumitem}
+\usepackage{amsthm}
+\usepackage{mleftright}
+\usepackage{dsfont}
+\usepackage{tikz-cd}
+
+
+\def\bD{\mathbb{D}}               
+\def\bE{\mathbb{E}}
+\def\bG{\mathbb{G}}
+\def\bN{\mathbb{N}}
+\def\bP{\mathbb{P}}
+\def\bQ{\mathbb{Q}}
+\def\bR{\mathbb{R}}
+\def\bBarR{\bar{\mathbb{R}}}
+\def\bY{\mathbb{Y}}
+
+
+
+\def\mA{\mathcal{A}}
+\def\mB{\mathcal{B}}
+\def\mD{\mathcal{D}}
+\def\mE{\mathcal{E}}
+\def\mF{\mathcal{F}}
+\def\mG{\mathcal{G}}
+\def\mH{\mathcal{H}}
+\def\mL{\mathcal{L}}
+\def\mN{\mathcal{N}}
+\def\mP{\mathcal{P}}
+\def\mS{\mathcal{S}}
+\def\mT{\mathcal{T}}
+\def\mX{\mathcal{X}}
+\def\mY{\mathcal{Y}}
+
+
+
+\usetheme{Madrid}
+
+
+
+% ======================== Beginn Document ========================
+
+\begin{document}
+
+
+
+
+
+% ======================== Begrüßung ==================
+
+\begin{frame}
+    \begin{center}
+        \textbf{\huge Willkommen in der guten Stube \newline \newline :D}
+    \end{center}
+\end{frame}
+% =====================================================
+
+
+
+% ======================== Präsentation ==================
+
+\begin{frame}
+    \begin{alertblock}{Aufgabe}
+        Seien \( x, y, z > 0 \) drei positive reelle Zahlen. Man zeige die Abschätzung:
+        \begin{align*}
+            x + y + z
+            \leq 2 \cdot \left( \frac{x^{2}}{y + z} + \frac{y^{2}}{x + z} + \frac{z^{2}}{x + y} \right).
+        \end{align*}
+    \end{alertblock}
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    \begin{block}{Cauchy-Schwarzsche Ungleichung}
+        Für alle \( x_{1}, x_{2}, \ldots, x_{m}, y_{1}, y_{2}, \ldots, y_{m} \in \bR \), \( m \in \bN \), gilt die Abschätzung:
+        \begin{align*}
+            \sum_{k = 1}^{m} x_{k} y_{k}
+            \leq \sqrt{\sum_{k = 1}^{m} x_{k}^{2}} \cdot \sqrt{\sum_{k = 1}^{m} y_{k}^{2}}.
+        \end{align*}
+    \end{block}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x, y, z > 0 \) drei positive reelle Zahlen.
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x, y, z > 0 \) drei positive reelle Zahlen. Wir schätzen zunächst ab:
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x, y, z > 0 \) drei positive reelle Zahlen. Wir schätzen zunächst ab:
+    \begin{align*}
+        x + y + z
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x, y, z > 0 \) drei positive reelle Zahlen. Wir schätzen zunächst ab:
+    \begin{align*}
+        x + y + z
+        & = \sqrt{y + z} \cdot \frac{x}{\sqrt{y + z}} + \sqrt{x + z} \cdot \frac{y}{\sqrt{x + z}} + \sqrt{x + y} \cdot \frac{z}{\sqrt{x + y}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x, y, z > 0 \) drei positive reelle Zahlen. Wir schätzen zunächst ab:
+    {\footnotesize
+    \begin{align*}
+        x + y + z
+        & = \sqrt{y + z} \cdot \frac{x}{\sqrt{y + z}} + \sqrt{x + z} \cdot \frac{y}{\sqrt{x + z}} + \sqrt{x + y} \cdot \frac{z}{\sqrt{x + y}} \\
+        & \leq \sqrt{\left( \sqrt{y + z} \right)^{2} + \left( \sqrt{x + z} \right)^{2} + \left( \sqrt{x + y} \right)^{2}} \cdot \sqrt{\left( \frac{x}{\sqrt{y + z}}\right)^{2} + \left( \frac{y}{\sqrt{x + z}}\right)^{2} + \left( \frac{z}{\sqrt{x + y}}\right)^{2}}
+    \end{align*}
+    }
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x, y, z > 0 \) drei positive reelle Zahlen. Wir schätzen zunächst ab:
+    {\footnotesize
+    \begin{align*}
+        x + y + z
+        & = \sqrt{y + z} \cdot \frac{x}{\sqrt{y + z}} + \sqrt{x + z} \cdot \frac{y}{\sqrt{x + z}} + \sqrt{x + y} \cdot \frac{z}{\sqrt{x + y}} \\
+        & \leq \sqrt{\left( \sqrt{y + z} \right)^{2} + \left( \sqrt{x + z} \right)^{2} + \left( \sqrt{x + y} \right)^{2}} \cdot \sqrt{\left( \frac{x}{\sqrt{y + z}}\right)^{2} + \left( \frac{y}{\sqrt{x + z}}\right)^{2} + \left( \frac{z}{\sqrt{x + y}}\right)^{2}} \\
+        & = \sqrt{y + z + x + z + x + y} \cdot \sqrt{\frac{x^{2}}{y + z} + \frac{y^{2}}{x + z} + \frac{z^{2}}{x + y}}
+    \end{align*}
+    }
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x, y, z > 0 \) drei positive reelle Zahlen. Wir schätzen zunächst ab:
+    {\footnotesize
+    \begin{align*}
+        x + y + z
+        & = \sqrt{y + z} \cdot \frac{x}{\sqrt{y + z}} + \sqrt{x + z} \cdot \frac{y}{\sqrt{x + z}} + \sqrt{x + y} \cdot \frac{z}{\sqrt{x + y}} \\
+        & \leq \sqrt{\left( \sqrt{y + z} \right)^{2} + \left( \sqrt{x + z} \right)^{2} + \left( \sqrt{x + y} \right)^{2}} \cdot \sqrt{\left( \frac{x}{\sqrt{y + z}}\right)^{2} + \left( \frac{y}{\sqrt{x + z}}\right)^{2} + \left( \frac{z}{\sqrt{x + y}}\right)^{2}} \\
+        & = \sqrt{y + z + x + z + x + y} \cdot \sqrt{\frac{x^{2}}{y + z} + \frac{y^{2}}{x + z} + \frac{z^{2}}{x + y}} \\
+        & = \sqrt{2} \cdot \sqrt{x + y + z} \cdot \sqrt{\frac{x^{2}}{y + z} + \frac{y^{2}}{x + z} + \frac{z^{2}}{x + y}}.
+    \end{align*}
+    }
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x, y, z > 0 \) drei positive reelle Zahlen. Wir schätzen zunächst ab:
+    {\footnotesize
+    \begin{align*}
+        x + y + z
+        & = \sqrt{y + z} \cdot \frac{x}{\sqrt{y + z}} + \sqrt{x + z} \cdot \frac{y}{\sqrt{x + z}} + \sqrt{x + y} \cdot \frac{z}{\sqrt{x + y}} \\
+        & \leq \sqrt{\left( \sqrt{y + z} \right)^{2} + \left( \sqrt{x + z} \right)^{2} + \left( \sqrt{x + y} \right)^{2}} \cdot \sqrt{\left( \frac{x}{\sqrt{y + z}}\right)^{2} + \left( \frac{y}{\sqrt{x + z}}\right)^{2} + \left( \frac{z}{\sqrt{x + y}}\right)^{2}} \\
+        & = \sqrt{y + z + x + z + x + y} \cdot \sqrt{\frac{x^{2}}{y + z} + \frac{y^{2}}{x + z} + \frac{z^{2}}{x + y}} \\
+        & = \sqrt{2} \cdot \sqrt{x + y + z} \cdot \sqrt{\frac{x^{2}}{y + z} + \frac{y^{2}}{x + z} + \frac{z^{2}}{x + y}}.
+    \end{align*}
+    }
+    Teilt man nun beide Seiten der Ungleichung durch \( \sqrt{x + y + z} \) so folgt die Abschätzung:
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    \begin{align*}
+        \sqrt{x + y + z}
+        \leq \sqrt{2} \cdot \sqrt{\frac{x^{2}}{y + z} + \frac{y^{2}}{x + z} + \frac{z^{2}}{x + y}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    \begin{align*}
+        \sqrt{x + y + z}
+        \leq \sqrt{2} \cdot \sqrt{\frac{x^{2}}{y + z} + \frac{y^{2}}{x + z} + \frac{z^{2}}{x + y}}.
+    \end{align*}
+    Die quadratische Funktion streng monoton wachsend für positive reelle Zahlen.
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    \begin{align*}
+        \sqrt{x + y + z}
+        \leq \sqrt{2} \cdot \sqrt{\frac{x^{2}}{y + z} + \frac{y^{2}}{x + z} + \frac{z^{2}}{x + y}}.
+    \end{align*}
+    Die quadratische Funktion streng monoton wachsend für positive reelle Zahlen. Damit folgt schließlich:
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    \begin{align*}
+        \sqrt{x + y + z}
+        \leq \sqrt{2} \cdot \sqrt{\frac{x^{2}}{y + z} + \frac{y^{2}}{x + z} + \frac{z^{2}}{x + y}}.
+    \end{align*}
+    Die quadratische Funktion streng monoton wachsend für positive reelle Zahlen. Damit folgt schließlich:
+    \begin{align*}
+        x + y + z
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    \begin{align*}
+        \sqrt{x + y + z}
+        \leq \sqrt{2} \cdot \sqrt{\frac{x^{2}}{y + z} + \frac{y^{2}}{x + z} + \frac{z^{2}}{x + y}}.
+    \end{align*}
+    Die quadratische Funktion streng monoton wachsend für positive reelle Zahlen. Damit folgt schließlich:
+    \begin{align*}
+        x + y + z
+        & = \left( \sqrt{x + y + z} \right)^{2}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    \begin{align*}
+        \sqrt{x + y + z}
+        \leq \sqrt{2} \cdot \sqrt{\frac{x^{2}}{y + z} + \frac{y^{2}}{x + z} + \frac{z^{2}}{x + y}}.
+    \end{align*}
+    Die quadratische Funktion streng monoton wachsend für positive reelle Zahlen. Damit folgt schließlich:
+    \begin{align*}
+        x + y + z
+        & = \left( \sqrt{x + y + z} \right)^{2} \\
+        & \leq \left( \sqrt{2} \cdot \sqrt{\frac{x^{2}}{y + z} + \frac{y^{2}}{x + z} + \frac{z^{2}}{x + y}} \right)^{2}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    \begin{align*}
+        \sqrt{x + y + z}
+        \leq \sqrt{2} \cdot \sqrt{\frac{x^{2}}{y + z} + \frac{y^{2}}{x + z} + \frac{z^{2}}{x + y}}.
+    \end{align*}
+    Die quadratische Funktion streng monoton wachsend für positive reelle Zahlen. Damit folgt schließlich:
+    \begin{align*}
+        x + y + z
+        & = \left( \sqrt{x + y + z} \right)^{2} \\
+        & \leq \left( \sqrt{2} \cdot \sqrt{\frac{x^{2}}{y + z} + \frac{y^{2}}{x + z} + \frac{z^{2}}{x + y}} \right)^{2} \\
+         & = 2 \cdot \left( \frac{x^{2}}{y + z} + \frac{y^{2}}{x + z} + \frac{z^{2}}{x + y} \right).
+    \end{align*}
+\end{frame}
+% ============================================================
+
+\end{document}
