@@ -1,0 +1,277 @@
+\documentclass[10pt]{beamer}
+
+\title{}
+\author{Artur's Mathematikstübchen}
+\date{}
+
+
+% ===== Packages =========
+\usepackage[utf8]{inputenc}
+
+\usepackage[natbibapa]{apacite}
+\bibliographystyle{apacite}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{MnSymbol}
+\usepackage{enumitem}
+\usepackage{amsthm}
+\usepackage{mleftright}
+\usepackage{dsfont}
+\usepackage{tikz-cd}
+
+
+\def\bD{\mathbb{D}}               
+\def\bE{\mathbb{E}}
+\def\bG{\mathbb{G}}
+\def\bN{\mathbb{N}}
+\def\bP{\mathbb{P}}
+\def\bQ{\mathbb{Q}}
+\def\bR{\mathbb{R}}
+\def\bBarR{\bar{\mathbb{R}}}
+\def\bY{\mathbb{Y}}
+
+
+
+\def\mA{\mathcal{A}}
+\def\mB{\mathcal{B}}
+\def\mD{\mathcal{D}}
+\def\mE{\mathcal{E}}
+\def\mF{\mathcal{F}}
+\def\mG{\mathcal{G}}
+\def\mH{\mathcal{H}}
+\def\mL{\mathcal{L}}
+\def\mN{\mathcal{N}}
+\def\mP{\mathcal{P}}
+\def\mS{\mathcal{S}}
+\def\mT{\mathcal{T}}
+\def\mX{\mathcal{X}}
+\def\mY{\mathcal{Y}}
+
+
+
+\usetheme{Madrid}
+
+
+
+% ======================== Beginn Document ========================
+
+\begin{document}
+
+
+
+
+
+% ======================== Begrüßung ==================
+
+\begin{frame}
+    \begin{center}
+        \textbf{\huge Willkommen in der guten Stube \newline \newline :D}
+    \end{center}
+\end{frame}
+% =====================================================
+
+
+
+% ======================== Präsentation ==================
+
+\begin{frame}
+    \begin{alertblock}{Aufgabe}
+        Seien \( x_{1}, x_{2}, \ldots, x_{n} \in \bR \), \( n \in \bN \), beliebige reelle Zahlen. Man zeige die Gültigkeit der folgenden Abschätzung:
+        \begin{align*}
+            n \cdot \min\left( \left\vert x_{1} \right\vert, \ldots, \left\vert x_{n} \right\vert \right)
+            \leq \sum_{k = 1}^{n} \left\vert x_{k} \right\vert
+            \leq \sqrt{n} \cdot \sqrt{\sum_{k = 1}^{n} x_{k}^{2}}
+            \leq n \cdot \max\left( \left\vert x_{1} \right\vert, \ldots, \left\vert x_{n} \right\vert \right).
+        \end{align*}
+    \end{alertblock}
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    \begin{block}{Cauchy-Schwarzsche Ungleichung}
+        Für alle \( x_{1}, x_{2}, \ldots, x_{m}, y_{1}, y_{2}, \ldots, y_{m} \in \bR \), \( m \in \bN \), gilt die Abschätzung:
+        \begin{align*}
+            \sum_{k = 1}^{m} x_{k} y_{k}
+            \leq \sqrt{\sum_{k = 1}^{m} x_{k}^{2}} \cdot \sqrt{\sum_{k = 1}^{m} y_{k}^{2}}.
+        \end{align*}
+    \end{block}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x_{1}, x_{2}, \ldots, x_{n} \in \bR \) reelle Zahlen. 
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x_{1}, x_{2}, \ldots, x_{n} \in \bR \) reelle Zahlen. Dann gilt: 
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x_{1}, x_{2}, \ldots, x_{n} \in \bR \) reelle Zahlen. Dann gilt:
+    \begin{align*}
+        n \cdot \min\left( \left\vert x_{1} \right\vert, \ldots, \left\vert x_{n} \right\vert \right)
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x_{1}, x_{2}, \ldots, x_{n} \in \bR \) reelle Zahlen. Dann gilt:
+    \begin{align*}
+        n \cdot \min\left( \left\vert x_{1} \right\vert, \ldots, \left\vert x_{n} \right\vert \right)
+        & = \sum_{k = 1}^{n} \min\left( \left\vert x_{1} \right\vert, \ldots, \left\vert x_{n} \right\vert \right) 
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x_{1}, x_{2}, \ldots, x_{n} \in \bR \) reelle Zahlen. Dann gilt:
+    \begin{align*}
+        n \cdot \min\left( \left\vert x_{1} \right\vert, \ldots, \left\vert x_{n} \right\vert \right)
+        & = \sum_{k = 1}^{n} \min\left( \left\vert x_{1} \right\vert, \ldots, \left\vert x_{n} \right\vert \right) \\
+        & \leq \sum_{k = 1}^{n} \left\vert x_{k} \right\vert
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x_{1}, x_{2}, \ldots, x_{n} \in \bR \) reelle Zahlen. Dann gilt:
+    \begin{align*}
+        n \cdot \min\left( \left\vert x_{1} \right\vert, \ldots, \left\vert x_{n} \right\vert \right)
+        & = \sum_{k = 1}^{n} \min\left( \left\vert x_{1} \right\vert, \ldots, \left\vert x_{n} \right\vert \right) \\
+        & \leq \sum_{k = 1}^{n} \left\vert x_{k} \right\vert \\
+        & = \sum_{k = 1}^{n} 1 \cdot \left\vert x_{k} \right\vert
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x_{1}, x_{2}, \ldots, x_{n} \in \bR \) reelle Zahlen. Dann gilt:
+    \begin{align*}
+        n \cdot \min\left( \left\vert x_{1} \right\vert, \ldots, \left\vert x_{n} \right\vert \right)
+        & = \sum_{k = 1}^{n} \min\left( \left\vert x_{1} \right\vert, \ldots, \left\vert x_{n} \right\vert \right) \\
+        & \leq \sum_{k = 1}^{n} \left\vert x_{k} \right\vert \\
+        & = \sum_{k = 1}^{n} 1 \cdot \left\vert x_{k} \right\vert \\
+        & \leq \sqrt{\sum_{k = 1}^{n} 1^{2}} \cdot \sqrt{\sum_{k = 1}^{n} \left( \left\vert x_{k} \right\vert \right)^{2}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x_{1}, x_{2}, \ldots, x_{n} \in \bR \) reelle Zahlen. Dann gilt:
+    \begin{align*}
+        n \cdot \min\left( \left\vert x_{1} \right\vert, \ldots, \left\vert x_{n} \right\vert \right)
+        & = \sum_{k = 1}^{n} \min\left( \left\vert x_{1} \right\vert, \ldots, \left\vert x_{n} \right\vert \right) \\
+        & \leq \sum_{k = 1}^{n} \left\vert x_{k} \right\vert \\
+        & = \sum_{k = 1}^{n} 1 \cdot \left\vert x_{k} \right\vert \\
+        & \leq \sqrt{\sum_{k = 1}^{n} 1^{2}} \cdot \sqrt{\sum_{k = 1}^{n} \left( \left\vert x_{k} \right\vert \right)^{2}} \\
+        & = \sqrt{\sum_{k = 1}^{n} 1 } \cdot \sqrt{\sum_{k = 1}^{n} x_{k}^{2}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x_{1}, x_{2}, \ldots, x_{n} \in \bR \) reelle Zahlen. Dann gilt:
+    \begin{align*}
+        n \cdot \min\left( \left\vert x_{1} \right\vert, \ldots, \left\vert x_{n} \right\vert \right)
+        & = \sum_{k = 1}^{n} \min\left( \left\vert x_{1} \right\vert, \ldots, \left\vert x_{n} \right\vert \right) \\
+        & \leq \sum_{k = 1}^{n} \left\vert x_{k} \right\vert \\
+        & = \sum_{k = 1}^{n} 1 \cdot \left\vert x_{k} \right\vert \\
+        & \leq \sqrt{\sum_{k = 1}^{n} 1^{2}} \cdot \sqrt{\sum_{k = 1}^{n} \left( \left\vert x_{k} \right\vert \right)^{2}} \\
+        & = \sqrt{\sum_{k = 1}^{n} 1 } \cdot \sqrt{\sum_{k = 1}^{n} x_{k}^{2}} \\
+        & = \sqrt{n} \cdot \sqrt{\sum_{k = 1}^{n} x_{k}^{2}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    \begin{align*}
+        \sqrt{n} \cdot \sqrt{\sum_{k = 1}^{n} x_{k}^{2}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    \begin{align*}
+        \sqrt{n} \cdot \sqrt{\sum_{k = 1}^{n} x_{k}^{2}} 
+        & \leq \sqrt{n} \cdot \sqrt{\sum_{k = 1}^{n} \max\left( x_{1}^{2}, \ldots, x_{n}^{2} \right)} 
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    \begin{align*}
+        \sqrt{n} \cdot \sqrt{\sum_{k = 1}^{n} x_{k}^{2}} 
+        & \leq \sqrt{n} \cdot \sqrt{\sum_{k = 1}^{n} \max\left( x_{1}^{2}, \ldots, x_{n}^{2} \right)} \\
+        & = \sqrt{n} \cdot \sqrt{n \cdot \max\left( x_{1}^{2}, \ldots, x_{n}^{2} \right)}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    \begin{align*}
+        \sqrt{n} \cdot \sqrt{\sum_{k = 1}^{n} x_{k}^{2}} 
+        & \leq \sqrt{n} \cdot \sqrt{\sum_{k = 1}^{n} \max\left( x_{1}^{2}, \ldots, x_{n}^{2} \right)} \\
+        & = \sqrt{n} \cdot \sqrt{n \cdot \max\left( x_{1}^{2}, \ldots, x_{n}^{2} \right)} \\
+        & = \sqrt{n} \cdot \sqrt{n} \cdot \sqrt{\max\left( x_{1}^{2}, \ldots, x_{n}^{2} \right)}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    \begin{align*}
+        \sqrt{n} \cdot \sqrt{\sum_{k = 1}^{n} x_{k}^{2}} 
+        & \leq \sqrt{n} \cdot \sqrt{\sum_{k = 1}^{n} \max\left( x_{1}^{2}, \ldots, x_{n}^{2} \right)} \\
+        & = \sqrt{n} \cdot \sqrt{n \cdot \max\left( x_{1}^{2}, \ldots, x_{n}^{2} \right)} \\
+        & = \sqrt{n} \cdot \sqrt{n} \cdot \sqrt{\max\left( x_{1}^{2}, \ldots, x_{n}^{2} \right)} \\
+        & = n \cdot \max\left( \sqrt{x_{1}^{2}}, \ldots, \sqrt{x_{n}^{2}} \right) 
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    \begin{align*}
+        \sqrt{n} \cdot \sqrt{\sum_{k = 1}^{n} x_{k}^{2}} 
+        & \leq \sqrt{n} \cdot \sqrt{\sum_{k = 1}^{n} \max\left( x_{1}^{2}, \ldots, x_{n}^{2} \right)} \\
+        & = \sqrt{n} \cdot \sqrt{n \cdot \max\left( x_{1}^{2}, \ldots, x_{n}^{2} \right)} \\
+        & = \sqrt{n} \cdot \sqrt{n} \cdot \sqrt{\max\left( x_{1}^{2}, \ldots, x_{n}^{2} \right)} \\
+        & = n \cdot \max\left( \sqrt{x_{1}^{2}}, \ldots, \sqrt{x_{n}^{2}} \right) \\
+        & = n \cdot \max( \left\vert x_{1} \right\vert, \ldots, \left\vert x_{n} \right\vert).
+    \end{align*}
+\end{frame}
+% ============================================================
+
+\end{document}
