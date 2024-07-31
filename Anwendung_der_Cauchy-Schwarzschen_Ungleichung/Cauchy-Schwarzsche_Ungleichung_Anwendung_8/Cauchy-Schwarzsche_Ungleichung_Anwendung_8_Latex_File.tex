@@ -1,0 +1,234 @@
+\documentclass[10pt]{beamer}
+
+\title{}
+\author{Artur's Mathematikstübchen}
+\date{}
+
+
+% ===== Packages =========
+\usepackage[utf8]{inputenc}
+
+\usepackage[natbibapa]{apacite}
+\bibliographystyle{apacite}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{MnSymbol}
+\usepackage{enumitem}
+\usepackage{amsthm}
+\usepackage{mleftright}
+\usepackage{dsfont}
+\usepackage{tikz-cd}
+
+
+\def\bD{\mathbb{D}}               
+\def\bE{\mathbb{E}}
+\def\bG{\mathbb{G}}
+\def\bN{\mathbb{N}}
+\def\bP{\mathbb{P}}
+\def\bQ{\mathbb{Q}}
+\def\bR{\mathbb{R}}
+\def\bBarR{\bar{\mathbb{R}}}
+\def\bY{\mathbb{Y}}
+
+
+
+\def\mA{\mathcal{A}}
+\def\mB{\mathcal{B}}
+\def\mD{\mathcal{D}}
+\def\mE{\mathcal{E}}
+\def\mF{\mathcal{F}}
+\def\mG{\mathcal{G}}
+\def\mH{\mathcal{H}}
+\def\mL{\mathcal{L}}
+\def\mN{\mathcal{N}}
+\def\mP{\mathcal{P}}
+\def\mS{\mathcal{S}}
+\def\mT{\mathcal{T}}
+\def\mX{\mathcal{X}}
+\def\mY{\mathcal{Y}}
+
+
+
+\usetheme{Madrid}
+
+
+
+% ======================== Beginn Document ========================
+
+\begin{document}
+
+
+
+
+
+% ======================== Begrüßung ==================
+
+\begin{frame}
+    \begin{center}
+        \textbf{\huge Willkommen in der guten Stube \newline \newline :D}
+    \end{center}
+\end{frame}
+% =====================================================
+
+
+
+% ======================== Präsentation ==================
+
+\begin{frame}
+    \begin{alertblock}{Aufgabe}
+        Seien \( x_{1}, x_{2}, \ldots, x_{n} \in \bR \), \( n \in \bN \), beliebige reelle Zahlen. Weiter seien \( \epsilon_{1}, \epsilon_{2}, \ldots, \epsilon_{n} > 0 \) positive reelle Zahlen. Man zeige die Abschätzung:
+        \begin{align*}
+            \frac{x_{1} + x_{2} + \ldots + x_{n}}{\sqrt{\epsilon_{1}^{2} + \epsilon_{2}^{2} + \ldots + \epsilon_{n}^{2}}}
+            \leq \sqrt{\frac{x_{1}^{2}}{\epsilon_{1}^{2}} + \frac{x_{2}^{2}}{\epsilon_{2}^{2}} + \ldots + \frac{x_{n}^{2}}{\epsilon_{n}^{2}}}.
+        \end{align*}
+    \end{alertblock}
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    \begin{block}{Cauchy-Schwarzsche Ungleichung}
+        Für alle \( x_{1}, x_{2}, \ldots, x_{m}, y_{1}, y_{2}, \ldots, y_{m} \in \bR \), \( m \in \bN \), gilt die Abschätzung:
+        \begin{align*}
+            \sum_{k = 1}^{m} x_{k} y_{k}
+            \leq \sqrt{\sum_{k = 1}^{m} x_{k}^{2}} \cdot \sqrt{\sum_{k = 1}^{m} y_{k}^{2}}.
+        \end{align*}
+    \end{block}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x_{1}, x_{2}, \ldots, x_{n} \in \bR \) beliebige und \( \epsilon_{1}, \epsilon_{2}, \ldots, \epsilon_{n} > 0 \) positive reelle Zahlen.
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x_{1}, x_{2}, \ldots, x_{n} \in \bR \) beliebige und \( \epsilon_{1}, \epsilon_{2}, \ldots, \epsilon_{n} > 0 \) positive reelle Zahlen. Dann folgt zusammen mit der Cauchy-Schwarzschen Ungleichung:
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x_{1}, x_{2}, \ldots, x_{n} \in \bR \) beliebige und \( \epsilon_{1}, \epsilon_{2}, \ldots, \epsilon_{n} > 0 \) positive reelle Zahlen. Dann folgt zusammen mit der Cauchy-Schwarzschen Ungleichung:
+    \begin{align*}
+        x_{1} + x_{2} + \ldots + x_{n}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x_{1}, x_{2}, \ldots, x_{n} \in \bR \) beliebige und \( \epsilon_{1}, \epsilon_{2}, \ldots, \epsilon_{n} > 0 \) positive reelle Zahlen. Dann folgt zusammen mit der Cauchy-Schwarzschen Ungleichung:
+    \begin{align*}
+        x_{1} + x_{2} + \ldots + x_{n}
+        & = \epsilon_{1} \cdot \frac{x_{1}}{\epsilon_{1}} + \epsilon_{2} \cdot \frac{x_{2}}{\epsilon_{2}} + \ldots + \epsilon_{n} \cdot \frac{x_{n}}{\epsilon_{n}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x_{1}, x_{2}, \ldots, x_{n} \in \bR \) beliebige und \( \epsilon_{1}, \epsilon_{2}, \ldots, \epsilon_{n} > 0 \) positive reelle Zahlen. Dann folgt zusammen mit der Cauchy-Schwarzschen Ungleichung:
+    \begin{align*}
+        x_{1} + x_{2} + \ldots + x_{n}
+        & = \epsilon_{1} \cdot \frac{x_{1}}{\epsilon_{1}} + \epsilon_{2} \cdot \frac{x_{2}}{\epsilon_{2}} + \ldots + \epsilon_{n} \cdot \frac{x_{n}}{\epsilon_{n}} \\
+        & \leq \sqrt{\epsilon_{1}^{2} + \epsilon_{2}^{2} + \ldots + \epsilon_{n}^{2}} \cdot \sqrt{\frac{x_{1}^{2}}{\epsilon_{1}^{2}} + \frac{x_{2}^{2}}{\epsilon_{2}^{2}} + \ldots + \frac{x_{n}^{2}}{\epsilon_{n}^{2}}}.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x_{1}, x_{2}, \ldots, x_{n} \in \bR \) beliebige und \( \epsilon_{1}, \epsilon_{2}, \ldots, \epsilon_{n} > 0 \) positive reelle Zahlen. Dann folgt zusammen mit der Cauchy-Schwarzschen Ungleichung:
+    \begin{align*}
+        x_{1} + x_{2} + \ldots + x_{n}
+        & = \epsilon_{1} \cdot \frac{x_{1}}{\epsilon_{1}} + \epsilon_{2} \cdot \frac{x_{2}}{\epsilon_{2}} + \ldots + \epsilon_{n} \cdot \frac{x_{n}}{\epsilon_{n}} \\
+        & \leq \sqrt{\epsilon_{1}^{2} + \epsilon_{2}^{2} + \ldots + \epsilon_{n}^{2}} \cdot \sqrt{\frac{x_{1}^{2}}{\epsilon_{1}^{2}} + \frac{x_{2}^{2}}{\epsilon_{2}^{2}} + \ldots + \frac{x_{n}^{2}}{\epsilon_{n}^{2}}}.
+    \end{align*}
+    Teilt man nun durch \( \sqrt{\epsilon_{1}^{2} + \epsilon_{2}^{2} + \ldots + \epsilon_{n}^{2}} \), so folgt die Abschätzung:
+    \begin{align*}
+        \frac{x_{1} + x_{2} + \ldots + x_{n}}{\sqrt{\epsilon_{1}^{2} + \epsilon_{2}^{2} + \ldots + \epsilon_{n}^{2}}}
+        \leq \sqrt{\frac{x_{1}^{2}}{\epsilon_{1}^{2}} + \frac{x_{2}^{2}}{\epsilon_{2}^{2}} + \ldots + \frac{x_{n}^{2}}{\epsilon_{n}^{2}}}.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Bemerkung}
+    
+\end{frame}
+
+
+
+\begin{frame}{Bemerkung}
+    Seien \( x_{1}, x_{2}, \ldots, x_{n} \in \bR \), so dass \( x_{1} + x_{2} + \ldots + x_{n} > 0 \).
+\end{frame}
+
+
+
+\begin{frame}{Bemerkung}
+    Seien \( x_{1}, x_{2}, \ldots, x_{n} \in \bR \), so dass \( x_{1} + x_{2} + \ldots + x_{n} > 0 \). Die quadratische Funktion ist eine streng monoton wachsende Funktion auf den positiven reellen Zahlen. Damit erhalten wir die folgende Abschätzung:
+\end{frame}
+
+
+
+\begin{frame}{Bemerkung}
+    Seien \( x_{1}, x_{2}, \ldots, x_{n} \in \bR \), so dass \( x_{1} + x_{2} + \ldots + x_{n} > 0 \). Die quadratische Funktion ist eine streng monoton wachsende Funktion auf den positiven reellen Zahlen. Damit erhalten wir die folgende Abschätzung:
+    \begin{align*}
+        \frac{\left( x_{1} + x_{2} + \ldots + x_{n} \right)^{2}}{\epsilon_{1}^{2} + \epsilon_{2}^{2} + \ldots + \epsilon_{n}^{2}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Bemerkung}
+    Seien \( x_{1}, x_{2}, \ldots, x_{n} \in \bR \), so dass \( x_{1} + x_{2} + \ldots + x_{n} > 0 \). Die quadratische Funktion ist eine streng monoton wachsende Funktion auf den positiven reellen Zahlen. Damit erhalten wir die folgende Abschätzung:
+    \begin{align*}
+        \frac{\left( x_{1} + x_{2} + \ldots + x_{n} \right)^{2}}{\epsilon_{1}^{2} + \epsilon_{2}^{2} + \ldots + \epsilon_{n}^{2}}
+        & = \left( \frac{x_{1} + x_{2} + \ldots + x_{n}}{\sqrt{\epsilon_{1}^{2} + \epsilon_{2}^{2} + \ldots + \epsilon_{n}^{2}}} \right)^{2}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Bemerkung}
+    Seien \( x_{1}, x_{2}, \ldots, x_{n} \in \bR \), so dass \( x_{1} + x_{2} + \ldots + x_{n} > 0 \). Die quadratische Funktion ist eine streng monoton wachsende Funktion auf den positiven reellen Zahlen. Damit erhalten wir die folgende Abschätzung:
+    \begin{align*}
+        \frac{\left( x_{1} + x_{2} + \ldots + x_{n} \right)^{2}}{\epsilon_{1}^{2} + \epsilon_{2}^{2} + \ldots + \epsilon_{n}^{2}}
+        & = \left( \frac{x_{1} + x_{2} + \ldots + x_{n}}{\sqrt{\epsilon_{1}^{2} + \epsilon_{2}^{2} + \ldots + \epsilon_{n}^{2}}} \right)^{2} \\
+        & \leq \left( \sqrt{\frac{x_{1}^{2}}{\epsilon_{1}^{2}} + \frac{x_{2}^{2}}{\epsilon_{2}^{2}} + \ldots + \frac{x_{n}^{2}}{\epsilon_{n}^{2}}} \right)^{2}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Bemerkung}
+    Seien \( x_{1}, x_{2}, \ldots, x_{n} \in \bR \), so dass \( x_{1} + x_{2} + \ldots + x_{n} > 0 \). Die quadratische Funktion ist eine streng monoton wachsende Funktion auf den positiven reellen Zahlen. Damit erhalten wir die folgende Abschätzung:
+    \begin{align*}
+        \frac{\left( x_{1} + x_{2} + \ldots + x_{n} \right)^{2}}{\epsilon_{1}^{2} + \epsilon_{2}^{2} + \ldots + \epsilon_{n}^{2}}
+        & = \left( \frac{x_{1} + x_{2} + \ldots + x_{n}}{\sqrt{\epsilon_{1}^{2} + \epsilon_{2}^{2} + \ldots + \epsilon_{n}^{2}}} \right)^{2} \\
+        & \leq \left( \sqrt{\frac{x_{1}^{2}}{\epsilon_{1}^{2}} + \frac{x_{2}^{2}}{\epsilon_{2}^{2}} + \ldots + \frac{x_{n}^{2}}{\epsilon_{n}^{2}}} \right)^{2} \\
+        & = \frac{x_{1}^{2}}{\epsilon_{1}^{2}} + \frac{x_{2}^{2}}{\epsilon_{2}^{2}} + \ldots + \frac{x_{n}^{2}}{\epsilon_{n}^{2}}.
+    \end{align*}
+\end{frame}
+% ============================================================
+
+\end{document}
