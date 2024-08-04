@@ -1,0 +1,214 @@
+\documentclass[10pt]{beamer}
+
+\title{}
+\author{Artur's Mathematikstübchen}
+\date{}
+
+
+% ===== Packages =========
+\usepackage[utf8]{inputenc}
+
+\usepackage[natbibapa]{apacite}
+\bibliographystyle{apacite}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{MnSymbol}
+\usepackage{enumitem}
+\usepackage{amsthm}
+\usepackage{mleftright}
+\usepackage{dsfont}
+\usepackage{tikz-cd}
+
+
+\def\bD{\mathbb{D}}               
+\def\bE{\mathbb{E}}
+\def\bG{\mathbb{G}}
+\def\bN{\mathbb{N}}
+\def\bP{\mathbb{P}}
+\def\bQ{\mathbb{Q}}
+\def\bR{\mathbb{R}}
+\def\bBarR{\bar{\mathbb{R}}}
+\def\bY{\mathbb{Y}}
+
+
+
+\def\mA{\mathcal{A}}
+\def\mB{\mathcal{B}}
+\def\mD{\mathcal{D}}
+\def\mE{\mathcal{E}}
+\def\mF{\mathcal{F}}
+\def\mG{\mathcal{G}}
+\def\mH{\mathcal{H}}
+\def\mL{\mathcal{L}}
+\def\mN{\mathcal{N}}
+\def\mP{\mathcal{P}}
+\def\mS{\mathcal{S}}
+\def\mT{\mathcal{T}}
+\def\mX{\mathcal{X}}
+\def\mY{\mathcal{Y}}
+
+
+
+\usetheme{Madrid}
+
+
+
+% ======================== Beginn Document ========================
+
+\begin{document}
+
+
+
+
+
+% ======================== Begrüßung ==================
+
+\begin{frame}
+    \begin{center}
+        \textbf{\huge Willkommen in der guten Stube \newline \newline :D}
+    \end{center}
+\end{frame}
+% =====================================================
+
+
+
+% ======================== Präsentation ==================
+
+\begin{frame}
+    \begin{alertblock}{Aufgabe}
+        Für alle \( x \in \bR \) zeige man die Abschätzung:
+        \begin{align*}
+            \left\vert \sin\left( x \right) \right\vert + \left\vert \cos\left( x \right) \right\vert
+            \leq \sqrt{2}.
+        \end{align*}
+    \end{alertblock}
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    \begin{block}{Cauchy-Schwarzsche Ungleichung}
+        Für alle \( x_{1}, x_{2}, \ldots, x_{m}, y_{1}, y_{2}, \ldots, y_{m} \in \bR \), \( m \in \bN \), gilt die Abschätzung:
+        \begin{align*}
+            \sum_{k = 1}^{m} x_{k} y_{k}
+            \leq \sqrt{\sum_{k = 1}^{m} x_{k}^{2}} \cdot \sqrt{\sum_{k = 1}^{m} y_{k}^{2}}.
+        \end{align*}
+    \end{block}
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    \begin{block}{Cauchy-Schwarzsche Ungleichung}
+        Für alle \( x_{1}, x_{2}, \ldots, x_{m}, y_{1}, y_{2}, \ldots, y_{m} \in \bR \), \( m \in \bN \), gilt die Abschätzung:
+        \begin{align*}
+            \sum_{k = 1}^{m} x_{k} y_{k}
+            \leq \sqrt{\sum_{k = 1}^{m} x_{k}^{2}} \cdot \sqrt{\sum_{k = 1}^{m} y_{k}^{2}}.
+        \end{align*}
+    \end{block}
+    Nutze die Ungleichung für den Fall \( m = 2 \): Für alle \( x_{1}, x_{2}, y_{1}, y_{2} \in \bR \) ist
+    \begin{align*}
+        x_{1}y_{1} + x_{2}y_{2}
+        \leq \sqrt{x_{1}^{2} + x_{2}^{2}} \cdot \sqrt{y_{1}^{2} + y_{2}^{2}}.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( x \in \bR \) eine beliebige reelle Zahl.
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( x \in \bR \) eine beliebige reelle Zahl. Dann folgt mit der Cauchy-Schwarzschen Ungleichung:
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( x \in \bR \) eine beliebige reelle Zahl. Dann folgt mit der Cauchy-Schwarzschen Ungleichung:
+    \begin{align*}
+        \left\vert \sin\left( x \right) \right\vert + \left\vert \cos\left( x \right) \right\vert
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( x \in \bR \) eine beliebige reelle Zahl. Dann folgt mit der Cauchy-Schwarzschen Ungleichung:
+    \begin{align*}
+        \left\vert \sin\left( x \right) \right\vert + \left\vert \cos\left( x \right) \right\vert
+        & = 1 \cdot \left\vert \sin\left( x \right) \right\vert + 1 \cdot \left\vert \cos\left( x \right) \right\vert
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( x \in \bR \) eine beliebige reelle Zahl. Dann folgt mit der Cauchy-Schwarzschen Ungleichung:
+    \begin{align*}
+        \left\vert \sin\left( x \right) \right\vert + \left\vert \cos\left( x \right) \right\vert
+        & = 1 \cdot \left\vert \sin\left( x \right) \right\vert + 1 \cdot \left\vert \cos\left( x \right) \right\vert \\
+        & \leq \sqrt{1^{2} + 1^{2}} \cdot \sqrt{\left( \left\vert \sin\left( x \right) \right\vert \right)^{2} + \left( \left\vert \cos\left( x \right) \right\vert \right)^{2}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( x \in \bR \) eine beliebige reelle Zahl. Dann folgt mit der Cauchy-Schwarzschen Ungleichung:
+    \begin{align*}
+        \left\vert \sin\left( x \right) \right\vert + \left\vert \cos\left( x \right) \right\vert
+        & = 1 \cdot \left\vert \sin\left( x \right) \right\vert + 1 \cdot \left\vert \cos\left( x \right) \right\vert \\
+        & \leq \sqrt{1^{2} + 1^{2}} \cdot \sqrt{\left( \left\vert \sin\left( x \right) \right\vert \right)^{2} + \left( \left\vert \cos\left( x \right) \right\vert \right)^{2}} \\
+        & = \sqrt{2} \cdot \sqrt{\sin^{2}\left( x \right) + \cos^{2}\left( x \right)}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( x \in \bR \) eine beliebige reelle Zahl. Dann folgt mit der Cauchy-Schwarzschen Ungleichung:
+    \begin{align*}
+        \left\vert \sin\left( x \right) \right\vert + \left\vert \cos\left( x \right) \right\vert
+        & = 1 \cdot \left\vert \sin\left( x \right) \right\vert + 1 \cdot \left\vert \cos\left( x \right) \right\vert \\
+        & \leq \sqrt{1^{2} + 1^{2}} \cdot \sqrt{\left( \left\vert \sin\left( x \right) \right\vert \right)^{2} + \left( \left\vert \cos\left( x \right) \right\vert \right)^{2}} \\
+        & = \sqrt{2} \cdot \sqrt{\sin^{2}\left( x \right) + \cos^{2}\left( x \right)} \\
+        & = \sqrt{2} \cdot \sqrt{1}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( x \in \bR \) eine beliebige reelle Zahl. Dann folgt mit der Cauchy-Schwarzschen Ungleichung:
+    \begin{align*}
+        \left\vert \sin\left( x \right) \right\vert + \left\vert \cos\left( x \right) \right\vert
+        & = 1 \cdot \left\vert \sin\left( x \right) \right\vert + 1 \cdot \left\vert \cos\left( x \right) \right\vert \\
+        & \leq \sqrt{1^{2} + 1^{2}} \cdot \sqrt{\left( \left\vert \sin\left( x \right) \right\vert \right)^{2} + \left( \left\vert \cos\left( x \right) \right\vert \right)^{2}} \\
+        & = \sqrt{2} \cdot \sqrt{\sin^{2}\left( x \right) + \cos^{2}\left( x \right)} \\
+        & = \sqrt{2} \cdot \sqrt{1} \\
+        & = \sqrt{2}.
+    \end{align*}
+\end{frame}
+% ============================================================
+
+\end{document}
