@@ -1,0 +1,346 @@
+\documentclass[10pt]{beamer}
+
+\title{}
+\author{Artur's Mathematikstübchen}
+\date{}
+
+
+% ===== Packages =========
+\usepackage[utf8]{inputenc}
+
+\usepackage[natbibapa]{apacite}
+\bibliographystyle{apacite}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{MnSymbol}
+\usepackage{enumitem}
+\usepackage{amsthm}
+\usepackage{mleftright}
+\usepackage{dsfont}
+\usepackage{tikz-cd}
+
+
+\def\bD{\mathbb{D}}               
+\def\bE{\mathbb{E}}
+\def\bG{\mathbb{G}}
+\def\bN{\mathbb{N}}
+\def\bP{\mathbb{P}}
+\def\bQ{\mathbb{Q}}
+\def\bR{\mathbb{R}}
+\def\bBarR{\bar{\mathbb{R}}}
+\def\bY{\mathbb{Y}}
+
+
+
+\def\mA{\mathcal{A}}
+\def\mB{\mathcal{B}}
+\def\mD{\mathcal{D}}
+\def\mE{\mathcal{E}}
+\def\mF{\mathcal{F}}
+\def\mG{\mathcal{G}}
+\def\mH{\mathcal{H}}
+\def\mL{\mathcal{L}}
+\def\mN{\mathcal{N}}
+\def\mP{\mathcal{P}}
+\def\mS{\mathcal{S}}
+\def\mT{\mathcal{T}}
+\def\mX{\mathcal{X}}
+\def\mY{\mathcal{Y}}
+
+
+
+\usetheme{Madrid}
+
+
+
+% ======================== Beginn Document ========================
+
+\begin{document}
+
+
+
+
+
+% ======================== Begrüßung ==================
+
+\begin{frame}
+    \begin{center}
+        \textbf{\huge Willkommen in der guten Stube \newline \newline :D}
+    \end{center}
+\end{frame}
+% =====================================================
+
+
+
+% ======================== Präsentation ==================
+
+\begin{frame}
+    \begin{alertblock}{Aufgabe}
+        Für alle \( x, y, z \in \bR_{> 0} \) zeige man die Abschätzung:
+        \begin{align*}
+            \sqrt{x} + \sqrt{y} + \sqrt{z}
+            \leq \frac{x}{\sqrt{y}} + \frac{y}{\sqrt{z}} + \frac{z}{\sqrt{x}}.
+        \end{align*}
+    \end{alertblock}
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    \begin{block}{Cauchy-Schwarzsche Ungleichung}
+        Für alle \( x_{1}, x_{2}, \ldots, x_{m}, y_{1}, y_{2}, \ldots, y_{m} \in \bR \), \( m \in \bN \), gilt die Abschätzung:
+        \begin{align*}
+            \sum_{k = 1}^{m} x_{k} y_{k}
+            \leq \sqrt{\sum_{k = 1}^{m} x_{k}^{2}} \cdot \sqrt{\sum_{k = 1}^{m} y_{k}^{2}}.
+        \end{align*}
+    \end{block}
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    \begin{block}{Cauchy-Schwarzsche Ungleichung}
+        Für alle \( x_{1}, x_{2}, \ldots, x_{m}, y_{1}, y_{2}, \ldots, y_{m} \in \bR \), \( m \in \bN \), gilt die Abschätzung:
+        \begin{align*}
+            \sum_{k = 1}^{m} x_{k} y_{k}
+            \leq \sqrt{\sum_{k = 1}^{m} x_{k}^{2}} \cdot \sqrt{\sum_{k = 1}^{m} y_{k}^{2}}.
+        \end{align*}
+    \end{block}
+    Nutze die Ungleichung für den Fall \( m = 3 \): Für alle \( x_{1}, x_{2}, x_{3}, y_{1}, y_{2}, y_{3} \in \bR \) ist
+    \begin{align*}
+        x_{1}y_{1} + x_{2}y_{2} + x_{3}y_{3}
+        \leq \sqrt{x_{1}^{2} + x_{2}^{2} + x_{3}^{2}} \cdot \sqrt{y_{1}^{2} + y_{2}^{2} + y_{3}^{2}}.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x, y, z \in \bR_{> 0} \) drei positive reelle Zahlen.
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x, y, z \in \bR_{> 0} \) drei positive reelle Zahlen. Dann sind \( \sqrt[4]{x}, \sqrt[4]{y}, \sqrt[4]{z} > 0 \) und es folgt zusammen mit der Cauchy-Schwarzschen Ungleichung:
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x, y, z \in \bR_{> 0} \) drei positive reelle Zahlen. Dann sind \( \sqrt[4]{x}, \sqrt[4]{y}, \sqrt[4]{z} > 0 \) und es folgt zusammen mit der Cauchy-Schwarzschen Ungleichung:
+    \begin{align*}
+        \sqrt{x} + \sqrt{y} + \sqrt{z}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x, y, z \in \bR_{> 0} \) drei positive reelle Zahlen.Dann sind \( \sqrt[4]{x}, \sqrt[4]{y}, \sqrt[4]{z} > 0 \) und es folgt zusammen mit der Cauchy-Schwarzschen Ungleichung:
+    \begin{align*}
+        \sqrt{x} + \sqrt{y} + \sqrt{z}
+        & = \sqrt[4]{y} \cdot \frac{\sqrt{x}}{\sqrt[4]{y}} + \sqrt[4]{z} \cdot \frac{\sqrt{y}}{\sqrt[4]{z}} + \sqrt[4]{x} \cdot \frac{\sqrt{z}}{\sqrt[4]{x}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x, y, z \in \bR_{> 0} \) drei positive reelle Zahlen.Dann sind \( \sqrt[4]{x}, \sqrt[4]{y}, \sqrt[4]{z} > 0 \) und es folgt zusammen mit der Cauchy-Schwarzschen Ungleichung:
+    \begin{align*}
+        \sqrt{x} + \sqrt{y} + \sqrt{z}
+        & = \sqrt[4]{y} \cdot \frac{\sqrt{x}}{\sqrt[4]{y}} + \sqrt[4]{z} \cdot \frac{\sqrt{y}}{\sqrt[4]{z}} + \sqrt[4]{x} \cdot \frac{\sqrt{z}}{\sqrt[4]{x}} \\
+        & \leq \sqrt{\left( \sqrt[4]{y} \right)^{2} + \left( \sqrt[4]{z} \right)^{2} + \left( \sqrt[4]{x} \right)^{2}} \cdot \sqrt{\left( \frac{\sqrt{x}}{\sqrt[4]{y}} \right)^{2} + \left( \frac{\sqrt{y}}{\sqrt[4]{z}} \right)^{2} \left( \frac{\sqrt{z}}{\sqrt[4]{x}} \right)^{2}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x, y, z \in \bR_{> 0} \) drei positive reelle Zahlen.Dann sind \( \sqrt[4]{x}, \sqrt[4]{y}, \sqrt[4]{z} > 0 \) und es folgt zusammen mit der Cauchy-Schwarzschen Ungleichung:
+    \begin{align*}
+        \sqrt{x} + \sqrt{y} + \sqrt{z}
+        & = \sqrt[4]{y} \cdot \frac{\sqrt{x}}{\sqrt[4]{y}} + \sqrt[4]{z} \cdot \frac{\sqrt{y}}{\sqrt[4]{z}} + \sqrt[4]{x} \cdot \frac{\sqrt{z}}{\sqrt[4]{x}} \\
+        & \leq \sqrt{\left( \sqrt[4]{y} \right)^{2} + \left( \sqrt[4]{z} \right)^{2} + \left( \sqrt[4]{x} \right)^{2}} \cdot \sqrt{\left( \frac{\sqrt{x}}{\sqrt[4]{y}} \right)^{2} + \left( \frac{\sqrt{y}}{\sqrt[4]{z}} \right)^{2} \left( \frac{\sqrt{z}}{\sqrt[4]{x}} \right)^{2}} \\
+        & = \sqrt{\sqrt{y} + \sqrt{z} + \sqrt{x}} \cdot \sqrt{\frac{x}{\sqrt{y}} + \frac{y}{\sqrt{z}} + \frac{z}{\sqrt{x}}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x, y, z \in \bR_{> 0} \) drei positive reelle Zahlen.Dann sind \( \sqrt[4]{x}, \sqrt[4]{y}, \sqrt[4]{z} > 0 \) und es folgt zusammen mit der Cauchy-Schwarzschen Ungleichung:
+    \begin{align*}
+        \sqrt{x} + \sqrt{y} + \sqrt{z}
+        & = \sqrt[4]{y} \cdot \frac{\sqrt{x}}{\sqrt[4]{y}} + \sqrt[4]{z} \cdot \frac{\sqrt{y}}{\sqrt[4]{z}} + \sqrt[4]{x} \cdot \frac{\sqrt{z}}{\sqrt[4]{x}} \\
+        & \leq \sqrt{\left( \sqrt[4]{y} \right)^{2} + \left( \sqrt[4]{z} \right)^{2} + \left( \sqrt[4]{x} \right)^{2}} \cdot \sqrt{\left( \frac{\sqrt{x}}{\sqrt[4]{y}} \right)^{2} + \left( \frac{\sqrt{y}}{\sqrt[4]{z}} \right)^{2} \left( \frac{\sqrt{z}}{\sqrt[4]{x}} \right)^{2}} \\
+        & = \sqrt{\sqrt{y} + \sqrt{z} + \sqrt{x}} \cdot \sqrt{\frac{x}{\sqrt{y}} + \frac{y}{\sqrt{z}} + \frac{z}{\sqrt{x}}} \\
+        & = \sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}} \cdot \sqrt{\frac{x}{\sqrt{y}} + \frac{y}{\sqrt{z}} + \frac{z}{\sqrt{x}}}
+    \end{align*}
+\end{frame}
+
+
+    
+\begin{frame}{Beweis}
+    Damit erhalten wir die folgende Abschätzung für \( \sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}} \):
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Damit erhalten wir die folgende Abschätzung für \( \sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}} \):
+    \begin{align*}
+        \sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Damit erhalten wir die folgende Abschätzung für \( \sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}} \):
+    \begin{align*}
+        \sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}}
+        & = \frac{ \sqrt{x} + \sqrt{y} + \sqrt{z}}{\sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Damit erhalten wir die folgende Abschätzung für \( \sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}} \):
+    \begin{align*}
+        \sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}}
+        & = \frac{ \sqrt{x} + \sqrt{y} + \sqrt{z}}{\sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}}} \\
+        & \leq \frac{1}{\sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}}} \cdot \sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}} \cdot \sqrt{\frac{x}{\sqrt{y}} + \frac{y}{\sqrt{z}} + \frac{z}{\sqrt{x}}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Damit erhalten wir die folgende Abschätzung für \( \sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}} \):
+    \begin{align*}
+        \sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}}
+        & = \frac{ \sqrt{x} + \sqrt{y} + \sqrt{z}}{\sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}}} \\
+        & \leq \frac{1}{\sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}}} \cdot \sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}} \cdot \sqrt{\frac{x}{\sqrt{y}} + \frac{y}{\sqrt{z}} + \frac{z}{\sqrt{x}}} \\
+        & = \sqrt{\frac{x}{\sqrt{y}} + \frac{y}{\sqrt{z}} + \frac{z}{\sqrt{x}}}.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Damit erhalten wir die folgende Abschätzung für \( \sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}} \):
+    \begin{align*}
+        \sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}}
+        & = \frac{ \sqrt{x} + \sqrt{y} + \sqrt{z}}{\sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}}} \\
+        & \leq \frac{1}{\sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}}} \cdot \sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}} \cdot \sqrt{\frac{x}{\sqrt{y}} + \frac{y}{\sqrt{z}} + \frac{z}{\sqrt{x}}} \\
+        & = \sqrt{\frac{x}{\sqrt{y}} + \frac{y}{\sqrt{z}} + \frac{z}{\sqrt{x}}}.
+    \end{align*}
+    Die quadratische Funktion ist streng monoton wachsend auf den positiven reellen Zahlen.
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Damit erhalten wir die folgende Abschätzung für \( \sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}} \):
+    \begin{align*}
+        \sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}}
+        & = \frac{ \sqrt{x} + \sqrt{y} + \sqrt{z}}{\sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}}} \\
+        & \leq \frac{1}{\sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}}} \cdot \sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}} \cdot \sqrt{\frac{x}{\sqrt{y}} + \frac{y}{\sqrt{z}} + \frac{z}{\sqrt{x}}} \\
+        & = \sqrt{\frac{x}{\sqrt{y}} + \frac{y}{\sqrt{z}} + \frac{z}{\sqrt{x}}}.
+    \end{align*}
+    Die quadratische Funktion ist streng monoton wachsend auf den positiven reellen Zahlen. Damit folgt schließlich:
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Damit erhalten wir die folgende Abschätzung für \( \sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}} \):
+    \begin{align*}
+        \sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}}
+        & = \frac{ \sqrt{x} + \sqrt{y} + \sqrt{z}}{\sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}}} \\
+        & \leq \frac{1}{\sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}}} \cdot \sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}} \cdot \sqrt{\frac{x}{\sqrt{y}} + \frac{y}{\sqrt{z}} + \frac{z}{\sqrt{x}}} \\
+        & = \sqrt{\frac{x}{\sqrt{y}} + \frac{y}{\sqrt{z}} + \frac{z}{\sqrt{x}}}.
+    \end{align*}
+    Die quadratische Funktion ist streng monoton wachsend auf den positiven reellen Zahlen. Damit folgt schließlich:
+    \begin{align*}
+         \sqrt{x} + \sqrt{y} + \sqrt{z}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Damit erhalten wir die folgende Abschätzung für \( \sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}} \):
+    \begin{align*}
+        \sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}}
+        & = \frac{ \sqrt{x} + \sqrt{y} + \sqrt{z}}{\sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}}} \\
+        & \leq \frac{1}{\sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}}} \cdot \sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}} \cdot \sqrt{\frac{x}{\sqrt{y}} + \frac{y}{\sqrt{z}} + \frac{z}{\sqrt{x}}} \\
+        & = \sqrt{\frac{x}{\sqrt{y}} + \frac{y}{\sqrt{z}} + \frac{z}{\sqrt{x}}}.
+    \end{align*}
+    Die quadratische Funktion ist streng monoton wachsend auf den positiven reellen Zahlen. Damit folgt schließlich:
+    \begin{align*}
+         \sqrt{x} + \sqrt{y} + \sqrt{z}
+        & = \left( \sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}} \right)^{2}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Damit erhalten wir die folgende Abschätzung für \( \sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}} \):
+    \begin{align*}
+        \sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}}
+        & = \frac{ \sqrt{x} + \sqrt{y} + \sqrt{z}}{\sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}}} \\
+        & \leq \frac{1}{\sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}}} \cdot \sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}} \cdot \sqrt{\frac{x}{\sqrt{y}} + \frac{y}{\sqrt{z}} + \frac{z}{\sqrt{x}}} \\
+        & = \sqrt{\frac{x}{\sqrt{y}} + \frac{y}{\sqrt{z}} + \frac{z}{\sqrt{x}}}.
+    \end{align*}
+    Die quadratische Funktion ist streng monoton wachsend auf den positiven reellen Zahlen. Damit folgt schließlich:
+    \begin{align*}
+         \sqrt{x} + \sqrt{y} + \sqrt{z}
+        & = \left( \sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}} \right)^{2} \\
+        & \leq \left( \sqrt{\frac{x}{\sqrt{y}} + \frac{y}{\sqrt{z}} + \frac{z}{\sqrt{x}}} \right)^{2}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Damit erhalten wir die folgende Abschätzung für \( \sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}} \):
+    \begin{align*}
+        \sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}}
+        & = \frac{ \sqrt{x} + \sqrt{y} + \sqrt{z}}{\sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}}} \\
+        & \leq \frac{1}{\sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}}} \cdot \sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}} \cdot \sqrt{\frac{x}{\sqrt{y}} + \frac{y}{\sqrt{z}} + \frac{z}{\sqrt{x}}} \\
+        & = \sqrt{\frac{x}{\sqrt{y}} + \frac{y}{\sqrt{z}} + \frac{z}{\sqrt{x}}}.
+    \end{align*}
+    Die quadratische Funktion ist streng monoton wachsend auf den positiven reellen Zahlen. Damit folgt schließlich:
+    {\small
+    \begin{align*}
+         \sqrt{x} + \sqrt{y} + \sqrt{z}
+        & = \left( \sqrt{\sqrt{x} + \sqrt{y} + \sqrt{z}} \right)^{2} \\
+        & \leq \left( \sqrt{\frac{x}{\sqrt{y}} + \frac{y}{\sqrt{z}} + \frac{z}{\sqrt{x}}} \right)^{2} \\
+        & = \frac{x}{\sqrt{y}} + \frac{y}{\sqrt{z}} + \frac{z}{\sqrt{x}}.
+    \end{align*}
+    }
+\end{frame}
+% ============================================================
+
+\end{document}
