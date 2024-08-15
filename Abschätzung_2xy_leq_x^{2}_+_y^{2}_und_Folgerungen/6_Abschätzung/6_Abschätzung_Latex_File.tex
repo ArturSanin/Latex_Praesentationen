@@ -1,0 +1,273 @@
+\documentclass[10pt]{beamer}
+
+\title{}
+\author{Artur's Mathematikstübchen}
+\date{}
+
+
+% ===== Packages =========
+\usepackage[utf8]{inputenc}
+
+\usepackage[natbibapa]{apacite}
+\bibliographystyle{apacite}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{MnSymbol}
+\usepackage{enumitem}
+\usepackage{amsthm}
+\usepackage{mleftright}
+\usepackage{dsfont}
+\usepackage{tikz-cd}
+
+
+\def\bD{\mathbb{D}}               
+\def\bE{\mathbb{E}}
+\def\bG{\mathbb{G}}
+\def\bN{\mathbb{N}}
+\def\bP{\mathbb{P}}
+\def\bQ{\mathbb{Q}}
+\def\bR{\mathbb{R}}
+\def\bBarR{\bar{\mathbb{R}}}
+\def\bY{\mathbb{Y}}
+
+
+
+\def\mA{\mathcal{A}}
+\def\mB{\mathcal{B}}
+\def\mD{\mathcal{D}}
+\def\mE{\mathcal{E}}
+\def\mF{\mathcal{F}}
+\def\mG{\mathcal{G}}
+\def\mH{\mathcal{H}}
+\def\mL{\mathcal{L}}
+\def\mN{\mathcal{N}}
+\def\mP{\mathcal{P}}
+\def\mS{\mathcal{S}}
+\def\mT{\mathcal{T}}
+\def\mX{\mathcal{X}}
+\def\mY{\mathcal{Y}}
+
+
+
+\usetheme{Madrid}
+
+
+
+% ======================== Beginn Document ========================
+
+\begin{document}
+
+
+
+
+
+% ======================== Begrüßung ==================
+
+\begin{frame}
+    \begin{center}
+        \textbf{\huge Willkommen in der guten Stube \newline \newline :D}
+    \end{center}
+\end{frame}
+% =====================================================
+
+
+
+% ======================== Präsentation ==================
+
+\begin{frame}
+    \begin{alertblock}{Aufgabe}
+        Für alle \( x, y, z \in \bR_{> 0} \) zeige man die Abschätzung:
+        \begin{align*}
+            x + y + z
+            \leq \frac{yz}{x} + \frac{xz}{y} + \frac{xy}{z}.
+        \end{align*}
+    \end{alertblock}
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    \begin{block}{Hilfsabschätzung}
+        Für alle \( u, v \in \bR \) gilt die Abschätzung:
+        \begin{align*}
+            uv
+            \leq \frac{u^{2} + v^{2}}{2}.
+        \end{align*}
+    \end{block}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x, y, z \in \bR_{> 0} \) drei positive reelle Zahlen.
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x, y, z \in \bR_{> 0} \) drei positive reelle Zahlen. Dann folgt zusammen mit der Hilfsabschätzung zunächst:
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x, y, z \in \bR_{> 0} \) drei positive reelle Zahlen. Dann folgt zusammen mit der Hilfsabschätzung zunächst:
+    \begin{align*}
+        \left( x + y + z \right)xyz
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x, y, z \in \bR_{> 0} \) drei positive reelle Zahlen. Dann folgt zusammen mit der Hilfsabschätzung zunächst:
+    \begin{align*}
+        \left( x + y + z \right)xyz
+        & = x^{2}yz + xy^{2}z + xyz^{2} \\
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x, y, z \in \bR_{> 0} \) drei positive reelle Zahlen. Dann folgt zusammen mit der Hilfsabschätzung zunächst:
+    \begin{align*}
+        \left( x + y + z \right)xyz
+        & = x^{2}yz + xy^{2}z + xyz^{2} \\
+        & \leq x^{2} \left( \frac{y^{2}}{2} + \frac{z^{2}}{2} \right) + xy^{2}z + xyz^{2}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x, y, z \in \bR_{> 0} \) drei positive reelle Zahlen. Dann folgt zusammen mit der Hilfsabschätzung zunächst:
+    \begin{align*}
+        \left( x + y + z \right)xyz
+        & = x^{2}yz + xy^{2}z + xyz^{2} \\
+        & \leq x^{2} \left( \frac{y^{2}}{2} + \frac{z^{2}}{2} \right) + xy^{2}z + xyz^{2} \\
+        & \leq x^{2} \left( \frac{y^{2}}{2} + \frac{z^{2}}{2} \right) + y^{2} \left( \frac{x^{2}}{2} + \frac{z^{2}}{2} \right) + xyz^{2}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x, y, z \in \bR_{> 0} \) drei positive reelle Zahlen. Dann folgt zusammen mit der Hilfsabschätzung zunächst:
+    \begin{align*}
+        \left( x + y + z \right)xyz
+        & = x^{2}yz + xy^{2}z + xyz^{2} \\
+        & \leq x^{2} \left( \frac{y^{2}}{2} + \frac{z^{2}}{2} \right) + xy^{2}z + xyz^{2} \\
+        & \leq x^{2} \left( \frac{y^{2}}{2} + \frac{z^{2}}{2} \right) + y^{2} \left( \frac{x^{2}}{2} + \frac{z^{2}}{2} \right) + xyz^{2} \\
+        & \leq x^{2} \left( \frac{y^{2}}{2} + \frac{z^{2}}{2} \right) + y^{2} \left( \frac{x^{2}}{2} + \frac{z^{2}}{2} \right) + z^{2} \left( \frac{x^{2}}{2} + \frac{y^{2}}{2} \right)
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x, y, z \in \bR_{> 0} \) drei positive reelle Zahlen. Dann folgt zusammen mit der Hilfsabschätzung zunächst:
+    \begin{align*}
+        \left( x + y + z \right)xyz
+        & = x^{2}yz + xy^{2}z + xyz^{2} \\
+        & \leq x^{2} \left( \frac{y^{2}}{2} + \frac{z^{2}}{2} \right) + xy^{2}z + xyz^{2} \\
+        & \leq x^{2} \left( \frac{y^{2}}{2} + \frac{z^{2}}{2} \right) + y^{2} \left( \frac{x^{2}}{2} + \frac{z^{2}}{2} \right) + xyz^{2} \\
+        & \leq x^{2} \left( \frac{y^{2}}{2} + \frac{z^{2}}{2} \right) + y^{2} \left( \frac{x^{2}}{2} + \frac{z^{2}}{2} \right) + z^{2} \left( \frac{x^{2}}{2} + \frac{y^{2}}{2} \right) \\
+        & = \frac{x^{2}y^{2}}{2} + \frac{x^{2}z^{2}}{2} + \frac{x^{2}y^{2}}{2} + \frac{y^{2}z^{2}}{2} + \frac{x^{2}z^{2}}{2} + \frac{y^{2}z^{2}}{2}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x, y, z \in \bR_{> 0} \) drei positive reelle Zahlen. Dann folgt zusammen mit der Hilfsabschätzung zunächst:
+    \begin{align*}
+        \left( x + y + z \right)xyz
+        & = x^{2}yz + xy^{2}z + xyz^{2} \\
+        & \leq x^{2} \left( \frac{y^{2}}{2} + \frac{z^{2}}{2} \right) + xy^{2}z + xyz^{2} \\
+        & \leq x^{2} \left( \frac{y^{2}}{2} + \frac{z^{2}}{2} \right) + y^{2} \left( \frac{x^{2}}{2} + \frac{z^{2}}{2} \right) + xyz^{2} \\
+        & \leq x^{2} \left( \frac{y^{2}}{2} + \frac{z^{2}}{2} \right) + y^{2} \left( \frac{x^{2}}{2} + \frac{z^{2}}{2} \right) + z^{2} \left( \frac{x^{2}}{2} + \frac{y^{2}}{2} \right) \\
+        & = \frac{x^{2}y^{2}}{2} + \frac{x^{2}z^{2}}{2} + \frac{x^{2}y^{2}}{2} + \frac{y^{2}z^{2}}{2} + \frac{x^{2}z^{2}}{2} + \frac{y^{2}z^{2}}{2} \\
+        & = y^{2}z^{2} + x^{2}z^{2} + x^{2}y^{2}.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Wegen \( x, y, z > 0 \) ist auch \( xyz > 0 \).    
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Wegen \( x, y, z > 0 \) ist auch \( xyz > 0 \). Damit folgt schließlich:    
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Wegen \( x, y, z > 0 \) ist auch \( xyz > 0 \). Damit folgt schließlich:
+    \begin{align*}
+        x + y + z
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Wegen \( x, y, z > 0 \) ist auch \( xyz > 0 \). Damit folgt schließlich:
+    \begin{align*}
+        x + y + z
+        & = \frac{1}{xyz} \left( x + y + z \right) xyz
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Wegen \( x, y, z > 0 \) ist auch \( xyz > 0 \). Damit folgt schließlich:
+    \begin{align*}
+        x + y + z
+        & = \frac{1}{xyz} \left( x + y + z \right) xyz \\
+        & \leq \frac{1}{xyz} \left( y^{2}z^{2} + x^{2}z^{2} + x^{2}y^{2} \right)
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Wegen \( x, y, z > 0 \) ist auch \( xyz > 0 \). Damit folgt schließlich:
+    \begin{align*}
+        x + y + z
+        & = \frac{1}{xyz} \left( x + y + z \right) xyz \\
+        & \leq \frac{1}{xyz} \left( y^{2}z^{2} + x^{2}z^{2} + x^{2}y^{2} \right) \\
+        & = \frac{y^{2}z^{2}}{xyz} + \frac{x^{2}z^{2}}{xyz} + \frac{x^{2}y^{2}}{xyz}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Wegen \( x, y, z > 0 \) ist auch \( xyz > 0 \). Damit folgt schließlich:
+    \begin{align*}
+        x + y + z
+        & = \frac{1}{xyz} \left( x + y + z \right) xyz \\
+        & \leq \frac{1}{xyz} \left( y^{2}z^{2} + x^{2}z^{2} + x^{2}y^{2} \right) \\
+        & = \frac{y^{2}z^{2}}{xyz} + \frac{x^{2}z^{2}}{xyz} + \frac{x^{2}y^{2}}{xyz} \\
+        & = \frac{yz}{x} + \frac{xz}{y} + \frac{xy}{z}.
+    \end{align*}
+\end{frame}
+% ============================================================
+
+\end{document}
