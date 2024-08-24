@@ -1,0 +1,267 @@
+\documentclass[10pt]{beamer}
+
+\title{}
+\author{Artur's Mathematikstübchen}
+\date{}
+
+
+% ===== Packages =========
+\usepackage[utf8]{inputenc}
+
+\usepackage[natbibapa]{apacite}
+\bibliographystyle{apacite}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{MnSymbol}
+\usepackage{enumitem}
+\usepackage{amsthm}
+\usepackage{mleftright}
+\usepackage{dsfont}
+\usepackage{tikz-cd}
+
+
+\def\bD{\mathbb{D}}               
+\def\bE{\mathbb{E}}
+\def\bG{\mathbb{G}}
+\def\bN{\mathbb{N}}
+\def\bP{\mathbb{P}}
+\def\bQ{\mathbb{Q}}
+\def\bR{\mathbb{R}}
+\def\bBarR{\bar{\mathbb{R}}}
+\def\bY{\mathbb{Y}}
+
+
+
+\def\mA{\mathcal{A}}
+\def\mB{\mathcal{B}}
+\def\mD{\mathcal{D}}
+\def\mE{\mathcal{E}}
+\def\mF{\mathcal{F}}
+\def\mG{\mathcal{G}}
+\def\mH{\mathcal{H}}
+\def\mL{\mathcal{L}}
+\def\mN{\mathcal{N}}
+\def\mP{\mathcal{P}}
+\def\mS{\mathcal{S}}
+\def\mT{\mathcal{T}}
+\def\mX{\mathcal{X}}
+\def\mY{\mathcal{Y}}
+
+
+
+\usetheme{Madrid}
+
+
+
+% ======================== Beginn Document ========================
+
+\begin{document}
+
+
+
+
+
+% ======================== Begrüßung ==================
+
+\begin{frame}
+    \begin{center}
+        \textbf{\huge Willkommen in der guten Stube \newline \newline :D}
+    \end{center}
+\end{frame}
+% =====================================================
+
+
+
+% ======================== Präsentation ==================
+
+\begin{frame}
+    \begin{alertblock}{Aufgabe}
+        Seien \( a, b, c, d, e \geq 0 \) nicht-negative reelle Zahlen. Man zeige die Abschätzung:
+        \begin{align*}
+            \left( a^{2} + b^{2} + c^{2} + d^{2} + e^{2} \right) \cdot \left( a^{3} + b^{3} + c^{3} + d^{3} + e^{3} \right)
+            \geq 25abcde.
+        \end{align*}
+    \end{alertblock}
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    Für den Beweis verwenden wir die Ungleichung zwischen dem geometrischen und arithmetischen Mittel:
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    Für den Beweis verwenden wir die Ungleichung zwischen dem geometrischen und arithmetischen Mittel:
+    \begin{block}{Hilfsabschätzung}
+        Für alle \( a_{1}, \ldots, a_{p} \geq 0 \), \( p \in \bN \), gilt die Abschätzung:
+        \begin{align*}
+            \sqrt[p]{a_{1} \cdot \ldots \cdot a_{p}} 
+            \leq \frac{a_{1} + \ldots + a_{p}}{p}.
+        \end{align*}
+    \end{block}
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    Für den Beweis verwenden wir die Ungleichung zwischen dem geometrischen und arithmetischen Mittel:
+    \begin{block}{Hilfsabschätzung}
+        Für alle \( a_{1}, \ldots, a_{p} \geq 0 \), \( p \in \bN \), gilt die Abschätzung:
+        \begin{align*}
+            \sqrt[p]{a_{1} \cdot \ldots \cdot a_{p}} 
+            \leq \frac{a_{1} + \ldots + a_{p}}{p}.
+        \end{align*}
+    \end{block}
+    Wir verwenden die Ungleichung für den Fall \( p = 5 \):
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    Für den Beweis verwenden wir die Ungleichung zwischen dem geometrischen und arithmetischen Mittel:
+    \begin{block}{Hilfsabschätzung}
+        Für alle \( a_{1}, \ldots, a_{p} \geq 0 \), \( p \in \bN \), gilt die Abschätzung:
+        \begin{align*}
+            \sqrt[p]{a_{1} \cdot \ldots \cdot a_{p}} 
+            \leq \frac{a_{1} + \ldots + a_{p}}{p}.
+        \end{align*}
+    \end{block}
+    Wir verwenden die Ungleichung für den Fall \( p = 5 \):
+    \begin{align*}
+        \sqrt[5]{a_{1} a_{2} a_{3} a_{4} a_{5}} 
+        \leq \frac{a_{1} + a_{2} + a_{3} + a_{4} + a_{5}}{5}.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( a, b, c, d, e \geq 0 \) beliebige nicht-negative reelle Zahlen. 
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( a, b, c, d, e \geq 0 \) beliebige nicht-negative reelle Zahlen. Wir schätzen wie folgt ab: 
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( a, b, c, d, e \geq 0 \) beliebige nicht-negative reelle Zahlen. Wir schätzen wie folgt ab:
+    \begin{align*}
+        \left( a^{2} + b^{2} + c^{2} + d^{2} + e^{2} \right) \cdot \left( a^{3} + b^{3} + c^{3} + d^{3} + e^{3} \right)
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( a, b, c, d, e \geq 0 \) beliebige nicht-negative reelle Zahlen. Wir schätzen wie folgt ab:
+    \begin{align*}
+        & \left( a^{2} + b^{2} + c^{2} + d^{2} + e^{2} \right) \cdot \left( a^{3} + b^{3} + c^{3} + d^{3} + e^{3} \right) \\
+        & = 25 \cdot \frac{\left( a^{2} + b^{2} + c^{2} + d^{2} + e^{2} \right)}{5} \cdot \frac{\left( a^{3} + b^{3} + c^{3} + d^{3} + e^{3} \right)}{5}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( a, b, c, d, e \geq 0 \) beliebige nicht-negative reelle Zahlen. Wir schätzen wie folgt ab:
+    \begin{align*}
+        & \left( a^{2} + b^{2} + c^{2} + d^{2} + e^{2} \right) \cdot \left( a^{3} + b^{3} + c^{3} + d^{3} + e^{3} \right) \\
+        & = 25 \cdot \frac{\left( a^{2} + b^{2} + c^{2} + d^{2} + e^{2} \right)}{5} \cdot \frac{\left( a^{3} + b^{3} + c^{3} + d^{3} + e^{3} \right)}{5} \\
+        & \geq 25 \sqrt[5]{a^{2} b^{2} c^{2} d^{2} e^{2}} \cdot \frac{\left( a^{3} + b^{3} + c^{3} + d^{3} + e^{3} \right)}{5}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( a, b, c, d, e \geq 0 \) beliebige nicht-negative reelle Zahlen. Wir schätzen wie folgt ab:
+    \begin{align*}
+        & \left( a^{2} + b^{2} + c^{2} + d^{2} + e^{2} \right) \cdot \left( a^{3} + b^{3} + c^{3} + d^{3} + e^{3} \right) \\
+        & = 25 \cdot \frac{\left( a^{2} + b^{2} + c^{2} + d^{2} + e^{2} \right)}{5} \cdot \frac{\left( a^{3} + b^{3} + c^{3} + d^{3} + e^{3} \right)}{5} \\
+        & \geq 25 \sqrt[5]{a^{2} b^{2} c^{2} d^{2} e^{2}} \cdot \frac{\left( a^{3} + b^{3} + c^{3} + d^{3} + e^{3} \right)}{5} \\
+        & \geq 25 \sqrt[5]{a^{2} b^{2} c^{2} d^{2} e^{2}} \cdot \sqrt[5]{a^{3} b^{3} c^{3} d^{3} e^{3}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( a, b, c, d, e \geq 0 \) beliebige nicht-negative reelle Zahlen. Wir schätzen wie folgt ab:
+    \begin{align*}
+        & \left( a^{2} + b^{2} + c^{2} + d^{2} + e^{2} \right) \cdot \left( a^{3} + b^{3} + c^{3} + d^{3} + e^{3} \right) \\
+        & = 25 \cdot \frac{\left( a^{2} + b^{2} + c^{2} + d^{2} + e^{2} \right)}{5} \cdot \frac{\left( a^{3} + b^{3} + c^{3} + d^{3} + e^{3} \right)}{5} \\
+        & \geq 25 \sqrt[5]{a^{2} b^{2} c^{2} d^{2} e^{2}} \cdot \frac{\left( a^{3} + b^{3} + c^{3} + d^{3} + e^{3} \right)}{5} \\
+        & \geq 25 \sqrt[5]{a^{2} b^{2} c^{2} d^{2} e^{2}} \cdot \sqrt[5]{a^{3} b^{3} c^{3} d^{3} e^{3}} \\
+        & \geq 25 \sqrt[5]{\left( a b c d e \right)^{2}} \cdot \sqrt[5]{\left( a b c d e \right)^{3}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( a, b, c, d, e \geq 0 \) beliebige nicht-negative reelle Zahlen. Wir schätzen wie folgt ab:
+    \begin{align*}
+        & \left( a^{2} + b^{2} + c^{2} + d^{2} + e^{2} \right) \cdot \left( a^{3} + b^{3} + c^{3} + d^{3} + e^{3} \right) \\
+        & = 25 \cdot \frac{\left( a^{2} + b^{2} + c^{2} + d^{2} + e^{2} \right)}{5} \cdot \frac{\left( a^{3} + b^{3} + c^{3} + d^{3} + e^{3} \right)}{5} \\
+        & \geq 25 \sqrt[5]{a^{2} b^{2} c^{2} d^{2} e^{2}} \cdot \frac{\left( a^{3} + b^{3} + c^{3} + d^{3} + e^{3} \right)}{5} \\
+        & \geq 25 \sqrt[5]{a^{2} b^{2} c^{2} d^{2} e^{2}} \cdot \sqrt[5]{a^{3} b^{3} c^{3} d^{3} e^{3}} \\
+        & \geq 25 \sqrt[5]{\left( a b c d e \right)^{2}} \cdot \sqrt[5]{\left( a b c d e \right)^{3}} \\
+        & = 25 \sqrt[5]{\left( a b c d e \right)^{2} \cdot \left( a b c d e \right)^{3}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( a, b, c, d, e \geq 0 \) beliebige nicht-negative reelle Zahlen. Wir schätzen wie folgt ab:
+    \begin{align*}
+        & \left( a^{2} + b^{2} + c^{2} + d^{2} + e^{2} \right) \cdot \left( a^{3} + b^{3} + c^{3} + d^{3} + e^{3} \right) \\
+        & = 25 \cdot \frac{\left( a^{2} + b^{2} + c^{2} + d^{2} + e^{2} \right)}{5} \cdot \frac{\left( a^{3} + b^{3} + c^{3} + d^{3} + e^{3} \right)}{5} \\
+        & \geq 25 \sqrt[5]{a^{2} b^{2} c^{2} d^{2} e^{2}} \cdot \frac{\left( a^{3} + b^{3} + c^{3} + d^{3} + e^{3} \right)}{5} \\
+        & \geq 25 \sqrt[5]{a^{2} b^{2} c^{2} d^{2} e^{2}} \cdot \sqrt[5]{a^{3} b^{3} c^{3} d^{3} e^{3}} \\
+        & \geq 25 \sqrt[5]{\left( a b c d e \right)^{2}} \cdot \sqrt[5]{\left( a b c d e \right)^{3}} \\
+        & = 25 \sqrt[5]{\left( a b c d e \right)^{2} \cdot \left( a b c d e \right)^{3}} \\
+        & = 25 \sqrt[5]{\left( a b c d e \right)^{5}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( a, b, c, d, e \geq 0 \) beliebige nicht-negative reelle Zahlen. Wir schätzen wie folgt ab:
+    \begin{align*}
+        & \left( a^{2} + b^{2} + c^{2} + d^{2} + e^{2} \right) \cdot \left( a^{3} + b^{3} + c^{3} + d^{3} + e^{3} \right) \\
+        & = 25 \cdot \frac{\left( a^{2} + b^{2} + c^{2} + d^{2} + e^{2} \right)}{5} \cdot \frac{\left( a^{3} + b^{3} + c^{3} + d^{3} + e^{3} \right)}{5} \\
+        & \geq 25 \sqrt[5]{a^{2} b^{2} c^{2} d^{2} e^{2}} \cdot \frac{\left( a^{3} + b^{3} + c^{3} + d^{3} + e^{3} \right)}{5} \\
+        & \geq 25 \sqrt[5]{a^{2} b^{2} c^{2} d^{2} e^{2}} \cdot \sqrt[5]{a^{3} b^{3} c^{3} d^{3} e^{3}} \\
+        & \geq 25 \sqrt[5]{\left( a b c d e \right)^{2}} \cdot \sqrt[5]{\left( a b c d e \right)^{3}} \\
+        & = 25 \sqrt[5]{\left( a b c d e \right)^{2} \cdot \left( a b c d e \right)^{3}} \\
+        & = 25 \sqrt[5]{\left( a b c d e \right)^{5}} \\
+        & = 25 a b c d e.
+    \end{align*}
+\end{frame}
+% ============================================================
+
+\end{document}
