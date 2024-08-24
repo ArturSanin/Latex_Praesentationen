@@ -1,0 +1,355 @@
+\documentclass[10pt]{beamer}
+
+\title{}
+\author{Artur's Mathematikstübchen}
+\date{}
+
+
+% ===== Packages =========
+\usepackage[utf8]{inputenc}
+
+\usepackage[natbibapa]{apacite}
+\bibliographystyle{apacite}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{MnSymbol}
+\usepackage{enumitem}
+\usepackage{amsthm}
+\usepackage{mleftright}
+\usepackage{dsfont}
+\usepackage{tikz-cd}
+
+
+\def\bD{\mathbb{D}}               
+\def\bE{\mathbb{E}}
+\def\bG{\mathbb{G}}
+\def\bN{\mathbb{N}}
+\def\bP{\mathbb{P}}
+\def\bQ{\mathbb{Q}}
+\def\bR{\mathbb{R}}
+\def\bBarR{\bar{\mathbb{R}}}
+\def\bY{\mathbb{Y}}
+
+
+
+\def\mA{\mathcal{A}}
+\def\mB{\mathcal{B}}
+\def\mD{\mathcal{D}}
+\def\mE{\mathcal{E}}
+\def\mF{\mathcal{F}}
+\def\mG{\mathcal{G}}
+\def\mH{\mathcal{H}}
+\def\mL{\mathcal{L}}
+\def\mN{\mathcal{N}}
+\def\mP{\mathcal{P}}
+\def\mS{\mathcal{S}}
+\def\mT{\mathcal{T}}
+\def\mX{\mathcal{X}}
+\def\mY{\mathcal{Y}}
+
+
+
+\usetheme{Madrid}
+
+
+
+% ======================== Beginn Document ========================
+
+\begin{document}
+
+
+
+
+
+% ======================== Begrüßung ==================
+
+\begin{frame}
+    \begin{center}
+        \textbf{\huge Willkommen in der guten Stube \newline \newline :D}
+    \end{center}
+\end{frame}
+% =====================================================
+
+
+
+% ======================== Präsentation ==================
+
+\begin{frame}
+    \begin{alertblock}{Aufgabe}
+        Seien \( x_{1}, x_{2}, \ldots, x_{n} > 0 \), \( n \in \bN \), positive reelle Zahlen. Weiter sei \( s \coloneq x_{1} + x_{2} + \ldots + x_{n} \) die Summe der Zahlen \( x_{1}, x_{2}, \ldots, x_{n} \). Man zeige die Abschätzung:
+        \begin{align*}
+            \left( 1 + x_{1} \right) \cdot \left( 1 + x_{2} \right) \cdot \ldots \cdot \left( 1 + x_{n} \right)
+            \leq 1 + s + \frac{s^{2}}{2!} + + \frac{s^{3}}{3!} + \ldots + \frac{s^{n}}{n!}.
+        \end{align*}
+    \end{alertblock}
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    Für den Beweis verwenden wir die Ungleichung zwischen dem geometrischen und arithmetischen Mittel:
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    Für den Beweis verwenden wir die Ungleichung zwischen dem geometrischen und arithmetischen Mittel:
+    \begin{block}{Hilfsabschätzung}
+        Für alle \( a_{1}, \ldots, a_{p} \geq 0 \), \( p \in \bN \), gilt die Abschätzung:
+        \begin{align*}
+            \sqrt[p]{a_{1} \cdot \ldots \cdot a_{p}} 
+            \leq \frac{a_{1} + \ldots + a_{p}}{p}.
+        \end{align*}
+    \end{block}
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    Für den Beweis verwenden wir die Ungleichung zwischen dem geometrischen und arithmetischen Mittel:
+    \begin{block}{Hilfsabschätzung}
+        Für alle \( a_{1}, \ldots, a_{p} \geq 0 \), \( p \in \bN \), gilt die Abschätzung:
+        \begin{align*}
+            \sqrt[p]{a_{1} \cdot \ldots \cdot a_{p}} 
+            \leq \frac{a_{1} + \ldots + a_{p}}{p}.
+        \end{align*}
+    \end{block}
+    Insbesondere folgt aus dieser Ungleichung die Abschätzung:
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    Für den Beweis verwenden wir die Ungleichung zwischen dem geometrischen und arithmetischen Mittel:
+    \begin{block}{Hilfsabschätzung}
+        Für alle \( a_{1}, \ldots, a_{p} \geq 0 \), \( p \in \bN \), gilt die Abschätzung:
+        \begin{align*}
+            \sqrt[p]{a_{1} \cdot \ldots \cdot a_{p}} 
+            \leq \frac{a_{1} + \ldots + a_{p}}{p}.
+        \end{align*}
+    \end{block}
+    Insbesondere folgt aus dieser Ungleichung die Abschätzung:
+    \begin{align*}
+        a_{1} \cdot \ldots \cdot a_{p} 
+        \leq \frac{\left( a_{1} + \ldots + a_{p} \right)^{p}}{p^{p}}.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    Für den Beweis verwenden wir die Ungleichung zwischen dem geometrischen und arithmetischen Mittel:
+    \begin{block}{Hilfsabschätzung}
+        Für alle \( a_{1}, \ldots, a_{p} \geq 0 \), \( p \in \bN \), gilt die Abschätzung:
+        \begin{align*}
+            \sqrt[p]{a_{1} \cdot \ldots \cdot a_{p}} 
+            \leq \frac{a_{1} + \ldots + a_{p}}{p}.
+        \end{align*}
+    \end{block}
+    Insbesondere folgt aus dieser Ungleichung die Abschätzung:
+    \begin{align*}
+        a_{1} \cdot \ldots \cdot a_{p} 
+        \leq \frac{\left( a_{1} + \ldots + a_{p} \right)^{p}}{p^{p}}.
+    \end{align*}
+    Zusätzlich benötigen wir den binomischen Lehrsatz:
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    Für den Beweis verwenden wir die Ungleichung zwischen dem geometrischen und arithmetischen Mittel:
+    \begin{block}{Hilfsabschätzung}
+        Für alle \( a_{1}, \ldots, a_{p} \geq 0 \), \( p \in \bN \), gilt die Abschätzung:
+        \begin{align*}
+            \sqrt[p]{a_{1} \cdot \ldots \cdot a_{p}} 
+            \leq \frac{a_{1} + \ldots + a_{p}}{p}.
+        \end{align*}
+    \end{block}
+    Insbesondere folgt aus dieser Ungleichung die Abschätzung:
+    \begin{align*}
+        a_{1} \cdot \ldots \cdot a_{p} 
+        \leq \frac{\left( a_{1} + \ldots + a_{p} \right)^{p}}{p^{p}}.
+    \end{align*}
+    Zusätzlich benötigen wir den binomischen Lehrsatz:
+    \begin{align*}
+        \left( x + y \right)^{m}
+        = \sum_{k = 0}^{m} \binom{m}{k} x^{n - k} y^{k}.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x_{1}, x_{2}, \ldots, x_{n} > 0 \) positive reelle Zahlen und \( s = x_{1} + x_{2} + \ldots + x_{n} \). 
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x_{1}, x_{2}, \ldots, x_{n} > 0 \) positive reelle Zahlen und \( s = x_{1} + x_{2} + \ldots + x_{n} \). Dann schätzen wir wie folgt ab: 
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x_{1}, x_{2}, \ldots, x_{n} > 0 \) positive reelle Zahlen und \( s = x_{1} + x_{2} + \ldots + x_{n} \). Dann schätzen wir wie folgt ab:
+    \begin{align*}
+         \left( 1 + x_{1} \right) \cdot \left( 1 + x_{2} \right) \cdot \ldots \cdot \left( 1 + x_{n} \right)
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x_{1}, x_{2}, \ldots, x_{n} > 0 \) positive reelle Zahlen und \( s = x_{1} + x_{2} + \ldots + x_{n} \). Dann schätzen wir wie folgt ab:
+    \begin{align*}
+         \left( 1 + x_{1} \right) \cdot \left( 1 + x_{2} \right) \cdot \ldots \cdot \left( 1 + x_{n} \right)
+         & \leq \frac{\left( 1 + x_{1} + 1 + x_{2} + \ldots + 1 + x_{n} \right)^{n}}{n^{n}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x_{1}, x_{2}, \ldots, x_{n} > 0 \) positive reelle Zahlen und \( s = x_{1} + x_{2} + \ldots + x_{n} \). Dann schätzen wir wie folgt ab:
+    \begin{align*}
+         \left( 1 + x_{1} \right) \cdot \left( 1 + x_{2} \right) \cdot \ldots \cdot \left( 1 + x_{n} \right)
+         & \leq \frac{\left( 1 + x_{1} + 1 + x_{2} + \ldots + 1 + x_{n} \right)^{n}}{n^{n}} \\
+         & = \frac{\left( n + s \right)^{n}}{n^{n}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x_{1}, x_{2}, \ldots, x_{n} > 0 \) positive reelle Zahlen und \( s = x_{1} + x_{2} + \ldots + x_{n} \). Dann schätzen wir wie folgt ab:
+    \begin{align*}
+         \left( 1 + x_{1} \right) \cdot \left( 1 + x_{2} \right) \cdot \ldots \cdot \left( 1 + x_{n} \right)
+         & \leq \frac{\left( 1 + x_{1} + 1 + x_{2} + \ldots + 1 + x_{n} \right)^{n}}{n^{n}} \\
+         & = \frac{\left( n + s \right)^{n}}{n^{n}} \\
+         & = \left( 1 + \frac{s}{n} \right)^{n}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x_{1}, x_{2}, \ldots, x_{n} > 0 \) positive reelle Zahlen und \( s = x_{1} + x_{2} + \ldots + x_{n} \). Dann schätzen wir wie folgt ab:
+    \begin{align*}
+         \left( 1 + x_{1} \right) \cdot \left( 1 + x_{2} \right) \cdot \ldots \cdot \left( 1 + x_{n} \right)
+         & \leq \frac{\left( 1 + x_{1} + 1 + x_{2} + \ldots + 1 + x_{n} \right)^{n}}{n^{n}} \\
+         & = \frac{\left( n + s \right)^{n}}{n^{n}} \\
+         & = \left( 1 + \frac{s}{n} \right)^{n} \\
+         & = \sum_{k = 0}^{n} \binom{n}{k}\left( \frac{s}{n} \right)^{k}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Seien \( x_{1}, x_{2}, \ldots, x_{n} > 0 \) positive reelle Zahlen und \( s = x_{1} + x_{2} + \ldots + x_{n} \). Dann schätzen wir wie folgt ab:
+    \begin{align*}
+         \left( 1 + x_{1} \right) \cdot \left( 1 + x_{2} \right) \cdot \ldots \cdot \left( 1 + x_{n} \right)
+         & \leq \frac{\left( 1 + x_{1} + 1 + x_{2} + \ldots + 1 + x_{n} \right)^{n}}{n^{n}} \\
+         & = \frac{\left( n + s \right)^{n}}{n^{n}} \\
+         & = \left( 1 + \frac{s}{n} \right)^{n} \\
+         & = \sum_{k = 0}^{n} \binom{n}{k}\left( \frac{s}{n} \right)^{k} \\
+         & = \sum_{k = 0}^{n} \frac{n!}{k! \left( n - k \right)!} \frac{s^{k}}{n^{k}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    \begin{align*}
+        \sum_{k = 0}^{n} \frac{n!}{k! \left( n - k \right)!} \frac{s^{k}}{n^{k}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    \begin{align*}
+        \sum_{k = 0}^{n} \frac{n!}{k! \left( n - k \right)!} \frac{s^{k}}{n^{k}}
+        & = \sum_{k = 0}^{n} \frac{n!}{n^{k} \left( n - k \right)!} \frac{s^{k}}{k!}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    \begin{align*}
+        \sum_{k = 0}^{n} \frac{n!}{k! \left( n - k \right)!} \frac{s^{k}}{n^{k}}
+        & = \sum_{k = 0}^{n} \frac{n!}{n^{k} \left( n - k \right)!} \frac{s^{k}}{k!} \\
+        & = \sum_{k = 0}^{n} \frac{n \left( n - 1 \right) \ldots \left( n - k + 1 \right)}{n^{k}} \frac{s^{k}}{k!}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    \begin{align*}
+        \sum_{k = 0}^{n} \frac{n!}{k! \left( n - k \right)!} \frac{s^{k}}{n^{k}}
+        & = \sum_{k = 0}^{n} \frac{n!}{n^{k} \left( n - k \right)!} \frac{s^{k}}{k!} \\
+        & = \sum_{k = 0}^{n} \frac{n \left( n - 1 \right) \ldots \left( n - k + 1 \right)}{n^{k}} \frac{s^{k}}{k!} \\
+        & = \sum_{k = 0}^{n} \frac{n}{n} \frac{\left( n - 1 \right)}{n} \ldots \frac{\left( n - k + 1 \right)}{n} \frac{s^{k}}{k!}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    \begin{align*}
+        \sum_{k = 0}^{n} \frac{n!}{k! \left( n - k \right)!} \frac{s^{k}}{n^{k}}
+        & = \sum_{k = 0}^{n} \frac{n!}{n^{k} \left( n - k \right)!} \frac{s^{k}}{k!} \\
+        & = \sum_{k = 0}^{n} \frac{n \left( n - 1 \right) \ldots \left( n - k + 1 \right)}{n^{k}} \frac{s^{k}}{k!} \\
+        & = \sum_{k = 0}^{n} \frac{n}{n} \frac{\left( n - 1 \right)}{n} \ldots \frac{\left( n - k + 1 \right)}{n} \frac{s^{k}}{k!} \\
+        & = \sum_{k = 0}^{n} \left( 1 - \frac{1}{n} \right) \ldots \left( 1 - \frac{k - 1}{n} \right) \frac{s^{k}}{k!}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    \begin{align*}
+        \sum_{k = 0}^{n} \frac{n!}{k! \left( n - k \right)!} \frac{s^{k}}{n^{k}}
+        & = \sum_{k = 0}^{n} \frac{n!}{n^{k} \left( n - k \right)!} \frac{s^{k}}{k!} \\
+        & = \sum_{k = 0}^{n} \frac{n \left( n - 1 \right) \ldots \left( n - k + 1 \right)}{n^{k}} \frac{s^{k}}{k!} \\
+        & = \sum_{k = 0}^{n} \frac{n}{n} \frac{\left( n - 1 \right)}{n} \ldots \frac{\left( n - k + 1 \right)}{n} \frac{s^{k}}{k!} \\
+        & = \sum_{k = 0}^{n} \left( 1 - \frac{1}{n} \right) \ldots \left( 1 - \frac{k - 1}{n} \right) \frac{s^{k}}{k!} \\
+        & \leq \sum_{k = 0}^{n} \frac{s^{k}}{k!}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    \begin{align*}
+        \sum_{k = 0}^{n} \frac{n!}{k! \left( n - k \right)!} \frac{s^{k}}{n^{k}}
+        & = \sum_{k = 0}^{n} \frac{n!}{n^{k} \left( n - k \right)!} \frac{s^{k}}{k!} \\
+        & = \sum_{k = 0}^{n} \frac{n \left( n - 1 \right) \ldots \left( n - k + 1 \right)}{n^{k}} \frac{s^{k}}{k!} \\
+        & = \sum_{k = 0}^{n} \frac{n}{n} \frac{\left( n - 1 \right)}{n} \ldots \frac{\left( n - k + 1 \right)}{n} \frac{s^{k}}{k!} \\
+        & = \sum_{k = 0}^{n} \left( 1 - \frac{1}{n} \right) \ldots \left( 1 - \frac{k - 1}{n} \right) \frac{s^{k}}{k!} \\
+        & \leq \sum_{k = 0}^{n} \frac{s^{k}}{k!} \\
+        & = 1 + s + \frac{s^{2}}{2!} + + \frac{s^{3}}{3!} + \ldots + \frac{s^{n}}{n!}.
+    \end{align*}
+\end{frame}
+% ============================================================
+
+\end{document}
