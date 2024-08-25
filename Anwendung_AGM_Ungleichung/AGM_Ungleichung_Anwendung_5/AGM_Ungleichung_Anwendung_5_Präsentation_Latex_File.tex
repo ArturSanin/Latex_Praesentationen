@@ -1,0 +1,250 @@
+\documentclass[10pt]{beamer}
+
+\title{}
+\author{Artur's Mathematikstübchen}
+\date{}
+
+
+% ===== Packages =========
+\usepackage[utf8]{inputenc}
+
+\usepackage[natbibapa]{apacite}
+\bibliographystyle{apacite}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{MnSymbol}
+\usepackage{enumitem}
+\usepackage{amsthm}
+\usepackage{mleftright}
+\usepackage{dsfont}
+\usepackage{tikz-cd}
+
+
+\def\bD{\mathbb{D}}               
+\def\bE{\mathbb{E}}
+\def\bG{\mathbb{G}}
+\def\bN{\mathbb{N}}
+\def\bP{\mathbb{P}}
+\def\bQ{\mathbb{Q}}
+\def\bR{\mathbb{R}}
+\def\bBarR{\bar{\mathbb{R}}}
+\def\bY{\mathbb{Y}}
+
+
+
+\def\mA{\mathcal{A}}
+\def\mB{\mathcal{B}}
+\def\mD{\mathcal{D}}
+\def\mE{\mathcal{E}}
+\def\mF{\mathcal{F}}
+\def\mG{\mathcal{G}}
+\def\mH{\mathcal{H}}
+\def\mL{\mathcal{L}}
+\def\mN{\mathcal{N}}
+\def\mP{\mathcal{P}}
+\def\mS{\mathcal{S}}
+\def\mT{\mathcal{T}}
+\def\mX{\mathcal{X}}
+\def\mY{\mathcal{Y}}
+
+
+
+\usetheme{Madrid}
+
+
+
+% ======================== Beginn Document ========================
+
+\begin{document}
+
+
+
+
+
+% ======================== Begrüßung ==================
+
+\begin{frame}
+    \begin{center}
+        \textbf{\huge Willkommen in der guten Stube \newline \newline :D}
+    \end{center}
+\end{frame}
+% =====================================================
+
+
+
+% ======================== Präsentation ==================
+
+\begin{frame}
+    \begin{alertblock}{Aufgabe}
+        Sei \( n \in \bN \) eine beliebige natürliche Zahl. Man zeige die Gültigkeit der folgenden Abschätzung:
+        \begin{align*}
+            n! 
+            \leq \left( \frac{n + 1}{2} \right)^{n}.
+        \end{align*}
+    \end{alertblock}
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    Für den Beweis verwenden wir die Ungleichung zwischen dem geometrischen und arithmetischen Mittel:
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    Für den Beweis verwenden wir die Ungleichung zwischen dem geometrischen und arithmetischen Mittel:
+    \begin{block}{Hilfsabschätzung}
+        Für alle \( a_{1}, \ldots, a_{p} \geq 0 \), \( p \in \bN \), gilt die Abschätzung:
+        \begin{align*}
+            \sqrt[p]{a_{1} \cdot \ldots \cdot a_{p}} 
+            \leq \frac{a_{1} + \ldots + a_{p}}{p}.
+        \end{align*}
+    \end{block}
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    Für den Beweis verwenden wir die Ungleichung zwischen dem geometrischen und arithmetischen Mittel:
+    \begin{block}{Hilfsabschätzung}
+        Für alle \( a_{1}, \ldots, a_{p} \geq 0 \), \( p \in \bN \), gilt die Abschätzung:
+        \begin{align*}
+            \sqrt[p]{a_{1} \cdot \ldots \cdot a_{p}} 
+            \leq \frac{a_{1} + \ldots + a_{p}}{p}.
+        \end{align*}
+    \end{block}
+    Insbesondere folgt die Abschätzung:
+    \begin{align*}
+        a_{1} \cdot \ldots \cdot a_{p} 
+        \leq \frac{\left( a_{1} + \ldots + a_{p} \right)^{p}}{p^{p}}.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    Für den Beweis verwenden wir die Ungleichung zwischen dem geometrischen und arithmetischen Mittel:
+    \begin{block}{Hilfsabschätzung}
+        Für alle \( a_{1}, \ldots, a_{p} \geq 0 \), \( p \in \bN \), gilt die Abschätzung:
+        \begin{align*}
+            \sqrt[p]{a_{1} \cdot \ldots \cdot a_{p}} 
+            \leq \frac{a_{1} + \ldots + a_{p}}{p}.
+        \end{align*}
+    \end{block}
+    Insbesondere folgt die Abschätzung:
+    \begin{align*}
+        a_{1} \cdot \ldots \cdot a_{p} 
+        \leq \frac{\left( a_{1} + \ldots + a_{p} \right)^{p}}{p^{p}}.
+    \end{align*}
+    Weiter gilt für alle \( n \in \bN \) die Gauß'sche Summenformel:   
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    Für den Beweis verwenden wir die Ungleichung zwischen dem geometrischen und arithmetischen Mittel:
+    \begin{block}{Hilfsabschätzung}
+        Für alle \( a_{1}, \ldots, a_{p} \geq 0 \), \( p \in \bN \), gilt die Abschätzung:
+        \begin{align*}
+            \sqrt[p]{a_{1} \cdot \ldots \cdot a_{p}} 
+            \leq \frac{a_{1} + \ldots + a_{p}}{p}.
+        \end{align*}
+    \end{block}
+    Insbesondere folgt die Abschätzung:
+    \begin{align*}
+        a_{1} \cdot \ldots \cdot a_{p} 
+        \leq \frac{\left( a_{1} + \ldots + a_{p} \right)^{p}}{p^{p}}.
+    \end{align*}
+    Weiter gilt für alle \( n \in \bN \) die Gauß'sche Summenformel:
+    \begin{align*}
+        \sum_{k = 1}^{n} k
+        = \frac{n \cdot \left( n + 1 \right)}{2}.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( n \in \bN \) eine beliebige natürliche Zahl.
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( n \in \bN \) eine beliebige natürliche Zahl. Dann schätzen wir wie folgt ab:
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( n \in \bN \) eine beliebige natürliche Zahl. Dann schätzen wir wie folgt ab:
+    \begin{align*}
+        n!
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( n \in \bN \) eine beliebige natürliche Zahl. Dann schätzen wir wie folgt ab:
+    \begin{align*}
+        n!
+        & = 1 \cdot 2 \cdot \ldots \cdot \left( n - 2 \right) \cdot \left( n - 1 \right) \cdot n
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( n \in \bN \) eine beliebige natürliche Zahl. Dann schätzen wir wie folgt ab:
+    \begin{align*}
+        n!
+        & = 1 \cdot 2 \cdot \ldots \cdot \left( n - 1 \right) \cdot \left( n - 2 \right) \cdot n \\
+        & \leq \left( \frac{1 + 2 + \ldots + \left( n - 2 \right) + \left( n - 1 \right) + n}{n} \right)^{n}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( n \in \bN \) eine beliebige natürliche Zahl. Dann schätzen wir wie folgt ab:
+    \begin{align*}
+        n!
+        & = 1 \cdot 2 \cdot \ldots \cdot \left( n - 1 \right) \cdot \left( n - 2 \right) \cdot n \\
+        & \leq \left( \frac{1 + 2 + \ldots + \left( n - 2 \right) + \left( n - 1 \right) + n}{n} \right)^{n} \\
+        & = \left( \frac{n \cdot \left( n + 1 \right)}{2n} \right)^{n}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( n \in \bN \) eine beliebige natürliche Zahl. Dann schätzen wir wie folgt ab:
+    \begin{align*}
+        n!
+        & = 1 \cdot 2 \cdot \ldots \cdot \left( n - 1 \right) \cdot \left( n - 2 \right) \cdot n \\
+        & \leq \left( \frac{1 + 2 + \ldots + \left( n - 2 \right) + \left( n - 1 \right) + n}{n} \right)^{n} \\
+        & = \left( \frac{n \cdot \left( n + 1 \right)}{2n} \right)^{n} \\
+        & = \left( \frac{n + 1}{2} \right)^{n}.
+    \end{align*}
+\end{frame}
+% ============================================================
+
+\end{document}
