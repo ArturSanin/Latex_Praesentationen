@@ -1,0 +1,327 @@
+\documentclass[10pt]{beamer}
+
+\title{}
+\author{Artur's \( \oint \) Mathematikstübchen}
+\date{}
+
+
+% ===== Packages =========
+\usepackage[utf8]{inputenc}
+
+\usepackage[natbibapa]{apacite}
+\bibliographystyle{apacite}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{MnSymbol}
+\usepackage{enumitem}
+\usepackage{amsthm}
+\usepackage{mleftright}
+\usepackage{dsfont}
+\usepackage{tikz-cd}
+
+
+\def\bD{\mathbb{D}}               
+\def\bE{\mathbb{E}}
+\def\bG{\mathbb{G}}
+\def\bN{\mathbb{N}}
+\def\bP{\mathbb{P}}
+\def\bQ{\mathbb{Q}}
+\def\bR{\mathbb{R}}
+\def\bBarR{\bar{\mathbb{R}}}
+\def\bY{\mathbb{Y}}
+
+
+
+\def\mA{\mathcal{A}}
+\def\mB{\mathcal{B}}
+\def\mD{\mathcal{D}}
+\def\mE{\mathcal{E}}
+\def\mF{\mathcal{F}}
+\def\mG{\mathcal{G}}
+\def\mH{\mathcal{H}}
+\def\mL{\mathcal{L}}
+\def\mN{\mathcal{N}}
+\def\mP{\mathcal{P}}
+\def\mS{\mathcal{S}}
+\def\mT{\mathcal{T}}
+\def\mX{\mathcal{X}}
+\def\mY{\mathcal{Y}}
+
+
+
+\usetheme{Madrid}
+
+
+
+% ======================== Beginn Document ========================
+
+\begin{document}
+
+
+
+
+
+% ======================== Begrüßung ==================
+
+\begin{frame}
+    \begin{center}
+        \textbf{\huge Willkommen in der guten Stube \newline \newline :D}
+    \end{center}
+\end{frame}
+% =====================================================
+
+
+
+% ======================== Präsentation ==================
+
+\begin{frame}
+    \begin{alertblock}{Aufgabe}
+        Man zeige, für alle \( n \in \bN_{0} \) gilt:
+        \begin{align*}
+            \Gamma\left( \frac{1}{2} - n \right)
+            = \frac{\left( - 4 \right)^{n} \cdot n!}{\left( 2n \right)!} \cdot \sqrt{\pi}.
+        \end{align*}
+    \end{alertblock}
+\end{frame}
+
+
+
+\begin{frame}{Eigenschaften}
+    
+\end{frame}
+
+
+
+\begin{frame}{Eigenschaften}
+    Für den Beweis verwenden wir die folgenden Eigenschaften der Gammafunktion:
+\end{frame}
+
+
+
+\begin{frame}{Eigenschaften}
+    Für den Beweis verwenden wir die folgenden Eigenschaften der Gammafunktion:
+    \begin{itemize}
+        \item<1-> 1. \( \Gamma\left( \frac{1}{2} \right) = \sqrt{\pi} \).
+        \item<2->  2. Für alle \( x \in \bR \setminus \left\{ 0, -1, -2, \ldots \right\} \) gilt: \( \Gamma\left( x \right) = \frac{\Gamma\left( x + 1 \right)}{x} \).
+    \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+ 
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Wir führen den Beweis mittels vollständiger Induktion. 
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Wir führen den Beweis mittels vollständiger Induktion.
+
+    \textbf{Induktionsanfang:}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Wir führen den Beweis mittels vollständiger Induktion.
+
+    \textbf{Induktionsanfang:}
+
+    Für \( n = 0 \) gilt:
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Wir führen den Beweis mittels vollständiger Induktion.
+
+    \textbf{Induktionsanfang:}
+    
+    Für \( n = 0 \) gilt:
+    \begin{align*}
+        \Gamma\left( \frac{1}{2} - 0 \right)
+        = \Gamma\left( \frac{1}{2} \right) 
+        = \sqrt{\pi}.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Wir führen den Beweis mittels vollständiger Induktion.
+
+    \textbf{Induktionsanfang:}
+    
+    Für \( n = 0 \) gilt:
+    \begin{align*}
+        \Gamma\left( \frac{1}{2} - 0 \right)
+        = \Gamma\left( \frac{1}{2} \right) 
+        = \sqrt{\pi}.
+    \end{align*}
+    \textbf{Induktionsvoraussetzung:}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Wir führen den Beweis mittels vollständiger Induktion.
+
+    \textbf{Induktionsanfang:}
+    
+    Für \( n = 0 \) gilt:
+    \begin{align*}
+        \Gamma\left( \frac{1}{2} - 0 \right)
+        = \Gamma\left( \frac{1}{2} \right) 
+        = \sqrt{\pi}.
+    \end{align*}
+    \textbf{Induktionsvoraussetzung:}
+
+    Angenommen für ein \( n \in \bN_{0} \) gelte:
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Wir führen den Beweis mittels vollständiger Induktion.
+
+    \textbf{Induktionsanfang:}
+    
+    Für \( n = 0 \) gilt:
+    \begin{align*}
+        \Gamma\left( \frac{1}{2} - 0 \right)
+        = \Gamma\left( \frac{1}{2} \right) 
+        = \sqrt{\pi}.
+    \end{align*}
+    \textbf{Induktionsvoraussetzung:}
+
+    Angenommen für ein \( n \in \bN_{0} \) gelte:
+    \begin{align*}
+        \Gamma\left( \frac{1}{2} - n \right)
+        = \frac{\left( - 4 \right)^{n} \cdot n!}{\left( 2n \right)!} \cdot \sqrt{\pi}.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    \textbf{Induktionsschritt:}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    \textbf{Induktionsschritt:}
+
+    Dann folgt für \( \left( n + 1 \right) \):
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    \textbf{Induktionsschritt:}
+
+    Dann folgt für \( \left( n + 1 \right) \):
+    \begin{align*}
+        \Gamma\left( \frac{1}{2} - n - 1  \right)
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    \textbf{Induktionsschritt:}
+
+    Dann folgt für \( \left( n + 1 \right) \):
+    \begin{align*}
+        \Gamma\left( \frac{1}{2} - n - 1  \right)
+        & = \frac{\Gamma\left( \frac{1}{2} - n \right)}{\frac{1}{2} - n - 1}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    \textbf{Induktionsschritt:}
+
+    Dann folgt für \( \left( n + 1 \right) \):
+    \begin{align*}
+        \Gamma\left( \frac{1}{2} - n - 1  \right)
+        & = \frac{\Gamma\left( \frac{1}{2} - n \right)}{\frac{1}{2} - n - 1} \\
+        & = \left( - 2 \right) \cdot \frac{\Gamma\left( \frac{1}{2} - n \right)}{2n + 1}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    \textbf{Induktionsschritt:}
+
+    Dann folgt für \( \left( n + 1 \right) \):
+    \begin{align*}
+        \Gamma\left( \frac{1}{2} - n - 1  \right)
+        & = \frac{\Gamma\left( \frac{1}{2} - n \right)}{\frac{1}{2} - n - 1} \\
+        & = \left( - 2 \right) \cdot \frac{\Gamma\left( \frac{1}{2} - n \right)}{2n + 1} \\
+        & = \left( - 2 \right) \cdot \frac{\left( - 4 \right)^{n} \cdot n!}{\left( 2n + 1 \right) \cdot \left( 2n \right)!} \cdot \sqrt{\pi}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    \textbf{Induktionsschritt:}
+
+    Dann folgt für \( \left( n + 1 \right) \):
+    \begin{align*}
+        \Gamma\left( \frac{1}{2} - n - 1  \right)
+        & = \frac{\Gamma\left( \frac{1}{2} - n \right)}{\frac{1}{2} - n - 1} \\
+        & = \left( - 2 \right) \cdot \frac{\Gamma\left( \frac{1}{2} - n \right)}{2n + 1} \\
+        & = \left( - 2 \right) \cdot \frac{\left( - 4 \right)^{n} \cdot n!}{\left( 2n + 1 \right) \cdot \left( 2n \right)!} \cdot \sqrt{\pi} \\
+        & = \left( - 2 \right) \cdot \frac{\left( 2n + 2 \right) \cdot \left( - 4 \right)^{n} \cdot n!}{\left( 2n + 2 \right) \cdot \left( 2n + 1 \right) \cdot \left( 2n \right)!} \cdot \sqrt{\pi}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    \textbf{Induktionsschritt:}
+
+    Dann folgt für \( \left( n + 1 \right) \):
+    \begin{align*}
+        \Gamma\left( \frac{1}{2} - n - 1  \right)
+        & = \frac{\Gamma\left( \frac{1}{2} - n \right)}{\frac{1}{2} - n - 1} \\
+        & = \left( - 2 \right) \cdot \frac{\Gamma\left( \frac{1}{2} - n \right)}{2n + 1} \\
+        & = \left( - 2 \right) \cdot \frac{\left( - 4 \right)^{n} \cdot n!}{\left( 2n + 1 \right) \cdot \left( 2n \right)!} \cdot \sqrt{\pi} \\
+        & = \left( - 2 \right) \cdot \frac{\left( 2n + 2 \right) \cdot \left( - 4 \right)^{n} \cdot n!}{\left( 2n + 2 \right) \cdot \left( 2n + 1 \right) \cdot \left( 2n \right)!} \cdot \sqrt{\pi} \\
+        & = \left( - 2 \right) \cdot \frac{2 \cdot \left( n + 1 \right) \cdot \left( - 4 \right)^{n} \cdot n!}{\left( 2n + 2 \right)!} \cdot \sqrt{\pi}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    \textbf{Induktionsschritt:}
+
+    Dann folgt für \( \left( n + 1 \right) \):
+    \begin{align*}
+        \Gamma\left( \frac{1}{2} - n - 1  \right)
+        & = \frac{\Gamma\left( \frac{1}{2} - n \right)}{\frac{1}{2} - n - 1} \\
+        & = \left( - 2 \right) \cdot \frac{\Gamma\left( \frac{1}{2} - n \right)}{2n + 1} \\
+        & = \left( - 2 \right) \cdot \frac{\left( - 4 \right)^{n} \cdot n!}{\left( 2n + 1 \right) \cdot \left( 2n \right)!} \cdot \sqrt{\pi} \\
+        & = \left( - 2 \right) \cdot \frac{\left( 2n + 2 \right) \cdot \left( - 4 \right)^{n} \cdot n!}{\left( 2n + 2 \right) \cdot \left( 2n + 1 \right) \cdot \left( 2n \right)!} \cdot \sqrt{\pi} \\
+        & = \left( - 2 \right) \cdot \frac{2 \cdot \left( n + 1 \right) \cdot \left( - 4 \right)^{n} \cdot n!}{\left( 2n + 2 \right)!} \cdot \sqrt{\pi} \\
+        & = \frac{\left( - 4 \right)^{n + 1} \cdot \left( n + 1 \right)!}{\left( 2n + 2 \right)!} \cdot \sqrt{\pi}.
+    \end{align*}
+\end{frame}
+% ============================================================
+
+\end{document}
