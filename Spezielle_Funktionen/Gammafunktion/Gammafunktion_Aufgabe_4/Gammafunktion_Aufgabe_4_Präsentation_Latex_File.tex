@@ -1,0 +1,260 @@
+\documentclass[10pt]{beamer}
+
+\title{}
+\author{Artur's \( \oint \) Mathematikstübchen}
+\date{}
+
+
+% ===== Packages =========
+\usepackage[utf8]{inputenc}
+
+\usepackage[natbibapa]{apacite}
+\bibliographystyle{apacite}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{MnSymbol}
+\usepackage{enumitem}
+\usepackage{amsthm}
+\usepackage{mleftright}
+\usepackage{dsfont}
+\usepackage{tikz-cd}
+
+
+\def\bC{\mathbb{C}}
+\def\bD{\mathbb{D}}               
+\def\bE{\mathbb{E}}
+\def\bG{\mathbb{G}}
+\def\bN{\mathbb{N}}
+\def\bP{\mathbb{P}}
+\def\bQ{\mathbb{Q}}
+\def\bR{\mathbb{R}}
+\def\bBarR{\bar{\mathbb{R}}}
+\def\bY{\mathbb{Y}}
+
+
+
+\def\mA{\mathcal{A}}
+\def\mB{\mathcal{B}}
+\def\mD{\mathcal{D}}
+\def\mE{\mathcal{E}}
+\def\mF{\mathcal{F}}
+\def\mG{\mathcal{G}}
+\def\mH{\mathcal{H}}
+\def\mL{\mathcal{L}}
+\def\mN{\mathcal{N}}
+\def\mP{\mathcal{P}}
+\def\mS{\mathcal{S}}
+\def\mT{\mathcal{T}}
+\def\mX{\mathcal{X}}
+\def\mY{\mathcal{Y}}
+
+
+
+\usetheme{Madrid}
+
+
+
+% ======================== Beginn Document ========================
+
+\begin{document}
+
+
+
+
+
+% ======================== Begrüßung ==================
+
+\begin{frame}
+    \begin{center}
+        \textbf{\huge Willkommen in der guten Stube \newline \newline :D}
+    \end{center}
+\end{frame}
+% =====================================================
+
+
+
+% ======================== Präsentation ==================
+
+\begin{frame}
+    \begin{alertblock}{Aufgabe}
+        Man zeige, für alle \( z \in \bC \setminus \left\{ 0, -1, -2, \ldots \right\} \):
+        \begin{align*}
+            \Gamma\left( z + 1 \right) 
+            = z \cdot \Gamma\left( z \right).
+        \end{align*}
+    \end{alertblock}
+\end{frame}
+
+
+
+\begin{frame}{Gauß'sche Darstellung der Gammafunktion}
+    
+\end{frame}
+
+
+
+\begin{frame}{Gauß'sche Darstellung der Gammafunktion}
+    Für den Beweis verwenden wir die Gauß'sche Darstellung der Gammafunktion:
+\end{frame}
+
+
+
+\begin{frame}{Gauß'sche Darstellung der Gammafunktion}
+    Für den Beweis verwenden wir die Gauß'sche Darstellung der Gammafunktion: 
+    \begin{align*}
+        \Gamma\left( z \right)
+        = \lim_{n \to \infty} \frac{n! n^{z}}{z \left( z + 1 \right) \left( z + 2 \right) \ldots \left( z + n \right)}, \quad z \in \bC \setminus \left\{ 0, -1, -2, \ldots \right\}.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+ 
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( z \in \bC \setminus \left\{ 0, -1, -2, \ldots \right\} \) eine komplexe Zahl. 
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( z \in \bC \setminus \left\{ 0, -1, -2, \ldots \right\} \) eine komplexe Zahl. Zunächst gilt: 
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( z \in \bC \setminus \left\{ 0, -1, -2, \ldots \right\} \) eine komplexe Zahl. Zunächst gilt:
+    \begin{align*}
+        \frac{n! n^{z + 1}}{\left( z + 1 \right) \left( z + 2 \right) \ldots \left( z + n \right) \left( z + 1 + n \right)}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( z \in \bC \setminus \left\{ 0, -1, -2, \ldots \right\} \) eine komplexe Zahl. Zunächst gilt:
+    \begin{align*}
+        \frac{n! n^{z + 1}}{\left( z + 1 \right) \left( z + 2 \right) \ldots \left( z + n \right) \left( z + 1 + n \right)}
+        & = \frac{n}{z + n + 1} \cdot \frac{n! n^{z}}{\left( z + 1 \right) \left( z + 2 \right) \ldots \left( z + n \right)}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( z \in \bC \setminus \left\{ 0, -1, -2, \ldots \right\} \) eine komplexe Zahl. Zunächst gilt:
+    \begin{align*}
+        \frac{n! n^{z + 1}}{\left( z + 1 \right) \left( z + 2 \right) \ldots \left( z + n \right) \left( z + 1 + n \right)}
+        & = \frac{n}{z + n + 1} \cdot \frac{n! n^{z}}{\left( z + 1 \right) \left( z + 2 \right) \ldots \left( z + n \right)} \\
+        & = \frac{n}{z + n + 1} \cdot z \cdot \frac{n! n^{z}}{z \left( z + 1 \right) \left( z + 2 \right) \ldots \left( z + n \right)}.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( z \in \bC \setminus \left\{ 0, -1, -2, \ldots \right\} \) eine komplexe Zahl. Zunächst gilt:
+    \begin{align*}
+        \frac{n! n^{z + 1}}{\left( z + 1 \right) \left( z + 2 \right) \ldots \left( z + n \right) \left( z + 1 + n \right)}
+        & = \frac{n}{z + n + 1} \cdot \frac{n! n^{z}}{\left( z + 1 \right) \left( z + 2 \right) \ldots \left( z + n \right)} \\
+        & = \frac{n}{z + n + 1} \cdot z \cdot \frac{n! n^{z}}{z \left( z + 1 \right) \left( z + 2 \right) \ldots \left( z + n \right)}.
+    \end{align*}
+    Damit folgt:
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( z \in \bC \setminus \left\{ 0, -1, -2, \ldots \right\} \) eine komplexe Zahl. Zunächst gilt:
+    \begin{align*}
+        \frac{n! n^{z + 1}}{\left( z + 1 \right) \left( z + 2 \right) \ldots \left( z + n \right) \left( z + 1 + n \right)}
+        & = \frac{n}{z + n + 1} \cdot \frac{n! n^{z}}{\left( z + 1 \right) \left( z + 2 \right) \ldots \left( z + n \right)} \\
+        & = \frac{n}{z + n + 1} \cdot z \cdot \frac{n! n^{z}}{z \left( z + 1 \right) \left( z + 2 \right) \ldots \left( z + n \right)}.
+    \end{align*}
+    Damit folgt:
+    \begin{align*}
+        \Gamma\left( z + 1 \right)
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( z \in \bC \setminus \left\{ 0, -1, -2, \ldots \right\} \) eine komplexe Zahl. Zunächst gilt:
+    \begin{align*}
+        \frac{n! n^{z + 1}}{\left( z + 1 \right) \left( z + 2 \right) \ldots \left( z + n \right) \left( z + 1 + n \right)}
+        & = \frac{n}{z + n + 1} \cdot \frac{n! n^{z}}{\left( z + 1 \right) \left( z + 2 \right) \ldots \left( z + n \right)} \\
+        & = \frac{n}{z + n + 1} \cdot z \cdot \frac{n! n^{z}}{z \left( z + 1 \right) \left( z + 2 \right) \ldots \left( z + n \right)}.
+    \end{align*}
+    Damit folgt:
+    \begin{align*}
+        \Gamma\left( z + 1 \right)
+        & = \lim_{n \to \infty} \frac{n! n^{z + 1}}{\left( z + 1 \right) \left( z + 2 \right) \ldots \left( z + n \right) \left( z + 1 + n \right)}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( z \in \bC \setminus \left\{ 0, -1, -2, \ldots \right\} \) eine komplexe Zahl. Zunächst gilt:
+    \begin{align*}
+        \frac{n! n^{z + 1}}{\left( z + 1 \right) \left( z + 2 \right) \ldots \left( z + n \right) \left( z + 1 + n \right)}
+        & = \frac{n}{z + n + 1} \cdot \frac{n! n^{z}}{\left( z + 1 \right) \left( z + 2 \right) \ldots \left( z + n \right)} \\
+        & = \frac{n}{z + n + 1} \cdot z \cdot \frac{n! n^{z}}{z \left( z + 1 \right) \left( z + 2 \right) \ldots \left( z + n \right)}.
+    \end{align*}
+    Damit folgt:
+    \begin{align*}
+        \Gamma\left( z + 1 \right)
+        & = \lim_{n \to \infty} \frac{n! n^{z + 1}}{\left( z + 1 \right) \left( z + 2 \right) \ldots \left( z + n \right) \left( z + 1 + n \right)} \\
+        & = \lim_{n \to \infty} \frac{n}{z + n + 1} \cdot z \cdot \frac{n! n^{z}}{z \left( z + 1 \right) \left( z + 2 \right) \ldots \left( z + n \right)}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( z \in \bC \setminus \left\{ 0, -1, -2, \ldots \right\} \) eine komplexe Zahl. Zunächst gilt:
+    \begin{align*}
+        \frac{n! n^{z + 1}}{\left( z + 1 \right) \left( z + 2 \right) \ldots \left( z + n \right) \left( z + 1 + n \right)}
+        & = \frac{n}{z + n + 1} \cdot \frac{n! n^{z}}{\left( z + 1 \right) \left( z + 2 \right) \ldots \left( z + n \right)} \\
+        & = \frac{n}{z + n + 1} \cdot z \cdot \frac{n! n^{z}}{z \left( z + 1 \right) \left( z + 2 \right) \ldots \left( z + n \right)}.
+    \end{align*}
+    Damit folgt:
+    \begin{align*}
+        \Gamma\left( z + 1 \right)
+        & = \lim_{n \to \infty} \frac{n! n^{z + 1}}{\left( z + 1 \right) \left( z + 2 \right) \ldots \left( z + n \right) \left( z + 1 + n \right)} \\
+        & = \lim_{n \to \infty} \frac{n}{z + n + 1} \cdot z \cdot \frac{n! n^{z}}{z \left( z + 1 \right) \left( z + 2 \right) \ldots \left( z + n \right)} \\
+        & = z \cdot \lim_{n \to \infty} \frac{n}{z + n + 1} \cdot \lim_{n \to \infty} \frac{n! n^{z}}{z \left( z + 1 \right) \left( z + 2 \right) \ldots \left( z + n \right)}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( z \in \bC \setminus \left\{ 0, -1, -2, \ldots \right\} \) eine komplexe Zahl. Zunächst gilt:
+    \begin{align*}
+        \frac{n! n^{z + 1}}{\left( z + 1 \right) \left( z + 2 \right) \ldots \left( z + n \right) \left( z + 1 + n \right)}
+        & = \frac{n}{z + n + 1} \cdot \frac{n! n^{z}}{\left( z + 1 \right) \left( z + 2 \right) \ldots \left( z + n \right)} \\
+        & = \frac{n}{z + n + 1} \cdot z \cdot \frac{n! n^{z}}{z \left( z + 1 \right) \left( z + 2 \right) \ldots \left( z + n \right)}.
+    \end{align*}
+    Damit folgt:
+    \begin{align*}
+        \Gamma\left( z + 1 \right)
+        & = \lim_{n \to \infty} \frac{n! n^{z + 1}}{\left( z + 1 \right) \left( z + 2 \right) \ldots \left( z + n \right) \left( z + 1 + n \right)} \\
+        & = \lim_{n \to \infty} \frac{n}{z + n + 1} \cdot z \cdot \frac{n! n^{z}}{z \left( z + 1 \right) \left( z + 2 \right) \ldots \left( z + n \right)} \\
+        & = z \cdot \lim_{n \to \infty} \frac{n}{z + n + 1} \cdot \lim_{n \to \infty} \frac{n! n^{z}}{z \left( z + 1 \right) \left( z + 2 \right) \ldots \left( z + n \right)} \\
+        & = z \cdot \Gamma\left( z \right).
+    \end{align*}
+\end{frame}
+% ============================================================
+
+\end{document}
