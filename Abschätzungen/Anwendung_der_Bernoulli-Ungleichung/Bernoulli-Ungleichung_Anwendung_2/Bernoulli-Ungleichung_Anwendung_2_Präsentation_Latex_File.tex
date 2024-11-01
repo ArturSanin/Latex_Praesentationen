@@ -1,0 +1,242 @@
+\documentclass[10pt]{beamer}
+
+\title{}
+\author{Artur's \( \oint \) Mathematikstübchen}
+\date{}
+
+
+% ===== Packages =========
+\usepackage[utf8]{inputenc}
+
+\usepackage[natbibapa]{apacite}
+\bibliographystyle{apacite}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{MnSymbol}
+\usepackage{enumitem}
+\usepackage{amsthm}
+\usepackage{mleftright}
+\usepackage{dsfont}
+\usepackage{tikz-cd}
+
+
+\def\bC{\mathbb{C}}
+\def\bD{\mathbb{D}}               
+\def\bE{\mathbb{E}}
+\def\bG{\mathbb{G}}
+\def\bN{\mathbb{N}}
+\def\bP{\mathbb{P}}
+\def\bQ{\mathbb{Q}}
+\def\bR{\mathbb{R}}
+\def\bBarR{\bar{\mathbb{R}}}
+\def\bY{\mathbb{Y}}
+
+
+
+\def\mA{\mathcal{A}}
+\def\mB{\mathcal{B}}
+\def\mD{\mathcal{D}}
+\def\mE{\mathcal{E}}
+\def\mF{\mathcal{F}}
+\def\mG{\mathcal{G}}
+\def\mH{\mathcal{H}}
+\def\mL{\mathcal{L}}
+\def\mN{\mathcal{N}}
+\def\mP{\mathcal{P}}
+\def\mS{\mathcal{S}}
+\def\mT{\mathcal{T}}
+\def\mX{\mathcal{X}}
+\def\mY{\mathcal{Y}}
+
+
+
+\usetheme{Madrid}
+
+
+
+% ======================== Beginn Document ========================
+
+\begin{document}
+
+
+
+
+
+% ======================== Begrüßung ==================
+
+\begin{frame}
+    \begin{center}
+        \textbf{\huge Willkommen in der guten Stube \newline \newline :D}
+    \end{center}
+\end{frame}
+% =====================================================
+
+
+
+% ======================== Präsentation ==================
+
+\begin{frame}
+    \begin{alertblock}{Aufgabe}
+        Sei \( x > 0 \) eine beliebige positive reelle Zahl. Man zeige für alle \( n \in \bN \) die Gültigkeit der Abschätzung:
+        \begin{align*}
+            \frac{n}{x} + x^{n}
+            \geq n + 1.
+        \end{align*}
+    \end{alertblock}
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    \begin{block}{Bernoulli-Ungleichung}
+        Für alle \( x \in \bR \) mit \( x \geq - 1 \) und alle \( n \in \bN_{0} \) gilt die Abschätzung:
+        \begin{align*}
+            \left( 1 + x \right)^{n}
+            \geq 1 + n \cdot x.
+        \end{align*}
+    \end{block}
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    \begin{block}{Bernoulli-Ungleichung}
+        Für alle \( x \in \bR \) mit \( x \geq - 1 \) und alle \( n \in \bN_{0} \) gilt die Abschätzung:
+        \begin{align*}
+            \left( 1 + x \right)^{n}
+            \geq 1 + n \cdot x.
+        \end{align*}
+    \end{block}
+    Weiter gilt für alle \( x > 0 \) die Abschätzung:
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    \begin{block}{Bermoulli-Ungleichung}
+        Für alle \( x \in \bR \) mit \( x \geq - 1 \) und alle \( n \in \bN_{0} \) gilt die Abschätzung:
+        \begin{align*}
+            \left( 1 + x \right)^{n}
+            \geq 1 + n \cdot x.
+        \end{align*}
+    \end{block}
+    Weiter gilt für alle \( x > 0 \) die Abschätzung:
+    \begin{align*}
+        x + \frac{1}{x} 
+        \geq 2.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( x > 0 \) eine positive reelle Zahl und \( n \in \bN \) eine natürliche Zahl.
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( x > 0 \) eine positive reelle Zahl und \( n \in \bN \) eine natürliche Zahl. Dann gilt:
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( x > 0 \) eine positive reelle Zahl und \( n \in \bN \) eine natürliche Zahl. Dann gilt:
+    \begin{align*}
+        \frac{n}{x} + x^{n}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( x > 0 \) eine positive reelle Zahl und \( n \in \bN \) eine natürliche Zahl. Dann gilt:
+    \begin{align*}
+        \frac{n}{x} + x^{n}
+        & = \frac{n}{x} + \left(1 + x - 1 \right)^{n}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( x > 0 \) eine positive reelle Zahl und \( n \in \bN \) eine natürliche Zahl. Dann gilt:
+    \begin{align*}
+        \frac{n}{x} + x^{n}
+        & = \frac{n}{x} + \left(1 + x - 1 \right)^{n} \\
+        & \geq \frac{n}{x} + 1 + n \cdot \left(x - 1 \right)
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( x > 0 \) eine positive reelle Zahl und \( n \in \bN \) eine natürliche Zahl. Dann gilt:
+    \begin{align*}
+        \frac{n}{x} + x^{n}
+        & = \frac{n}{x} + \left(1 + x - 1 \right)^{n} \\
+        & \geq \frac{n}{x} + 1 + n \cdot \left(x - 1 \right) \\
+        & = \frac{n}{x} + n \cdot x - n + 1
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( x > 0 \) eine positive reelle Zahl und \( n \in \bN \) eine natürliche Zahl. Dann gilt:
+    \begin{align*}
+        \frac{n}{x} + x^{n}
+        & = \frac{n}{x} + \left(1 + x - 1 \right)^{n} \\
+        & \geq \frac{n}{x} + 1 + n \cdot \left(x - 1 \right) \\
+        & = \frac{n}{x} + n \cdot x - n + 1 \\
+        & = \left( \frac{1}{x} + x \right) \cdot n - n + 1
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( x > 0 \) eine positive reelle Zahl und \( n \in \bN \) eine natürliche Zahl. Dann gilt:
+    \begin{align*}
+        \frac{n}{x} + x^{n}
+        & = \frac{n}{x} + \left(1 + x - 1 \right)^{n} \\
+        & \geq \frac{n}{x} + 1 + n \cdot \left(x - 1 \right) \\
+        & = \frac{n}{x} + n \cdot x - n + 1 \\
+        & = \left( \frac{1}{x} + x \right) \cdot n - n + 1 \\
+        & \geq 2 \cdot n - n + 1
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( x > 0 \) eine positive reelle Zahl und \( n \in \bN \) eine natürliche Zahl. Dann gilt:
+    \begin{align*}
+        \frac{n}{x} + x^{n}
+        & = \frac{n}{x} + \left(1 + x - 1 \right)^{n} \\
+        & \geq \frac{n}{x} + 1 + n \cdot \left(x - 1 \right) \\
+        & = \frac{n}{x} + n \cdot x - n + 1 \\
+        & = \left( \frac{1}{x} + x \right) \cdot n - n + 1 \\
+        & \geq 2 \cdot n - n + 1 \\
+        & = n + 1.
+    \end{align*}
+\end{frame}
+% ============================================================
+\end{document}
