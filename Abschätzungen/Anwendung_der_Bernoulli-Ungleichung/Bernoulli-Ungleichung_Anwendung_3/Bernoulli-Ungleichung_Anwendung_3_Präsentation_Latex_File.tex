@@ -1,0 +1,258 @@
+\documentclass[10pt]{beamer}
+
+\title{}
+\author{Artur's \( \oint \) Mathematikstübchen}
+\date{}
+
+
+% ===== Packages =========
+\usepackage[utf8]{inputenc}
+
+\usepackage[natbibapa]{apacite}
+\bibliographystyle{apacite}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{MnSymbol}
+\usepackage{enumitem}
+\usepackage{amsthm}
+\usepackage{mleftright}
+\usepackage{dsfont}
+\usepackage{tikz-cd}
+
+
+\def\bC{\mathbb{C}}
+\def\bD{\mathbb{D}}               
+\def\bE{\mathbb{E}}
+\def\bG{\mathbb{G}}
+\def\bN{\mathbb{N}}
+\def\bP{\mathbb{P}}
+\def\bQ{\mathbb{Q}}
+\def\bR{\mathbb{R}}
+\def\bBarR{\bar{\mathbb{R}}}
+\def\bY{\mathbb{Y}}
+
+
+
+\def\mA{\mathcal{A}}
+\def\mB{\mathcal{B}}
+\def\mD{\mathcal{D}}
+\def\mE{\mathcal{E}}
+\def\mF{\mathcal{F}}
+\def\mG{\mathcal{G}}
+\def\mH{\mathcal{H}}
+\def\mL{\mathcal{L}}
+\def\mN{\mathcal{N}}
+\def\mP{\mathcal{P}}
+\def\mS{\mathcal{S}}
+\def\mT{\mathcal{T}}
+\def\mX{\mathcal{X}}
+\def\mY{\mathcal{Y}}
+
+
+
+\usetheme{Madrid}
+
+
+
+% ======================== Beginn Document ========================
+
+\begin{document}
+
+
+
+
+
+% ======================== Begrüßung ==================
+
+\begin{frame}
+    \begin{center}
+        \textbf{\huge Willkommen in der guten Stube \newline \newline :D}
+    \end{center}
+\end{frame}
+% =====================================================
+
+
+
+% ======================== Präsentation ==================
+
+\begin{frame}
+    \begin{alertblock}{Aufgabe}
+        Sei \( 0 < x < 1 \) eine reelle Zahl. Man zeige für alle \( n \in \bN \) die Gültigkeit der Abschätzung:
+        \begin{align*}
+            \left( 1 - x \right)^{n}
+            < \frac{1}{1 + nx}.
+        \end{align*}
+    \end{alertblock}
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    \begin{block}{Bernoulli-Ungleichung}
+        Für alle \( x \in \bR \) mit \( x \geq - 1 \) und alle \( n \in \bN_{0} \) gilt die Abschätzung:
+        \begin{align*}
+            \left( 1 + x \right)^{n}
+            \geq 1 + n \cdot x.
+        \end{align*}
+    \end{block}
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    \begin{block}{Bernoulli-Ungleichung}
+        Für alle \( x \in \bR \) mit \( x \geq - 1 \) und alle \( n \in \bN_{0} \) gilt die Abschätzung:
+        \begin{align*}
+            \left( 1 + x \right)^{n}
+            \geq 1 + n \cdot x.
+        \end{align*}
+    \end{block}
+    Weiter gilt für alle \( 0 < x < 1 \) die Abschätzung:
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    \begin{block}{Bernoulli-Ungleichung}
+        Für alle \( x \in \bR \) mit \( x \geq - 1 \) und alle \( n \in \bN_{0} \) gilt die Abschätzung:
+        \begin{align*}
+            \left( 1 + x \right)^{n}
+            \geq 1 + n \cdot x.
+        \end{align*}
+    \end{block}
+    Weiter gilt für  \( 0 < x < 1 \) die Abschätzung:
+    \begin{align*}
+        \frac{1}{1 - x} 
+        > 1.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( 0 < x < 1 \) eine reelle Zahl und \( n \in \bN \) eine natürliche Zahl.
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( 0 < x < 1 \) eine reelle Zahl und \( n \in \bN \) eine natürliche Zahl. Dann gilt:
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( 0 < x < 1 \) eine reelle Zahl und \( n \in \bN \) eine natürliche Zahl. Dann gilt:
+    \begin{align*}
+        \left( 1 - x \right)^{n}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( 0 < x < 1 \) eine reelle Zahl und \( n \in \bN \) eine natürliche Zahl. Dann gilt:
+    \begin{align*}
+        \left( 1 - x \right)^{n}
+        & = \left( \frac{1}{\frac{1}{1 - x}} \right)^{n}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( 0 < x < 1 \) eine reelle Zahl und \( n \in \bN \) eine natürliche Zahl. Dann gilt:
+    \begin{align*}
+        \left( 1 - x \right)^{n}
+        & = \left( \frac{1}{\frac{1}{1 - x}} \right)^{n} \\
+        & = \frac{1}{\left( \frac{1}{1 - x} \right)^{n}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( 0 < x < 1 \) eine reelle Zahl und \( n \in \bN \) eine natürliche Zahl. Dann gilt:
+    \begin{align*}
+        \left( 1 - x \right)^{n} 
+        & = \left( \frac{1}{\frac{1}{1 - x}} \right)^{n} \\
+        & = \frac{1}{\left( \frac{1}{1 - x} \right)^{n}} \\
+        & = \frac{1}{\left( 1 + \frac{1}{1 - x} - 1 \right)^{n}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( 0 < x < 1 \) eine reelle Zahl und \( n \in \bN \) eine natürliche Zahl. Dann gilt:
+    \begin{align*}
+        \left( 1 - x \right)^{n} 
+        & = \left( \frac{1}{\frac{1}{1 - x}} \right)^{n} \\
+        & = \frac{1}{\left( \frac{1}{1 - x} \right)^{n}} \\
+        & = \frac{1}{\left( 1 + \frac{1}{1 - x} - 1 \right)^{n}} \\
+        & \leq \frac{1}{1 + n \cdot \left( \frac{1}{1 - x} - 1 \right)}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( 0 < x < 1 \) eine reelle Zahl und \( n \in \bN \) eine natürliche Zahl. Dann gilt:
+    \begin{align*}
+        \left( 1 - x \right)^{n} 
+        & = \left( \frac{1}{\frac{1}{1 - x}} \right)^{n} \\
+        & = \frac{1}{\left( \frac{1}{1 - x} \right)^{n}} \\
+        & = \frac{1}{\left( 1 + \frac{1}{1 - x} - 1 \right)^{n}} \\
+        & \leq \frac{1}{1 + n \cdot \left( \frac{1}{1 - x} - 1 \right)} \\
+        & = \frac{1}{1 + n \cdot \frac{x}{1 - x}}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( 0 < x < 1 \) eine reelle Zahl und \( n \in \bN \) eine natürliche Zahl. Dann gilt:
+    \begin{align*}
+        \left( 1 - x \right)^{n} 
+        & = \left( \frac{1}{\frac{1}{1 - x}} \right)^{n} \\
+        & = \frac{1}{\left( \frac{1}{1 - x} \right)^{n}} \\
+        & = \frac{1}{\left( 1 + \frac{1}{1 - x} - 1 \right)^{n}} \\
+        & \leq \frac{1}{1 + n \cdot \left( \frac{1}{1 - x} - 1 \right)} \\
+        & = \frac{1}{1 + n \cdot \frac{x}{1 - x}} \\
+        & = \frac{1}{1 + \frac{1}{1 - x} \cdot n \cdot x}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( 0 < x < 1 \) eine reelle Zahl und \( n \in \bN \) eine natürliche Zahl. Dann gilt:
+    \begin{align*}
+        \left( 1 - x \right)^{n} 
+        & = \left( \frac{1}{\frac{1}{1 - x}} \right)^{n} \\
+        & = \frac{1}{\left( \frac{1}{1 - x} \right)^{n}} \\
+        & = \frac{1}{\left( 1 + \frac{1}{1 - x} - 1 \right)^{n}} \\
+        & \leq \frac{1}{1 + n \cdot \left( \frac{1}{1 - x} - 1 \right)} \\
+        & = \frac{1}{1 + n \cdot \frac{x}{1 - x}} \\
+        & = \frac{1}{1 + \frac{1}{1 - x} \cdot n \cdot x} \\
+        & < \frac{1}{1 + nx}.
+    \end{align*}
+\end{frame}
+% ============================================================
+\end{document}
