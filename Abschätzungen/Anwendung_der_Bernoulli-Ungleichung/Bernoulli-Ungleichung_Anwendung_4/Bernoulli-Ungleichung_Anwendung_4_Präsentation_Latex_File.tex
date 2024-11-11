@@ -1,0 +1,295 @@
+\documentclass[10pt]{beamer}
+
+\title{}
+\author{Artur's \( \oint \) Mathematikstübchen}
+\date{}
+
+
+% ===== Packages =========
+\usepackage[utf8]{inputenc}
+
+\usepackage[natbibapa]{apacite}
+\bibliographystyle{apacite}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{MnSymbol}
+\usepackage{enumitem}
+\usepackage{amsthm}
+\usepackage{mleftright}
+\usepackage{dsfont}
+\usepackage{tikz-cd}
+
+
+\def\bC{\mathbb{C}}
+\def\bD{\mathbb{D}}               
+\def\bE{\mathbb{E}}
+\def\bG{\mathbb{G}}
+\def\bN{\mathbb{N}}
+\def\bP{\mathbb{P}}
+\def\bQ{\mathbb{Q}}
+\def\bR{\mathbb{R}}
+\def\bBarR{\bar{\mathbb{R}}}
+\def\bY{\mathbb{Y}}
+
+
+
+\def\mA{\mathcal{A}}
+\def\mB{\mathcal{B}}
+\def\mD{\mathcal{D}}
+\def\mE{\mathcal{E}}
+\def\mF{\mathcal{F}}
+\def\mG{\mathcal{G}}
+\def\mH{\mathcal{H}}
+\def\mL{\mathcal{L}}
+\def\mN{\mathcal{N}}
+\def\mP{\mathcal{P}}
+\def\mS{\mathcal{S}}
+\def\mT{\mathcal{T}}
+\def\mX{\mathcal{X}}
+\def\mY{\mathcal{Y}}
+
+
+
+\usetheme{Madrid}
+
+
+
+% ======================== Beginn Document ========================
+
+\begin{document}
+
+
+
+
+
+% ======================== Begrüßung ==================
+
+\begin{frame}
+    \begin{center}
+        \textbf{\huge Willkommen in der guten Stube \newline \newline :D}
+    \end{center}
+\end{frame}
+% =====================================================
+
+
+
+% ======================== Präsentation ==================
+
+\begin{frame}
+    \begin{alertblock}{Aufgabe}
+        Sei \( x \in \bR \) eine beliebige reelle Zahl. Man zeige die Gültigkeit der Abschätzung:
+        \begin{align*}
+            e^{x}
+            \geq 1 + x.
+        \end{align*}
+    \end{alertblock}
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    \begin{block}{Bernoulli-Ungleichung}
+        Für alle \( x \in \bR \) mit \( x \geq - 1 \) und alle \( n \in \bN_{0} \) gilt die Abschätzung:
+        \begin{align*}
+            \left( 1 + x \right)^{n}
+            \geq 1 + n \cdot x.
+        \end{align*}
+    \end{block}
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    \begin{block}{Bernoulli-Ungleichung}
+        Für alle \( x \in \bR \) mit \( x \geq - 1 \) und alle \( n \in \bN_{0} \) gilt die Abschätzung:
+        \begin{align*}
+            \left( 1 + x \right)^{n}
+            \geq 1 + n \cdot x.
+        \end{align*}
+    \end{block}
+    Weiter gilt für alle \( x \in \bR \) die folgende Grenzwert-Darstellung der Exponentialfunktion:
+\end{frame}
+
+
+
+\begin{frame}{Hilfsabschätzung}
+    \begin{block}{Bernoulli-Ungleichung}
+        Für alle \( x \in \bR \) mit \( x \geq - 1 \) und alle \( n \in \bN_{0} \) gilt die Abschätzung:
+        \begin{align*}
+            \left( 1 + x \right)^{n}
+            \geq 1 + n \cdot x.
+        \end{align*}
+    \end{block}
+    Weiter gilt für alle \( x \in \bR \) die folgende Grenzwert-Darstellung der Exponentialfunktion:
+    \begin{align*}
+        e^{x} 
+        & = \lim_{n \to \infty} \left( 1 + \frac{x}{n} \right)^{n}.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( x \in \bR \) eine beliebige reelle Zahl.
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( x \in \bR \) eine beliebige reelle Zahl. Es gilt:
+    \begin{align*}
+        \lim_{n \to \infty} \frac{x}{n} = 0. 
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( x \in \bR \) eine beliebige reelle Zahl. Es gilt:
+    \begin{align*}
+        \lim_{n \to \infty} \frac{x}{n} = 0. 
+    \end{align*}
+    Hieraus folgt die Existenz einer natürlichen Zahl \( n_{0}(x) \in \bN \), so dass für jedes \( n \in \bN \) mit \( n \geq n_{0}(x) \) gilt:
+    \begin{align*}
+        \frac{x}{n} 
+        \geq - 1.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( x \in \bR \) eine beliebige reelle Zahl. Es gilt:
+    \begin{align*}
+        \lim_{n \to \infty} \frac{x}{n} = 0. 
+    \end{align*}
+    Hieraus folgt die Existenz einer natürlichen Zahl \( n_{0}(x) \in \bN \), so dass für jedes \( n \in \bN \) mit \( n \geq n_{0}(x) \) gilt:
+    \begin{align*}
+        \frac{x}{n} 
+        \geq - 1.
+    \end{align*}
+    Für jedes solche \( n \) gilt zusammen mit der Bernoulli-Ungleichung:
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( x \in \bR \) eine beliebige reelle Zahl. Es gilt:
+    \begin{align*}
+        \lim_{n \to \infty} \frac{x}{n} = 0. 
+    \end{align*}
+    Hieraus folgt die Existenz einer natürlichen Zahl \( n_{0}(x) \in \bN \), so dass für jedes \( n \in \bN \) mit \( n \geq n_{0}(x) \) gilt:
+    \begin{align*}
+        \frac{x}{n} 
+        \geq - 1.
+    \end{align*}
+    Für jedes solche \( n \) gilt zusammen mit der Bernoulli-Ungleichung:
+    \begin{align*}
+        \left( 1 + \frac{x}{n} \right)^{n}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( x \in \bR \) eine beliebige reelle Zahl. Es gilt:
+    \begin{align*}
+        \lim_{n \to \infty} \frac{x}{n} = 0. 
+    \end{align*}
+    Hieraus folgt die Existenz einer natürlichen Zahl \( n_{0}(x) \in \bN \), so dass für jedes \( n \in \bN \) mit \( n \geq n_{0}(x) \) gilt:
+    \begin{align*}
+        \frac{x}{n} 
+        \geq - 1.
+    \end{align*}
+    Für jedes solche \( n \) gilt zusammen mit der Bernoulli-Ungleichung:
+    \begin{align*}
+        \left( 1 + \frac{x}{n} \right)^{n}
+        & \geq 1 + n \cdot \frac{x}{n}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( x \in \bR \) eine beliebige reelle Zahl. Es gilt:
+    \begin{align*}
+        \lim_{n \to \infty} \frac{x}{n} = 0. 
+    \end{align*}
+    Hieraus folgt die Existenz einer natürlichen Zahl \( n_{0}(x) \in \bN \), so dass für jedes \( n \in \bN \) mit \( n \geq n_{0}(x) \) gilt:
+    \begin{align*}
+        \frac{x}{n} 
+        \geq - 1.
+    \end{align*}
+    Für jedes solche \( n \) gilt zusammen mit der Bernoulli-Ungleichung:
+    \begin{align*}
+        \left( 1 + \frac{x}{n} \right)^{n}
+        & \geq 1 + n \cdot \frac{x}{n} \\
+        & = 1 + x.
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Aus der Betrachtung \( n \to \infty \) folgt:
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Aus der Betrachtung \( n \to \infty \) folgt:
+    \begin{align*}
+        e^{x}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Aus der Betrachtung \( n \to \infty \) folgt:
+    \begin{align*}
+        e^{x}
+        & = \lim_{n \to \infty} \left( 1 + \frac{x}{n} \right)^{n}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Aus der Betrachtung \( n \to \infty \) folgt:
+    \begin{align*}
+        e^{x}
+        & = \lim_{n \to \infty} \left( 1 + \frac{x}{n} \right)^{n} \\
+        & \geq \lim_{n \to \infty} \left( 1 + x \right)
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Aus der Betrachtung \( n \to \infty \) folgt:
+    \begin{align*}
+        e^{x}
+        & = \lim_{n \to \infty} \left( 1 + \frac{x}{n} \right)^{n} \\
+        & \geq \lim_{n \to \infty} \left( 1 + x \right) \\
+        & = 1 + x.
+    \end{align*}
+\end{frame}
+% ============================================================
+\end{document}
