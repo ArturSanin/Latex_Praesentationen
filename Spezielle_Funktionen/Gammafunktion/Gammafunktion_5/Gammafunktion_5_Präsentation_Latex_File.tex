@@ -1,0 +1,278 @@
+\documentclass[10pt]{beamer}
+
+\title{}
+\author{Artur's \( \oint \) Mathematikstübchen}
+\date{}
+
+
+% ===== Packages =========
+\usepackage[utf8]{inputenc}
+
+\usepackage[natbibapa]{apacite}
+\bibliographystyle{apacite}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{MnSymbol}
+\usepackage{enumitem}
+\usepackage{amsthm}
+\usepackage{mleftright}
+\usepackage{dsfont}
+\usepackage{tikz-cd}
+\usepackage{physics}
+
+
+\def\bC{\mathbb{C}}
+\def\bD{\mathbb{D}}               
+\def\bE{\mathbb{E}}
+\def\bG{\mathbb{G}}
+\def\bN{\mathbb{N}}
+\def\bP{\mathbb{P}}
+\def\bQ{\mathbb{Q}}
+\def\bR{\mathbb{R}}
+\def\bBarR{\bar{\mathbb{R}}}
+\def\bY{\mathbb{Y}}
+
+
+
+\def\mA{\mathcal{A}}
+\def\mB{\mathcal{B}}
+\def\mD{\mathcal{D}}
+\def\mE{\mathcal{E}}
+\def\mF{\mathcal{F}}
+\def\mG{\mathcal{G}}
+\def\mH{\mathcal{H}}
+\def\mL{\mathcal{L}}
+\def\mN{\mathcal{N}}
+\def\mP{\mathcal{P}}
+\def\mS{\mathcal{S}}
+\def\mT{\mathcal{T}}
+\def\mX{\mathcal{X}}
+\def\mY{\mathcal{Y}}
+
+
+
+\usetheme{Madrid}
+
+
+
+% ======================== Beginn Document ========================
+
+\begin{document}
+
+
+
+
+
+% ======================== Begrüßung ==================
+
+\begin{frame}
+    \begin{center}
+        \textbf{\huge Willkommen in der guten Stube \newline \newline :D}
+    \end{center}
+\end{frame}
+% =====================================================
+
+
+
+% ======================== Präsentation ==================
+
+\begin{frame}
+    \begin{alertblock}{Aufgabe}
+        Man zeige, für alle \( z \in \bC \) mit \( Re(z) > 0 \) die Gültigkeit der folgenden Abschätzung:
+        \begin{align*}
+            \left\vert \Gamma( z ) \right\vert
+            \leq \Gamma( Re( z ) ).
+        \end{align*}
+    \end{alertblock}
+\end{frame}
+
+
+
+\begin{frame}{Hilfsmittel}
+    
+\end{frame}
+
+
+
+\begin{frame}{Hilfsmittel}
+    Für den Beweis verwenden wir folgende Hilfsmittel:
+\end{frame}
+
+
+
+\begin{frame}{Hilfsmittel}
+    Für den Beweis verwenden wir folgende Hilfsmittel:
+    \begin{itemize}
+        \item<1->  1. Für alle \( z \in \bC \) mit \( Re( z ) > 0 \) gilt: \( \Gamma( z ) = \int_{0}^{\infty} t^{z - 1} e^{-t} \dd{t} \).
+        \item<2->  2. Es gilt die Dreiecksungleichung für Integrale: \( \left\vert \int f( z ) \dd{z} \right\vert \leq \int \left\vert f( z ) \right\vert \dd{z} \).
+        \item<3->  3. Für alle \( w, z \in \bC \) gilt: \( e^{w + z} = e^{w} \cdot e^{z} \).
+        \item<4->  4. Für \( a > 0 \) und \( z \in \bC \) ist: \( a^{z} = e^{z \ln(a)} \). Insbesondere ist für alle \( w, z \in \bC \)
+        \begin{align*}
+            a^{w + z} 
+            & = e^{\left( w + z \right) \ln(a)} \\
+            & = e^{w \ln(a) + z \ln(a)} \\
+            & = e^{w \ln(a)} \cdot e^{z \ln(a)} \\
+            & = a^{w} \cdot a^{z}.
+        \end{align*}
+        \item<5->  5. Für \( x \in \bR \) gilt: \( \left\vert e^{i \cdot x} \right\vert = 1 \). Daraus folgt für \( a > 0 \) und \( x \in \bR \) \( \left\vert a^{i \cdot x} \right\vert = 1 \).
+    \end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( z \in \bC \) eine komplexe Zahl mit \( Re(z) > 0 \).
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( z \in \bC \) eine komplexe Zahl mit \( Re(z) > 0 \). Dann gilt:
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( z \in \bC \) eine komplexe Zahl mit \( Re(z) > 0 \). Dann gilt:
+    \begin{align*}
+        \left\vert \Gamma( z ) \right\vert
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( z \in \bC \) eine komplexe Zahl mit \( Re(z) > 0 \). Dann gilt:
+    \begin{align*}
+        \left\vert \Gamma( z ) \right\vert
+        & = \left\vert \int_{0}^{\infty} t^{z - 1} e^{-t} \dd{t} \right\vert
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( z \in \bC \) eine komplexe Zahl mit \( Re(z) > 0 \). Dann gilt:
+    \begin{align*}
+        \left\vert \Gamma( z ) \right\vert
+        & = \left\vert \int_{0}^{\infty} t^{z - 1} e^{-t} \dd{t} \right\vert \\
+        & \leq \int_{0}^{\infty} \left\vert t^{z - 1} e^{-t} \right\vert \dd{t}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( z \in \bC \) eine komplexe Zahl mit \( Re(z) > 0 \). Dann gilt:
+    \begin{align*}
+        \left\vert \Gamma( z ) \right\vert
+        & = \left\vert \int_{0}^{\infty} t^{z - 1} e^{-t} \dd{t} \right\vert \\
+        & \leq \int_{0}^{\infty} \left\vert t^{z - 1} e^{-t} \right\vert \dd{t} \\
+        & = \int_{0}^{\infty} \left\vert t^{z}t^{-1} e^{-t} \right\vert \dd{t}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( z \in \bC \) eine komplexe Zahl mit \( Re(z) > 0 \). Dann gilt:
+    \begin{align*}
+        \left\vert \Gamma( z ) \right\vert
+        & = \left\vert \int_{0}^{\infty} t^{z - 1} e^{-t} \dd{t} \right\vert \\
+        & \leq \int_{0}^{\infty} \left\vert t^{z - 1} e^{-t} \right\vert \dd{t} \\
+        & = \int_{0}^{\infty} \left\vert t^{z}t^{-1} e^{-t} \right\vert \dd{t} \\
+        & = \int_{0}^{\infty} \left\vert t^{z} \right\vert t^{-1} e^{-t} \dd{t}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( z \in \bC \) eine komplexe Zahl mit \( Re(z) > 0 \). Dann gilt:
+    \begin{align*}
+        \left\vert \Gamma( z ) \right\vert
+        & = \left\vert \int_{0}^{\infty} t^{z - 1} e^{-t} \dd{t} \right\vert \\
+        & \leq \int_{0}^{\infty} \left\vert t^{z - 1} e^{-t} \right\vert \dd{t} \\
+        & = \int_{0}^{\infty} \left\vert t^{z}t^{-1} e^{-t} \right\vert \dd{t} \\
+        & = \int_{0}^{\infty} \left\vert t^{z} \right\vert t^{-1} e^{-t} \dd{t} \\
+        & = \int_{0}^{\infty} \left\vert t^{Re(z) + i \cdot Im(z)} \right\vert t^{-1} e^{-t} \dd{t}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( z \in \bC \) eine komplexe Zahl mit \( Re(z) > 0 \). Dann gilt:
+    \begin{align*}
+        \left\vert \Gamma( z ) \right\vert
+        & = \left\vert \int_{0}^{\infty} t^{z - 1} e^{-t} \dd{t} \right\vert \\
+        & \leq \int_{0}^{\infty} \left\vert t^{z - 1} e^{-t} \right\vert \dd{t} \\
+        & = \int_{0}^{\infty} \left\vert t^{z}t^{-1} e^{-t} \right\vert \dd{t} \\
+        & = \int_{0}^{\infty} \left\vert t^{z} \right\vert t^{-1} e^{-t} \dd{t} \\
+        & = \int_{0}^{\infty} \left\vert t^{Re(z) + i \cdot Im(z)} \right\vert t^{-1} e^{-t} \dd{t} \\
+        & = \int_{0}^{\infty} \left\vert t^{Re(z)} t^{i \cdot Im(z)} \right\vert t^{-1} e^{-t} \dd{t}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( z \in \bC \) eine komplexe Zahl mit \( Re(z) > 0 \). Dann gilt:
+    \begin{align*}
+        \left\vert \Gamma( z ) \right\vert
+        & = \left\vert \int_{0}^{\infty} t^{z - 1} e^{-t} \dd{t} \right\vert \\
+        & \leq \int_{0}^{\infty} \left\vert t^{z - 1} e^{-t} \right\vert \dd{t} \\
+        & = \int_{0}^{\infty} \left\vert t^{z}t^{-1} e^{-t} \right\vert \dd{t} \\
+        & = \int_{0}^{\infty} \left\vert t^{z} \right\vert t^{-1} e^{-t} \dd{t} \\
+        & = \int_{0}^{\infty} \left\vert t^{Re(z) + i \cdot Im(z)} \right\vert t^{-1} e^{-t} \dd{t} \\
+        & = \int_{0}^{\infty} \left\vert t^{Re(z)} t^{i \cdot Im(z)} \right\vert t^{-1} e^{-t} \dd{t} \\
+        & = \int_{0}^{\infty} \left\vert t^{Re(z)} \right\vert \left\vert t^{i \cdot Im(z)} \right\vert t^{-1} e^{-t} \dd{t}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( z \in \bC \) eine komplexe Zahl mit \( Re(z) > 0 \). Dann gilt:
+    \begin{align*}
+        \left\vert \Gamma( z ) \right\vert
+        & = \left\vert \int_{0}^{\infty} t^{z - 1} e^{-t} \dd{t} \right\vert \\
+        & \leq \int_{0}^{\infty} \left\vert t^{z - 1} e^{-t} \right\vert \dd{t} \\
+        & = \int_{0}^{\infty} \left\vert t^{z}t^{-1} e^{-t} \right\vert \dd{t} \\
+        & = \int_{0}^{\infty} \left\vert t^{z} \right\vert t^{-1} e^{-t} \dd{t} \\
+        & = \int_{0}^{\infty} \left\vert t^{Re(z) + i \cdot Im(z)} \right\vert t^{-1} e^{-t} \dd{t} \\
+        & = \int_{0}^{\infty} \left\vert t^{Re(z)} t^{i \cdot Im(z)} \right\vert t^{-1} e^{-t} \dd{t} \\
+        & = \int_{0}^{\infty} \left\vert t^{Re(z)} \right\vert \left\vert t^{i \cdot Im(z)} \right\vert t^{-1} e^{-t} \dd{t} \\
+        & = \int_{0}^{\infty} t^{Re(z) - 1} e^{-t} \dd{t}
+    \end{align*}
+\end{frame}
+
+
+
+\begin{frame}{Beweis}
+    Sei \( z \in \bC \) eine komplexe Zahl mit \( Re(z) > 0 \). Dann gilt:
+    \begin{align*}
+        \left\vert \Gamma( z ) \right\vert
+        & = \left\vert \int_{0}^{\infty} t^{z - 1} e^{-t} \dd{t} \right\vert \\
+        & \leq \int_{0}^{\infty} \left\vert t^{z - 1} e^{-t} \right\vert \dd{t} \\
+        & = \int_{0}^{\infty} \left\vert t^{z}t^{-1} e^{-t} \right\vert \dd{t} \\
+        & = \int_{0}^{\infty} \left\vert t^{z} \right\vert t^{-1} e^{-t} \dd{t} \\
+        & = \int_{0}^{\infty} \left\vert t^{Re(z) + i \cdot Im(z)} \right\vert t^{-1} e^{-t} \dd{t} \\
+        & = \int_{0}^{\infty} \left\vert t^{Re(z)} t^{i \cdot Im(z)} \right\vert t^{-1} e^{-t} \dd{t} \\
+        & = \int_{0}^{\infty} \left\vert t^{Re(z)} \right\vert \left\vert t^{i \cdot Im(z)} \right\vert t^{-1} e^{-t} \dd{t} \\
+        & = \int_{0}^{\infty} t^{Re(z) - 1} e^{-t} \dd{t} \\
+        & = \Gamma( Re( z ) ).
+    \end{align*}
+\end{frame}
+% ============================================================
+\end{document}
